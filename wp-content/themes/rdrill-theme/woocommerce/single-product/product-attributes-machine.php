@@ -58,7 +58,7 @@ ob_start();
             }
             ?>
             <tr class="<?php if ( ( $alt = $alt * -1 ) == 1 ) echo 'alt'; ?>">
-                <th><?php echo wc_attribute_label( $attribute['name'] ); ?></th>
+                <td><?php echo wc_attribute_label( $attribute['name'] ); ?></td>
                 <td class="value-characteristics"><?php
                     if ( $attribute['is_taxonomy'] ) {
 
