@@ -63,7 +63,7 @@ if ( $products->have_posts() ) : ?>
 						<div class="product-slider__image">
 							<?php echo woocommerce_get_product_thumbnail()?>
 						</div>
-						<p class="product-slider__title"><span></span></p>
+						<p class="product-slider__title"><span><?php echo get_the_title() ?></span></p>
 					</a>
 				</div>
 			<?php endwhile; // end of the loop. ?>
