@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 
-<?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
+
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -50,26 +50,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="summary entry-summary">
-
-		<?php
-			/**
-			 * woocommerce_single_product_summary hook.
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 */
-			do_action( 'woocommerce_single_product_summary' );
-		?>
-
-	</div><!-- .summary -->
-
+    <?php global $product; ?>
     <p><?php echo get_the_title() ?></p>
+    <p><?php echo number_format($product->get_price(), 0, '', ' ') ?></p>
+
+
+    <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
+
 
 	<?php wc_get_template( 'single-product/single-product-description.php' );
 	wc_get_template( 'single-product/single-product-ddd.php' );
