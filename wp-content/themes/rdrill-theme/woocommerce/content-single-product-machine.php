@@ -117,11 +117,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         </div>  <!-- end wrap-card -->
     </div> <!-- end l-container -->
-        <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
-        <?php $tab = $tabs['additional_information'] ?>
-            <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
-                <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-            </div>
+    <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
+    <?php $tab = $tabs['additional_information'] ?>
+    <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
+        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+    </div>
+    <?php $tab = $tabs['reviews'] ?>
+    <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
+        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+    </div>
+    <?php $tab = $tabs['description'] ?>
+    <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
+        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+    </div>
+
     <div class="other-product">
         <div class="l-container">
             <!-- похожие товары -->
