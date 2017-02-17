@@ -98,7 +98,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                <?php
                $useful_articles = get_post_meta( $post->ID, 'test', true );
                foreach ( $useful_articles as $useful_article ):
-               echo $useful_article;
+               echo get_post_permalink($useful_article);
                endforeach;
                ?>
            </div>
