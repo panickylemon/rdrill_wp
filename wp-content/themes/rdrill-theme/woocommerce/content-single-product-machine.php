@@ -92,7 +92,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                     <?php echo get_post_meta( $post->ID, 'usefull_articles', true ); ?>
                 </div>
             </div>
-           <div>
+
+
+           <div> <!-- почему-то не выводит -->
                <?php echo get_post_meta( $post->ID, 'test', true ); ?>
            </div>
 
