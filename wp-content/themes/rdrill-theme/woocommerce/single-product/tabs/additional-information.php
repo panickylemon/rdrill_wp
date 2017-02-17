@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
-$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( '', 'woocommerce' ) );
+$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( '2', 'woocommerce' ) );
 
 ?>
 
