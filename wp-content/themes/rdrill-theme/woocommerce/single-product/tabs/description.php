@@ -36,9 +36,9 @@ if ( has_term( 'machine', 'product_cat' ) ) {
 <?php endif; ?>
 
 <?php
-if ( has_term( 'machine', 'product_cat' ) ) {
-    the_content();
-} else {
+if ( has_term( 'machine', 'product_cat' ) ) {?>
+    <div> <?php the_content(); ?> </div>
+<?php } else {?>
 	the_content();
-}
+<?php }
 ?>
