@@ -93,7 +93,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </div>
             </div>
            <div>
-               <?php echo get_post_meta( $post->ID, 'дюлбртпиам', true ); ?>
+               <?php echo get_post_meta( $post->ID, 'test', true ); ?>
            </div>
 
             <div class="zz">
