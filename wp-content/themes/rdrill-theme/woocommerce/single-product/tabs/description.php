@@ -26,7 +26,7 @@ if ( has_term( 'machine', 'product_cat' ) ) {
 	$heading = esc_html(apply_filters('woocommerce_product_description_heading', __('Описание',
 		'woocommerce')));
 } else {
-	$heading = esc_html(apply_filters('woocommerce_product_description_heading', __('Пиписька',
+	$heading = esc_html(apply_filters('woocommerce_product_description_heading', __('Описание свёрел',
 		'woocommerce')));
 }
 ?>
@@ -35,4 +35,10 @@ if ( has_term( 'machine', 'product_cat' ) ) {
   <h2><?php echo $heading; ?></h2>
 <?php endif; ?>
 
-<?php the_content(); ?>
+<?php
+if ( has_term( 'machine', 'product_cat' ) ) {
+    the_content();
+} else {
+	the_content();
+}
+?>
