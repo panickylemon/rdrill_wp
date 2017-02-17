@@ -1,0 +1,130 @@
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #ffffff;
+	border-top: 1px solid #e8eef0;
+}
+
+.wrap-footer {
+	position: relative;
+	padding: 45px 0 0;
+	height: 455px;
+}
+
+.footer-item {
+	width: 25%;
+	float: left;
+}
+
+.footer-menu-list {
+	padding: 0;
+	list-style: none;
+}
+
+.footer-submenu-list {
+	padding: 0;
+	list-style: none;
+}
+
+.footer-menu-link {
+	font-size: 14px;
+	font-weight: 600;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.footer-submenu-link {
+	font-size: 14px;
+	font-weight: 300;
+	color: #666666;
+}
+
+.footer-menu-link:hover, .footer-submenu-link:hover,
+.footer-menu-link:focus, .footer-submenu-link:focus {
+	color: #f84630;
+}
+
+.footer-submenu-list__item {
+	margin-bottom: 8px;
+}
+
+.footer-submenu-list {
+	margin-top: 30px;
+}
+
+.footer-contact__title {
+	margin-bottom: 25px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.footer__phone-number {
+	margin: 0;
+	font-size: 26px;
+	font-weight: 300;
+	color: #666666;
+}
+
+.footer__phone-item--red {
+	font-weight: 600;
+	color: #fc0013;
+}
+
+.footer__phone-description {
+	font-size: 13px;
+	font-weight: 300;
+	color: #666666;
+}
+
+.footer-contact__title-address {
+	margin: 30px 0 20px;
+}
+
+.footer-contact__address {
+	font-size: 15px;
+	font-weight: 300;
+	color: #666666;
+}
+
+.bottom-panel {
+	position: absolute;
+	width: 100%;
+	padding: 15px 0 9px;
+	bottom: 0;
+	background: #efefef;
+}
+
+.footer__copyright {
+	float: left;
+	margin: 7px 0 0;
+	font-size: 15px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.footer__social-network {
+	float: right;
+}
+
+.social-network__item {
+	display: inline-block;
+	width: 30px;
+	height: 31px;
+	margin-left: 10px;
+	margin-top: 1px;
+}
+
+.footer__youtube {
+	background: url("../image/icons/social-network-icons.png") no-repeat;
+}
+
+.footer__facebook {
+	background: url("../image/icons/social-network-icons.png") no-repeat 50%;
+}
+
+.footer__vk {
+	background: url("../image/icons/social-network-icons.png") no-repeat 100%;
+}

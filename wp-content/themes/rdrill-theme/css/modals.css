@@ -1,0 +1,156 @@
+input[type="text"], input[type="password"], textarea {
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-o-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-khtml-border-radius: 0 !important;
+	-webkit-appearance: none;
+	line-height: inherit;
+}
+
+input[type="radio"] {
+	-webkit-appearance: radio;
+}
+
+input, textarea {
+	outline: none;
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+input[placeholder] {
+	color: #999999;
+	font-size: 13px;
+	text-overflow: ellipsis;
+}
+
+input::-webkit-input-placeholder {
+	color: #999999;
+	font-size: 13px;
+	text-overflow: ellipsis;
+}
+
+input::-moz-placeholder {
+	color: #999999;
+	opacity: 1 !important;
+	font-size: 13px;
+	text-overflow: ellipsis;
+}
+
+.l-modal input[placeholder], .l-modal textarea[placeholder] {
+	font-size: 14px;
+	color: #999999;
+	text-overflow: ellipsis;
+}
+
+.l-modal input::-webkit-input-placeholder, .l-modal textarea::-webkit-input-placeholder {
+	font-size: 14px;
+	color: #999999;
+	text-overflow: ellipsis;
+}
+
+.l-modal input::-moz-placeholder, .l-modal textarea::-moz-placeholder {
+	opacity: 1 !important;
+	font-size: 14px;
+	color: #999999;
+	text-overflow: ellipsis;
+}
+
+label {
+	display: none;
+}
+
+input, textarea {
+	display: block;
+}
+
+.l-modal .b-modal{
+	width: 100%;
+	max-width: 600px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.l-modal{
+	z-index: 10000;
+}
+
+.modal-form__title {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	font-style: italic;
+	color: #333333;
+}
+
+.l-modal input, .l-modal textarea {
+	width: 100%;
+	margin-bottom: 25px;
+	color: #333333 !important;
+	padding: 10px 0;
+	line-height: 1.4;
+	border: none;
+	border-bottom: 1px solid #bfbfbf;
+	background: #efefef;
+}
+
+.modal-form {
+	padding: 60px;
+	background: #efefef;
+}
+
+.wrap-button{
+	width: 100%;
+	text-align: center;
+}
+
+.button-submit {
+	width: auto;
+	padding: 18px 40px;
+	margin: 25px auto 0;
+	border: none;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.button-submit:hover{
+	background: rgb(199, 28, 0);
+}
+
+.modal-dialog {
+	z-index: 6000;
+	margin: 30px auto !important;
+}
+
+.modal-close{
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url("../image/icons/close-form.png") no-repeat;
+}
+
+
+.parsley-errors-list{
+	margin: 0;
+	padding: 0;
+	color: #ff0000;
+	font-style: italic;
+	font-size: 13px;
+	list-style: none;
+}
+
+.parsley-errors-list .parsley-required{
+	margin: -22px 0 4px;
+}
