@@ -38,7 +38,7 @@ if ( has_term( 'machine', 'product_cat' ) ) {
 <?php
 if ( has_term( 'machine', 'product_cat' ) ) {?>
     <div> <?php the_content(); ?> </div>
-<?php } else {?>
+<?php } else {
 	the_content();
-<?php }
+ }
 ?>
