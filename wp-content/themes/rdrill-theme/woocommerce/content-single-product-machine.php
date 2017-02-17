@@ -65,13 +65,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
             </div>
             <div class="clearfix">
-            <!-- !!!!!! нужна проверка на наличие поля особенности !!!!! -->
+            <!-- !!!!!! проверка на наличие поля особенности !!!!! -->
             <?php $features_machine = get_post_meta( $post->ID, 'features_machine', true ); ?>
-            <?php
-                if (!empty($features_machine)) {
-                ?>
+            <?php if (!empty($features_machine)) { ?>
                 <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
             <?php }?>
+
             <!-- видео -->
             <div class="video-container">
                 <div class="video-wrapper">
