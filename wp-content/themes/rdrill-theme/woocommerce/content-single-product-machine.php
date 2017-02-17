@@ -64,6 +64,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
     </div>
     <div class="clearfix">
+        <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
         <!-- особенности/преимущества -->
         <?php echo get_post_meta( $post->ID, 'features_machine', true ); ?>
     </div>
