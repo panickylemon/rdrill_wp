@@ -70,6 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div><!-- .summary -->
 
     <p><?php echo get_the_title() ?></p>
+    <?php echo number_format($product->get_price(), 0, '', ' ') ?>
 
 	<?php wc_get_template( 'single-product/single-product-description.php' );
 	wc_get_template( 'single-product/single-product-ddd.php' );
