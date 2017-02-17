@@ -89,19 +89,14 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="useful-articles">
                 <p class="useful-articles__title">Полезные статьи по теме</p>
                 <div class="useful-articles__content">
-                    <?php echo get_post_meta( $post->ID, 'usefull_articles', true ); ?>
+                    <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true );
+                    foreach ( $useful_articles as $useful_article ): ?>
+                        <a href="<?php echo get_permalink($useful_article);?>">
+                            <span><?php echo get_the_title($useful_article);?></span>
+                        </a>
+                    <?php endforeach;?>
                 </div>
             </div>
-
-
-           <div class="clearfix">
-               <?php $useful_articles = get_post_meta( $post->ID, 'test', true );
-               foreach ( $useful_articles as $useful_article ): ?>
-                  <a href="<?php echo get_permalink($useful_article);?>">
-                      <span><?php echo get_the_title($useful_article);?></span>
-                  </a>
-               <?php endforeach;?>
-           </div>
 
             <div class="zz">
                 <?php wc_get_template( 'single-product/single-product-description.php' );?>
