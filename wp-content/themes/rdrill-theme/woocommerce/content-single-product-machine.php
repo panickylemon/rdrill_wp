@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
            <div> <!-- почему-то не выводит -->
-               <?php echo get_post_custom( $post->ID, 'test', true ); ?>
+               <?php echo get_post_meta( $post->ID, 'test', true ); ?>
            </div>
 
             <div class="zz">
