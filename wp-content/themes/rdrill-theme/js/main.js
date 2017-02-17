@@ -68,7 +68,7 @@ $(document).ready(function () {
     });
 
     $('#other-product-slider').owlCarousel({
-        loop: true,
+        loop: false,
         nav: true,
         dots: false,
         navText: false,
