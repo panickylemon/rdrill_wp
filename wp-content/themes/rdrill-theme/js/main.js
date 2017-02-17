@@ -67,6 +67,29 @@ $(document).ready(function () {
         }
     });
 
+    $('#other-product-slider').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        navText: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            481: {
+                items: 2
+            },
+            861: {
+                items: 3
+            },
+            1140: {
+                items: 4
+            }
+        }
+    });
+
+
+
 
     // Tab
     $('#productsTab').easyResponsiveTabs({
@@ -138,15 +161,15 @@ $(document).ready(function () {
     });
     initSticky();
 
-        $('.card-slider').bxSlider({
-            mode: 'vertical',
-            slideWidth: 74,
-            minSlides: 5,
-            nextText: '',
-            prevText: '',
-            pager: false,
-            slideMargin: 10
-        });
+    $('.card-slider').bxSlider({
+        mode: 'vertical',
+        slideWidth: 74,
+        minSlides: 5,
+        nextText: '',
+        prevText: '',
+        pager: false,
+        slideMargin: 10
+    });
 
     lightbox.option({
         'wrapAround': true,
