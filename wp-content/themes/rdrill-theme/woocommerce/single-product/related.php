@@ -26,9 +26,14 @@ if ( empty( $product ) || ! $product->exists() ) {
 	return;
 }
 
-if ( ! $related = $product->get_related( $posts_per_page ) ) {
-	return;
+if ( $product->upsell_ids) {
+	$related = $product->upsell_ids;
+} else {
+	if ( ! $related = $product->get_related( $posts_per_page ) ) {
+		return;
+	}
 }
+
 
 $args = apply_filters( 'woocommerce_related_products_args', array(
 	'post_type'            => 'product',
