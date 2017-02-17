@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
-$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( 'FFFFF', 'woocommerce' ) );
+$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( '', 'woocommerce' ) );
 
 ?>
 
@@ -30,4 +30,8 @@ $heading = apply_filters( 'woocommerce_product_additional_information_heading', 
 	<h2><?php echo $heading; ?></h2>
 <?php endif; ?>
 
-<?php $product->list_attributes(); ?>
+<?php
+wc_get_template( 'single-product/product-attributes.php', array(
+		'product'    => $this
+) );
+?>
