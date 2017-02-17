@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="l-container">
             <!-- похожие товары -->
             <?php
-            wc_get_template( 'single-product/single-product-ddd.php' );
+
             $args = array(
                 'posts_per_page' 	=> 4,
                 'columns' 			=> 4,
