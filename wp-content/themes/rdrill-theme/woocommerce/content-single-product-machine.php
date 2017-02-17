@@ -51,8 +51,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
     <?php global $product; ?>
-    <p><?php echo get_the_title() ?></p>
-    <p><?php echo number_format($product->get_price(), 0, '', ' ') ?></p>
+    <h1><?php echo get_the_title() ?></h1>
+
+    <div class="product-price">
+        <p class="product-price__text">Цена с НДС:</p>
+        <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
+        <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
+    </div>
 
 
     <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
