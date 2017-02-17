@@ -56,22 +56,18 @@ if ( $products->have_posts() ) : ?>
 		<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
 
 	<div class="other-product-slider">
-	<div id="other-product-slider" class="owl-carousel owl-theme">
-
+		<div id="other-product-slider" class="owl-carousel owl-theme">
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 				<div class="product-slider__item">
 					<a class="product-slider__item-link">
 						<div class="product-slider__image">
 							<?php echo woocommerce_get_product_thumbnail()?>
 						</div>
-						<p class="product-slider__title"><span><?php echo get_the_title() ?></span></p>
+						<p class="product-slider__title"><span></span></p>
 					</a>
 				</div>
-				<?php //wc_get_template_part( 'content', 'product' ); ?>
-
 			<?php endwhile; // end of the loop. ?>
-
-	</div>
+		</div>
 	</div>
 
 	</div>
