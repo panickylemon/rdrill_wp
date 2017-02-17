@@ -62,9 +62,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!-- комплект поставки-->
     <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
 
-    <div class="zz">
-        <?php wc_get_template( 'single-product/single-product-description.php' );?>
-    </div>
 
 
 	<?php
