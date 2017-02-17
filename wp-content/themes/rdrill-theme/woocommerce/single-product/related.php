@@ -58,8 +58,15 @@ if ( $products->have_posts() ) : ?>
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
-
-				<?php wc_get_template_part( 'content', 'product' ); ?>
+				<div class="product-slider__item">
+					<a class="product-slider__item-link">
+						<div class="product-slider__image">
+							<img src="<?php echo woocommerce_get_product_thumbnail()?>" alt="">
+						</div>
+						<p class="product-slider__title"><span>Удлинительные шпиндели</span></p>
+					</a>
+				</div>
+				<?php //wc_get_template_part( 'content', 'product' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
