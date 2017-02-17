@@ -62,6 +62,20 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!-- комплект поставки-->
     <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
 
+
+	<?php wc_get_template( 'single-product/single-product-description.php' );?>
+
+     <?php
+	wc_get_template( 'single-product/single-product-ddd.php' );
+	$args = array(
+	'posts_per_page' 	=> 4,
+	'columns' 			=> 4,
+	'orderby' 			=> 'rand'
+	);
+
+	woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
+	?>
+
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook.
@@ -73,6 +87,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
+    <!-- не знаю что это -->
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
     </div>
