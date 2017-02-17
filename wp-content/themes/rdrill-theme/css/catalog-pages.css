@@ -1112,7 +1112,8 @@ img.thumbnail {
 	padding: 15px 20px;
 }
 
-.useful-articles__item {
+
+.useful-articles__content a{
 	display: block;
 	margin: 10px 0;
 	font-size: 14px;
@@ -1120,15 +1121,15 @@ img.thumbnail {
 	color: #666666;
 }
 
-.useful-articles__item:hover {
+.useful-articles__content a:hover {
 	color: #f84630;
 }
 
-.useful-articles__item span {
+.useful-articles__content a span {
 	border-bottom: 1px solid #e9eff1;
 }
 
-.useful-articles__item:before {
+.useful-articles__content a:before {
 	content: '';
 	display: inline-block;
 	width: 12px;
