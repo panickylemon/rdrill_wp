@@ -83,17 +83,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                     </a>
                 </div>
             </div>
-                <div class="video-container">
-                    <div class="video-wrapper">
-                        <div id="player" data-video-id="ca6ARA4V0v4"></div>
-                        <div id="thumbnail_container" class="thumbnail_container">
-                            <img class="thumbnail" id="thumbnail"
-                                 src="http://img.youtube.com/vi/ca6ARA4V0v4/sddefault.jpg" alt="превью"/>
-                        </div>
-                        <a class="start-video"><img src="image/icons/play.png" alt="play">
-                        </a>
-                    </div>
-                </div>
 
 
             <!-- особенности/преимущества -->
