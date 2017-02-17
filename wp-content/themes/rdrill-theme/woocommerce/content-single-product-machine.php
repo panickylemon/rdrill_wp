@@ -63,9 +63,8 @@ if ( ! defined( 'ABSPATH' ) ) {
             <!-- pdf файл -->
             <?php $instructions = get_post_meta( $post->ID, 'instructions_pdf', true ); ?>
             <?php if (!empty($instructions)) { ?>
-                <a class="instructions-product" href="#">
+                <a class="instructions-product" href="<?php echo wp_get_attachment_url($instructions) ?>">
                     <span>Инструкция к станку</span>
-                    <?php echo wp_get_attachment_url($instructions) ?>
                 </a>
             <?php }?>
 
