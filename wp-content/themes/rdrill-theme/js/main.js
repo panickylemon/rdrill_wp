@@ -79,7 +79,12 @@ $(document).ready(function () {
             481: {
                 items: 2
             },
-
+            861: {
+                items: 3
+            },
+            1140: {
+                items: 4
+            }
         }
     });
 
