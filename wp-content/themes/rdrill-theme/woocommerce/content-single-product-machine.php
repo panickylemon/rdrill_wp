@@ -117,15 +117,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         </div>  <!-- end wrap-card -->
     </div> <!-- end l-container -->
+
+        <!-- Дополнительная инфа -->
+
     <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
     <?php $tab = $tabs['additional_information'] ?>
+    <?php $tab['title'] = 'FFFFFF' ?>
     <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
     </div>
-    <?php $tab = $tabs['reviews'] ?>
+
+        <!-- Отзывы -->
+        <?php $tab = $tabs['reviews'] ?>
     <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
     </div>
+
+        <!-- Описание -->
     <?php $tab = $tabs['description'] ?>
     <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
