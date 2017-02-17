@@ -94,11 +94,11 @@ if ( ! defined( 'ABSPATH' ) ) {
             </div>
 
 
-           <div>
+           <div class="clearfix">
                <?php
-               $posts = get_post_meta( $post->ID, 'test', true );
-               foreach ( $posts as $post ):
-               echo $post;
+               $useful_articles = get_post_meta( $post->ID, 'test', true );
+               foreach ( $useful_articles as $useful_article ):
+               echo $useful_article;
                endforeach;
                ?>
            </div>
