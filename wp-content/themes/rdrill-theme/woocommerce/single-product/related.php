@@ -51,9 +51,10 @@ $woocommerce_loop['columns'] = apply_filters( 'woocommerce_related_products_colu
 
 if ( $products->have_posts() ) : ?>
 
-	<div class="related products">
+	<div class="other-product">
+	<div class="l-container">
 
-		<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
+		<p class="other-news__title">Дополнительные товары. Обратите внимание:</p>
 
 	<div class="other-product-slider">
 		<div id="other-product-slider" class="owl-carousel owl-theme">
@@ -70,6 +71,7 @@ if ( $products->have_posts() ) : ?>
 		</div>
 	</div>
 
+	</div>
 	</div>
 
 <?php endif;
