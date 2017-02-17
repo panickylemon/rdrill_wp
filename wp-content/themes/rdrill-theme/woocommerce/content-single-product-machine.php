@@ -40,87 +40,95 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="catalog catalog-item">
     <div class="l-container">
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
+        <div class="wrap-card">
+            <?php
+                /**
+                 * woocommerce_before_single_product_summary hook.
+                 *
+                 * @hooked woocommerce_show_product_sale_flash - 10
+                 * @hooked woocommerce_show_product_images - 20
+                 */
+                do_action( 'woocommerce_before_single_product_summary' );
+            ?>
 
-    <?php global $product; ?>
-    <h1><?php echo get_the_title() ?></h1>
+            <?php global $product; ?>
+            <h1><?php echo get_the_title() ?></h1>
 
-    <div class="product-price">
-        <p class="product-price__text">Цена с НДС:</p>
-        <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
-        <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
-    </div>
+            <div class="product-price">
+                <p class="product-price__text">Цена с НДС:</p>
+                <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
+                <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
+            </div>
 
-    <div class="clearfix">
-        <!-- комплект поставки-->
-        <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
-    </div>
-    <div class="clearfix">
-        <!-- !!!!!! нужна проверка на наличие поля особенности !!!!! -->
-        <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
+            <div class="clearfix">
+                <!-- комплект поставки-->
+                <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
+            </div>
+            <div class="clearfix">
+            <!-- !!!!!! нужна проверка на наличие поля особенности !!!!! -->
+            <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
 
-        <!-- видео -->
-        <div class="video-container">
-            <div class="video-wrapper">
-                <div id="player" data-video-id="<?php echo get_post_meta( $post->ID, 'video_machine', true ); ?>"></div>
-                <div id="thumbnail_container" class="thumbnail_container">
-                    <img class="thumbnail" id="thumbnail"
-                         src="http://img.youtube.com/vi/<?php echo get_post_meta( $post->ID, 'video_machine', true ); ?>/sddefault.jpg" alt="превью"/>
+            <!-- видео -->
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <div id="player" data-video-id="<?php echo get_post_meta( $post->ID, 'video_machine', true ); ?>"></div>
+                    <div id="thumbnail_container" class="thumbnail_container">
+                        <img class="thumbnail" id="thumbnail"
+                             src="http://img.youtube.com/vi/<?php echo get_post_meta( $post->ID, 'video_machine', true ); ?>/sddefault.jpg" alt="превью"/>
+                    </div>
+                    <a class="start-video"><img src="/wp-content/themes/rdrill-theme/image/icons/play.png" alt="play">
+                    </a>
                 </div>
-                <a class="start-video"><img src="/wp-content/themes/rdrill-theme/image/icons/play.png" alt="play">
-                </a>
             </div>
-        </div>
 
-        <!-- особенности/преимущества -->
-        <?php echo get_post_meta( $post->ID, 'features_machine', true ); ?>
+            <!-- особенности/преимущества -->
+            <?php echo get_post_meta( $post->ID, 'features_machine', true ); ?>
 
 
-        <!-- полезные статьи -->
-        <div class="useful-articles">
-            <p class="useful-articles__title">Полезные статьи по теме</p>
-            <div class="useful-articles__content">
-                <?php echo get_post_meta( $post->ID, 'usefull_articles', true ); ?>
+            <!-- полезные статьи -->
+            <div class="useful-articles">
+                <p class="useful-articles__title">Полезные статьи по теме</p>
+                <div class="useful-articles__content">
+                    <?php echo get_post_meta( $post->ID, 'usefull_articles', true ); ?>
+                </div>
             </div>
+            </div>
+
+            <div class="zz">
+                <?php wc_get_template( 'single-product/single-product-description.php' );?>
+            </div>
+
+
+            <?php
+                /**
+                 * woocommerce_after_single_product_summary hook.
+                 *
+                 * @hooked woocommerce_output_product_data_tabs - 10
+                 * @hooked woocommerce_upsell_display - 15
+                 * @hooked woocommerce_output_related_products - 20
+                 */
+                do_action( 'woocommerce_after_single_product_summary' );
+            ?>
+
+
+        </div>  <!-- end wrap-card -->
+    </div> <!-- end l-container -->
+
+    <div class="other-product">
+        <div class="l-container">
+            <!-- похожие товары -->
+            <?php
+            wc_get_template( 'single-product/single-product-ddd.php' );
+            $args = array(
+                'posts_per_page' 	=> 4,
+                'columns' 			=> 4,
+                'orderby' 			=> 'rand'
+            );
+
+            woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
+            ?>
         </div>
     </div>
-
-    <div class="zz">
-        <?php wc_get_template( 'single-product/single-product-description.php' );?>
-    </div>
-
-
-	<?php
-		/**
-		 * woocommerce_after_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
-
-
-    <!-- похожие товары -->
-    <?php
-    wc_get_template( 'single-product/single-product-ddd.php' );
-    $args = array(
-        'posts_per_page' 	=> 4,
-        'columns' 			=> 4,
-        'orderby' 			=> 'rand'
-    );
-
-    woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
-    ?>
 
     <!-- не знаю что это -->
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
