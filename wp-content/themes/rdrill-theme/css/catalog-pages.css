@@ -607,10 +607,9 @@ tr.sorting-model__item {
 	float: right;
 }
 
-
 .catalog-products-wrap {
-	display: inline-block;
 	width: 100%;
+	display: inline-block;
 }
 
 .catalog-product {
@@ -988,12 +987,14 @@ tr.sorting-model__item {
 	float: right;
 }
 
+
 /*video*/
 
 .video-container {
 	float: left;
 	width: 100%;
 	max-width: 300px;
+	margin-right: 50px;
 }
 
 .video-container-2 {
@@ -1088,7 +1089,6 @@ img.thumbnail {
 .video-list {
 	width: 45%;
 	float: left;
-	margin-left: 50px;
 }
 
 .useful-articles {

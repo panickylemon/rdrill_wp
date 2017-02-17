@@ -59,9 +59,18 @@ if ( ! defined( 'ABSPATH' ) ) {
         <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
     </div>
 
-    <!-- комплект поставки-->
-    <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
+    <div class="clearfix">
+        <!-- комплект поставки-->
+        <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
+    </div>
+    <div class="clearfix">
+        <!-- особенности/преимущества -->
+        <?php echo get_post_meta( $post->ID, 'features_machine', true ); ?>
+    </div>
 
+    <div class="zz">
+        <?php wc_get_template( 'single-product/single-product-description.php' );?>
+    </div>
 
 
 	<?php
