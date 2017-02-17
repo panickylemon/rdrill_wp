@@ -72,18 +72,20 @@ if ( ! defined( 'ABSPATH' ) ) {
             <?php }?>
 
             <!-- видео -->
+            <?php $video_machine = get_post_meta( $post->ID, 'video_machine', true ); ?>
+            <?php if (!empty($video_machine)) { ?>
             <div class="video-container">
                 <div class="video-wrapper">
-                    <div id="player" data-video-id="<?php echo get_post_meta( $post->ID, 'video_machine', true ); ?>"></div>
+                    <div id="player" data-video-id="<?php echo $video_machine ?>"></div>
                     <div id="thumbnail_container" class="thumbnail_container">
                         <img class="thumbnail" id="thumbnail"
-                             src="http://img.youtube.com/vi/<?php echo get_post_meta( $post->ID, 'video_machine', true ); ?>/sddefault.jpg" alt="превью"/>
+                             src="http://img.youtube.com/vi/<?php echo $video_machine ?>/sddefault.jpg" alt="превью"/>
                     </div>
                     <a class="start-video"><img src="/wp-content/themes/rdrill-theme/image/icons/play.png" alt="play">
                     </a>
                 </div>
             </div>
-
+            <?php }?>
 
             <!-- особенности/преимущества -->
             <?php echo $features_machine; ?>
