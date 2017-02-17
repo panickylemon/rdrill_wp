@@ -61,7 +61,7 @@ if ( $products->have_posts() ) : ?>
 				<div class="product-slider__item">
 					<a class="product-slider__item-link">
 						<div class="product-slider__image">
-							<img src="<?php echo woocommerce_get_product_thumbnail()?>" alt="">
+							<?php echo woocommerce_get_product_thumbnail()?>
 						</div>
 						<p class="product-slider__title"><span>Удлинительные шпиндели</span></p>
 					</a>
