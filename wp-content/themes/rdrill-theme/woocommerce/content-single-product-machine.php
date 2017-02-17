@@ -59,19 +59,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
     </div>
 
-
+    <!-- комплект поставки-->
     <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
 
-
-	<?php wc_get_template( 'single-product/single-product-description.php' );
-	wc_get_template( 'single-product/single-product-ddd.php' );
-	$args = array(
-	'posts_per_page' 	=> 4,
-	'columns' 			=> 4,
-	'orderby' 			=> 'rand'
-	);
-
-	woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );?>
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook.
