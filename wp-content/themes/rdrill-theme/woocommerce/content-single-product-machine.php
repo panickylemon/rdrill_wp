@@ -60,6 +60,15 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
             </div>
 
+            <!-- pdf файл -->
+            <?php $instructions = get_post_meta( $post->ID, 'instructions_pdf', true ); ?>
+            <?php if (!empty($instructions)) { ?>
+                <a class="instructions-product" href="#">
+                    <span>Инструкция к станку</span>
+                    <?php echo $instructions ?>
+                </a>
+            <?php }?>
+
             <div class="clearfix">
                 <!-- комплект поставки-->
                 <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
