@@ -82,6 +82,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <!-- особенности/преимущества -->
         <?php echo get_post_meta( $post->ID, 'features_machine', true ); ?>
+
+
+        <!-- полезные статьи -->
+        <div class="useful-articles">
+            <p class="useful-articles__title">Полезные статьи по теме</p>
+            <div class="useful-articles__content">
+                <?php echo get_post_meta( $post->ID, 'usefull_articles', true ); ?>
+            </div>
+        </div>
     </div>
 
     <div class="zz">
