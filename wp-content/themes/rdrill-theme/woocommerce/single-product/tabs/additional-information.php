@@ -31,7 +31,8 @@ $heading = apply_filters( 'woocommerce_product_additional_information_heading', 
 <?php endif; ?>
 
 <?php
-wc_get_template( 'single-product/product-attributes.php', array(
-		'product'    => $product
-) );
-?>
+if ( has_term( 'machine', 'product_cat' ) ) {
+	wc_get_template('single-product/product-attributes.php', array(
+			'product' => $product
+	));
+};?>
