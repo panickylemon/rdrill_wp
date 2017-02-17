@@ -66,8 +66,12 @@ if ( ! defined( 'ABSPATH' ) ) {
             </div>
             <div class="clearfix">
             <!-- !!!!!! нужна проверка на наличие поля особенности !!!!! -->
-            <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
-
+            <?php $features_machine = get_post_meta( $post->ID, 'features_machine', true ); ?>
+            <?php
+                if (!empty($features_machine)) {
+                ?>
+                <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
+            <?php }?>
             <!-- видео -->
             <div class="video-container">
                 <div class="video-wrapper">
@@ -82,7 +86,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             </div>
 
             <!-- особенности/преимущества -->
-            <?php echo get_post_meta( $post->ID, 'features_machine', true ); ?>
+            <?php echo $features_machine; ?>
 
 
             <!-- полезные статьи !!!!!! тоже нужна проверка !!!!!!!!!!!!!!!!!!!  -->
@@ -101,19 +105,6 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="zz">
                 <?php wc_get_template( 'single-product/single-product-description.php' );?>
             </div>
-
-
-            <?php
-                /**
-                 * woocommerce_after_single_product_summary hook.
-                 *
-                 * @hooked woocommerce_output_product_data_tabs - 10
-                 * @hooked woocommerce_upsell_display - 15
-                 * @hooked woocommerce_output_related_products - 20
-                 */
-                //do_action( 'woocommerce_after_single_product_summary' );
-            ?>
-
 
         </div>  <!-- end wrap-card -->
     </div> <!-- end l-container -->
