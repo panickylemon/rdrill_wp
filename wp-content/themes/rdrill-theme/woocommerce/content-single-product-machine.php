@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             </div>
 
 
-           <div> <!-- почему-то не выводит -->
+           <div>
                <?php
                $posts = get_post_meta( $post->ID, 'test', true );
                foreach ( $posts as $post ):
