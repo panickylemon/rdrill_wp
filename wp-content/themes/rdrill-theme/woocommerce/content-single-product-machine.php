@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <?php if (!empty($instructions)) { ?>
                 <a class="instructions-product" href="#">
                     <span>Инструкция к станку</span>
-                    <?php echo get_attached_file($instructions) ?>
+                    <?php echo wp_get_attachment_url($instructions) ?>
                 </a>
             <?php }?>
 
