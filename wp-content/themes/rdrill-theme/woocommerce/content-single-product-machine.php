@@ -38,8 +38,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+<div class="catalog catalog-item">
+    <div class="l-container">
 	<?php
 		/**
 		 * woocommerce_before_single_product_summary hook.
@@ -80,6 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
-</div><!-- #product-<?php the_ID(); ?> -->
+    </div>
+</div><!-- #product -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
