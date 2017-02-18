@@ -24,6 +24,7 @@ global $post, $product;
 ?>
 <div class="images">
 	<?php
+	    do_action( 'woocommerce_product_thumbnails' );
 		if ( has_post_thumbnail() ) {
 			$attachment_count = count( $product->get_gallery_attachment_ids() );
 			$gallery          = $attachment_count > 0 ? '[product-gallery]' : '';
@@ -47,6 +48,6 @@ global $post, $product;
 			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
 		}
 
-		do_action( 'woocommerce_product_thumbnails' );
+
 	?>
 </div>
