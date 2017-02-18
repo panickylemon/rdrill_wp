@@ -31,11 +31,12 @@ global $post, $product;
 			$image            = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
 				'title'	 => $props['title'],
 				'alt'    => $props['alt'],
+				'id'       => 'main-image'
 			) );
 			echo apply_filters(
 				'woocommerce_single_product_image_html',
 				sprintf(
-					'<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto%s">%s</a>',
+					'<div class="card-photo"><a href="%s" id="main-image" data-lightbox="images" title="%s">%s</a></div>',
 					esc_url( $props['url'] ),
 					esc_attr( $props['caption'] ),
 					$gallery,

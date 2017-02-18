@@ -52,7 +52,7 @@ if ( $attachment_ids ) {
 			echo apply_filters(
 				'woocommerce_single_product_image_thumbnail_html',
 				sprintf(
-					'<li><a href="%s" class="%s thumb" title="%s" data-rel="prettyPhoto[product-gallery]" data-lightbox="images">%s</a></li>',
+					'<li><a href="%s" class="%s thumb" title="%s" data-lightbox="images">%s</a></li>',
 					esc_url( $props['url'] ),
 					esc_attr( $image_class ),
 					esc_attr( $props['caption'] ),
