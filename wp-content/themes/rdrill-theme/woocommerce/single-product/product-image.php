@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 ?>
-<div class="images">
+<div id="card-product-slider" class="clearfix">
 	<?php
 	    do_action( 'woocommerce_product_thumbnails' );
 		if ( has_post_thumbnail() ) {
