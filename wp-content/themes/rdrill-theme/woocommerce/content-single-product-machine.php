@@ -99,7 +99,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <?php echo $features_machine; ?>
 
 
-            <!-- полезные статьи !!!!!! тоже нужна проверка !!!!!!!!!!!!!!!!!!!  -->
+            <!-- полезные статьи !!!!!! проверка !!!!!!!!!!!!!!!!!!!  -->
             <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true ); ?>
             <?php if (!empty($useful_articles)) { ?>
                 <div class="useful-articles">
