@@ -39,7 +39,6 @@ global $post, $product;
 					'<div class="card-photo"><a href="%s" id="main-image" data-lightbox="images" title="%s">%s</a></div>',
 					esc_url( $props['url'] ),
 					esc_attr( $props['caption'] ),
-					$gallery,
 					$image
 				),
 				$post->ID
