@@ -55,6 +55,10 @@
 	color: #252525;
 }
 
+.banner-catalog__description p{
+	margin: 0;
+}
+
 /* begin checkbox */
 
 .checkbox {

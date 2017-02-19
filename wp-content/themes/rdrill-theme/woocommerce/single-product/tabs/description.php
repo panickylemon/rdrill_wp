@@ -22,11 +22,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 
-if ( has_term( 'machine', 'product_cat' ) ) {
+if ( has_term( 'machine', 'product_cat' ) ) { 
 	$heading = esc_html(apply_filters('woocommerce_product_description_heading', __('Описание',
 		'woocommerce')));
 } else {
-	$heading = esc_html(apply_filters('woocommerce_product_description_heading', __('Описание свёрел',
+	$heading = esc_html(apply_filters('woocommerce_product_description_heading', __('Описание свёрл',
 		'woocommerce')));
 }
 ?>

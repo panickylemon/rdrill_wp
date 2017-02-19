@@ -136,9 +136,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
     </div>
 
+
+        <!-- Похожие товары -->
     <div class="other-product">
         <div class="l-container">
-            <!-- похожие товары -->
+
             <?php
 
             $args = array(
