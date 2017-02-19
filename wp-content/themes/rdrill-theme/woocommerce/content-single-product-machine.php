@@ -72,8 +72,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <!-- комплект поставки-->
                 <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
             </div>
+
             <div class="clearfix">
-            <!-- !!!!!! проверка на наличие поля особенности !!!!! -->
+            <!-- проверка на наличие поля особенности -->
             <?php $features_machine = get_post_meta( $post->ID, 'features_machine', true ); ?>
             <?php if (!empty($features_machine)) { ?>
                 <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
@@ -99,7 +100,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <?php echo $features_machine; ?>
 
 
-            <!-- полезные статьи !!!!!! проверка !!!!!!!!!!!!!!!!!!!  -->
+            <!-- полезные статьи -->
             <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true ); ?>
             <?php if (!empty($useful_articles)) { ?>
                 <div class="useful-articles">
@@ -140,9 +141,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Похожие товары -->
     <div class="other-product">
         <div class="l-container">
-
             <?php
-
             $args = array(
                 'posts_per_page' 	=> 4,
                 'columns' 			=> 4,
