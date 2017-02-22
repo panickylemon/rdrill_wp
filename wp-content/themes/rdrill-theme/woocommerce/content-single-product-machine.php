@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="l-container">
         <div class="wrap-card">
             <h1><?php echo get_the_title() ?></h1>
-            <div class="card-main-info">
+            <div class="card-main-info clearfix">
 
                 <?php
                     /**
@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     do_action( 'woocommerce_before_single_product_summary' );
                 ?>
 
-                <div class="card-main-text clearfix">
+                <div class="card-main-text">
                     <!-- Дополнительная инфа / Характеристики -->
                     <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
                     <?php $tab = $tabs['additional_information'] ?>
