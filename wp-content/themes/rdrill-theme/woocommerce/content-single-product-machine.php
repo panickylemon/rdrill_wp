@@ -151,7 +151,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!-- Похожие товары -->
     <?php
     $args = array(
-        'posts_per_page' 	=> 4,
+        'posts_per_page' 	=> -1,
         'columns' 			=> 4,
         'orderby' 			=> 'rand'
     );
