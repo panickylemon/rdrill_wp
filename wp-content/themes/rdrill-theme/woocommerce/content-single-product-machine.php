@@ -149,19 +149,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
     <!-- Похожие товары -->
-    <div class="other-product">
-        <div class="l-container">
-            <?php
-            $args = array(
-                'posts_per_page' 	=> 4,
-                'columns' 			=> 4,
-                'orderby' 			=> 'rand'
-            );
+    <?php
+    $args = array(
+        'posts_per_page' 	=> 4,
+        'columns' 			=> 4,
+        'orderby' 			=> 'rand'
+    );
 
-            woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
-            ?>
-        </div>
-    </div>
+    woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
+    ?>
+
 
 
      <!-- Отзывы -->
