@@ -115,30 +115,34 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </div>
             <?php }?>
 
+
+
+
+                <!-- Дополнительная инфа -->
+                <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
+                <?php $tab = $tabs['additional_information'] ?>
+                <div>
+                    <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+                </div>
+
+                <!-- Отзывы -->
+                <?php $tab = $tabs['reviews'] ?>
+                <div>
+                    <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+                </div>
+
+                <!-- Описание -->
+                <?php $tab = $tabs['description'] ?>
+                <div>
+                    <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+                </div>
+
+
         </div>  <!-- end wrap-card -->
     </div> <!-- end l-container -->
 
-        <!-- Дополнительная инфа -->
-    <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
-    <?php $tab = $tabs['additional_information'] ?>
-    <div>
-        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-    </div>
 
-        <!-- Отзывы -->
-        <?php $tab = $tabs['reviews'] ?>
-    <div>
-        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-    </div>
-
-        <!-- Описание -->
-    <?php $tab = $tabs['description'] ?>
-    <div>
-        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-    </div>
-
-
-        <!-- Похожие товары -->
+    <!-- Похожие товары -->
     <div class="other-product">
         <div class="l-container">
             <?php
@@ -154,9 +158,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
 
     <!-- не знаю что это -->
-	<meta itemprop="url" content="<?php the_permalink(); ?>" />
+    <meta itemprop="url" content="<?php the_permalink(); ?>" />
 
-    </div>
-</div><!-- #product -->
+</div><!-- #end catalog catalog-item -->
+
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
