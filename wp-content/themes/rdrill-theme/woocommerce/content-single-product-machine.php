@@ -139,7 +139,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <!-- Описание -->
                 <?php $tab = $tabs['description'] ?>
-                <div>
+                <div class="catalog-text">
                     <?php call_user_func( $tab['callback'], $key, $tab ); ?>
                 </div>
 
