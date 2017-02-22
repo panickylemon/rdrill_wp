@@ -36,37 +36,58 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 
-
+<?php global $product; ?>
 
 <div class="catalog catalog-item">
     <div class="l-container">
         <div class="wrap-card">
-            <?php
-                /**
-                 * woocommerce_before_single_product_summary hook.
-                 *
-                 * @hooked woocommerce_show_product_sale_flash - 10
-                 * @hooked woocommerce_show_product_images - 20
-                 */
-                do_action( 'woocommerce_before_single_product_summary' );
-            ?>
-
-            <?php global $product; ?>
             <h1><?php echo get_the_title() ?></h1>
+            <div class="card-main-info">
 
-            <div class="product-price">
-                <p class="product-price__text">Цена с НДС:</p>
-                <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
-                <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
+                <?php
+                    /**
+                     * woocommerce_before_single_product_summary hook.
+                     *
+                     * @hooked woocommerce_show_product_sale_flash - 10
+                     * @hooked woocommerce_show_product_images - 20
+                     */
+                    do_action( 'woocommerce_before_single_product_summary' );
+                ?>
+
+                <div class="card-main-text">
+                    <!-- Дополнительная инфа -->
+                    <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
+                    <?php $tab = $tabs['additional_information'] ?>
+                    <div>
+                        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+                    </div>
+                </div>
+
+                <div class="clearfix card-main-info__bottom">
+                    <div class="product-price">
+                        <p class="product-price__text">Цена с НДС:</p>
+                        <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
+                        <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
+                    </div>
+                    <div class="wrap-give-feedback">
+
+                        <a class="base-button base-button--grey button-give-feedback" href="#">
+                            <span class="button-star"></span>
+                            Оставить отзыв
+                        </a>
+
+                        <!-- pdf файл -->
+                        <?php $instructions = get_post_meta( $post->ID, 'instructions_pdf', true ); ?>
+                        <?php if (!empty($instructions)) { ?>
+                            <a class="instructions-product" href="<?php echo wp_get_attachment_url($instructions) ?>">
+                                <span>Инструкция к станку</span>
+                            </a>
+                        <?php }?>
+                    </div>
+                </div>
             </div>
 
-            <!-- pdf файл -->
-            <?php $instructions = get_post_meta( $post->ID, 'instructions_pdf', true ); ?>
-            <?php if (!empty($instructions)) { ?>
-                <a class="instructions-product" href="<?php echo wp_get_attachment_url($instructions) ?>">
-                    <span>Инструкция к станку</span>
-                </a>
-            <?php }?>
+
 
             <div class="clearfix">
                 <!-- комплект поставки-->
@@ -118,18 +139,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-                <!-- Дополнительная инфа -->
-                <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
-                <?php $tab = $tabs['additional_information'] ?>
-                <div>
-                    <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-                </div>
 
-                <!-- Отзывы -->
-                <?php $tab = $tabs['reviews'] ?>
-                <div>
-                    <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-                </div>
+
 
                 <!-- Описание -->
                 <?php $tab = $tabs['description'] ?>
@@ -156,6 +167,16 @@ if ( ! defined( 'ABSPATH' ) ) {
             ?>
         </div>
     </div>
+
+
+     <!-- Отзывы -->
+     <div class="l-container">
+         <?php $tab = $tabs['reviews'] ?>
+         <div>
+             <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+         </div>
+     </div>
+
 
     <!-- не знаю что это -->
     <meta itemprop="url" content="<?php the_permalink(); ?>" />
