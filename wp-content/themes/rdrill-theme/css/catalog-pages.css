@@ -861,6 +861,10 @@ tr.sorting-model__item {
 	border-bottom: 1px dotted #d8d8d8;
 }
 
+.card-main-characteristics td{
+	height: 27px;
+}
+
 .value-characteristics {
 	text-align: right;
 }
