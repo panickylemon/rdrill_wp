@@ -37,7 +37,7 @@ global $post, $product;
 			echo apply_filters(
 				'woocommerce_single_product_image_html',
 				sprintf(
-					'<div class="card-photo"><a href="%s" id="main-image" data-lightbox="images" title="%s">%s</a></div>',
+					'<div class="card-photo"><a href="%s" id="main-image-link" data-lightbox="images" title="%s">%s</a></div>',
 					esc_url( $props['url'] ),
 					esc_attr( $props['caption'] ),
 					$image
