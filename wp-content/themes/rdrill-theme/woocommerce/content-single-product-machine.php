@@ -89,62 +89,55 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             </div><!-- end card-main-info -->
 
-
-
             <div class="clearfix">
                 <!-- комплект поставки-->
                 <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
             </div>
 
             <div class="clearfix">
-            <!-- проверка на наличие поля особенности -->
-            <?php $features_machine = get_post_meta( $post->ID, 'features_machine', true ); ?>
-            <?php if (!empty($features_machine)) { ?>
-                <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
-            <?php }?>
+                <!-- проверка на наличие поля Особенности -->
+                <?php $features_machine = get_post_meta( $post->ID, 'features_machine', true ); ?>
+                <?php if (!empty($features_machine)) { ?>
+                    <h2>Основные преимущества станка <?php echo $product->get_attribute( 'name-category' ); ?></h2>
+                <?php }?>
 
-            <!-- видео -->
-            <?php $video_machine = get_post_meta( $post->ID, 'video_machine', true ); ?>
-            <?php if (!empty($video_machine)) { ?>
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <div id="player" data-video-id="<?php echo $video_machine ?>"></div>
-                    <div id="thumbnail_container" class="thumbnail_container">
-                        <img class="thumbnail" id="thumbnail"
-                             src="http://img.youtube.com/vi/<?php echo $video_machine ?>/sddefault.jpg" alt="превью"/>
+                <!-- Видео -->
+                <?php $video_machine = get_post_meta( $post->ID, 'video_machine', true ); ?>
+                <?php if (!empty($video_machine)) { ?>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <div id="player" data-video-id="<?php echo $video_machine ?>"></div>
+                        <div id="thumbnail_container" class="thumbnail_container">
+                            <img class="thumbnail" id="thumbnail"
+                                 src="http://img.youtube.com/vi/<?php echo $video_machine ?>/sddefault.jpg" alt="превью"/>
+                        </div>
+                        <a class="start-video"><img src="/wp-content/themes/rdrill-theme/image/icons/play.png" alt="play">
+                        </a>
                     </div>
-                    <a class="start-video"><img src="/wp-content/themes/rdrill-theme/image/icons/play.png" alt="play">
-                    </a>
                 </div>
+                <?php }?>
+
+                <!-- особенности/преимущества -->
+                <?php echo $features_machine; ?>
+
+                <!-- полезные статьи -->
+                <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true ); ?>
+                <?php if (!empty($useful_articles)) { ?>
+                    <div class="useful-articles">
+                        <p class="useful-articles__title">Полезные статьи по теме</p>
+                        <div class="useful-articles__content">
+                            <?php foreach ( $useful_articles as $useful_article ): ?>
+                                <a href="<?php echo get_permalink($useful_article);?>">
+                                    <span><?php echo get_the_title($useful_article);?></span>
+                                </a>
+                            <?php endforeach;?>
+                        </div>
+                    </div>
+                <?php }?>
             </div>
-            <?php }?>
-
-            <!-- особенности/преимущества -->
-            <?php echo $features_machine; ?>
 
 
-            <!-- полезные статьи -->
-            <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true ); ?>
-            <?php if (!empty($useful_articles)) { ?>
-                <div class="useful-articles">
-                    <p class="useful-articles__title">Полезные статьи по теме</p>
-                    <div class="useful-articles__content">
-                        <?php foreach ( $useful_articles as $useful_article ): ?>
-                            <a href="<?php echo get_permalink($useful_article);?>">
-                                <span><?php echo get_the_title($useful_article);?></span>
-                            </a>
-                        <?php endforeach;?>
-                    </div>
-                </div>
-            <?php }?>
-
-
-
-
-
-
-
-                <!-- Описание -->
+            <!-- Описание -->
                 <?php $tab = $tabs['description'] ?>
                 <div>
                     <?php call_user_func( $tab['callback'], $key, $tab ); ?>
