@@ -55,37 +55,39 @@ if ( ! defined( 'ABSPATH' ) ) {
                 ?>
 
                 <div class="card-main-text">
-                    <!-- Дополнительная инфа -->
+                    <!-- Дополнительная инфа / Характеристики -->
                     <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
                     <?php $tab = $tabs['additional_information'] ?>
-                    <div>
-                        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-                    </div>
-                </div>
+                    <?php call_user_func( $tab['callback'], $key, $tab ); ?>
 
-                <div class="clearfix card-main-info__bottom">
-                    <div class="product-price">
-                        <p class="product-price__text">Цена с НДС:</p>
-                        <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
-                        <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
-                    </div>
-                    <div class="wrap-give-feedback">
 
-                        <a class="base-button base-button--grey button-give-feedback" href="#">
-                            <span class="button-star"></span>
-                            Оставить отзыв
-                        </a>
+                    <!-- Правая часть -->
+                    <div class="clearfix card-main-info__bottom">
+                        <div class="product-price">
+                            <p class="product-price__text">Цена с НДС:</p>
+                            <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
+                            <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
+                        </div>
+                        <div class="wrap-give-feedback">
 
-                        <!-- pdf файл -->
-                        <?php $instructions = get_post_meta( $post->ID, 'instructions_pdf', true ); ?>
-                        <?php if (!empty($instructions)) { ?>
-                            <a class="instructions-product" href="<?php echo wp_get_attachment_url($instructions) ?>">
-                                <span>Инструкция к станку</span>
+                            <a class="base-button base-button--grey button-give-feedback" href="#">
+                                <span class="button-star"></span>
+                                Оставить отзыв
                             </a>
-                        <?php }?>
+
+                            <!-- pdf файл -->
+                            <?php $instructions = get_post_meta( $post->ID, 'instructions_pdf', true ); ?>
+                            <?php if (!empty($instructions)) { ?>
+                                <a class="instructions-product" href="<?php echo wp_get_attachment_url($instructions) ?>">
+                                    <span>Инструкция к станку</span>
+                                </a>
+                            <?php }?>
+                        </div>
                     </div>
+
                 </div>
-            </div>
+
+            </div><!-- end card-main-info -->
 
 
 
