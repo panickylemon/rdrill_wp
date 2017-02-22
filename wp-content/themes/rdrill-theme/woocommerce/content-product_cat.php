@@ -21,7 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<div class="about-page__wrap-menu clearfix">
+<div class="l-container">
+    <div class="about-page__wrap-menu clearfix">
     <div class="about-navigation__item about-navigation__item-first">
         <span class="delimiter-about delimiter-about-1"></span>
         <span class="delimiter-about delimiter-about-2"></span>
@@ -186,4 +187,4 @@ if ( ! defined( 'ABSPATH' ) ) {
         </a>
     </div>
 </div>
-
+</div>
