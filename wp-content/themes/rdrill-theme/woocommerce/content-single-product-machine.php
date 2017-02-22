@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <span>Инструкция к станку</span>
                             </a>
                         <?php }?>
-
+                    </div>
                 </div>
             </div>
 
