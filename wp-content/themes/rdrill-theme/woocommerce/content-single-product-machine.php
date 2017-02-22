@@ -170,9 +170,6 @@ if ( ! defined( 'ABSPATH' ) ) {
      </div>
 
 
-    <!-- не знаю что это -->
-    <meta itemprop="url" content="<?php the_permalink(); ?>" />
-
 </div><!-- #end catalog catalog-item -->
 
 
