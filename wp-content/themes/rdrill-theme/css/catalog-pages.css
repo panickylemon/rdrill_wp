@@ -732,9 +732,11 @@ tr.sorting-model__item {
 }
 
 .bx-wrapper .thumb img {
-	max-width: 80%;
-	max-height: 95%;
+	/*max-width: 80%;*/
+	/*max-height: 95%;*/
 	margin: auto;
+	max-width: 57px;
+	max-height: 64px;
 }
 
 .bx-wrapper .card-slider {
@@ -788,6 +790,8 @@ tr.sorting-model__item {
 
 #main-image {
 	max-width: 100%;
+	width: auto;
+	height: auto;
 }
 
 #main-image-link {
