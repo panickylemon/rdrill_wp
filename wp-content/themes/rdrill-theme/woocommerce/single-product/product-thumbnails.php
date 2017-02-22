@@ -28,7 +28,7 @@ if ( $attachment_ids ) {
 	$loop 		= 0;
 	$columns 	= apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 	?>
-	<div class="thumbnails <?php echo 'columns-' . $columns; ?>"><?php
+	<ul class="card-slider"><?php
 
 		foreach ( $attachment_ids as $attachment_id ) {
 
@@ -52,7 +52,7 @@ if ( $attachment_ids ) {
 			echo apply_filters(
 				'woocommerce_single_product_image_thumbnail_html',
 				sprintf(
-					'<a href="%s" class="%s" title="%s" data-rel="prettyPhoto[product-gallery]">%s</a>',
+					'<li><a href="%s" class="%s thumb" title="%s" data-lightbox="images">%s</a></li>',
 					esc_url( $props['url'] ),
 					esc_attr( $image_class ),
 					esc_attr( $props['caption'] ),
@@ -66,6 +66,6 @@ if ( $attachment_ids ) {
 			$loop++;
 		}
 
-	?></div>
+	?></ul>
 	<?php
 }

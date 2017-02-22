@@ -29,7 +29,7 @@ $attributes = $product->get_attributes();
 ob_start();
 
 ?>
-    <table class="shop_attributes">
+    <table class="card-main-characteristics">
 
         <?php if ( $product->enable_dimensions_display() ) : ?>
 
@@ -51,16 +51,16 @@ ob_start();
 
         <?php foreach ( $attributes as $attribute ) :
             if ( empty( $attribute['is_visible'] ) || ( $attribute['is_taxonomy'] && ! taxonomy_exists(
-                        //не выводить атрибут "название категории"
-                        $attribute['name'] ) )  || $attribute['name'] == 'pa_name-category') {
+                    //не выводить атрибут "название категории"
+                    $attribute['name'] ) )  || $attribute['name'] == 'pa_name-category') {
                 continue;
             } else {
                 $has_row = true;
             }
             ?>
             <tr class="<?php if ( ( $alt = $alt * -1 ) == 1 ) echo 'alt'; ?>">
-                <th><?php echo wc_attribute_label( $attribute['name'] ); ?></th>
-                <td><?php
+                <td><?php echo wc_attribute_label( $attribute['name'] ); ?></td>
+                <td class="value-characteristics"><?php
                     if ( $attribute['is_taxonomy'] ) {
 
                         $values = wc_get_product_terms( $product->id, $attribute['name'], array( 'fields' => 'names' ) );

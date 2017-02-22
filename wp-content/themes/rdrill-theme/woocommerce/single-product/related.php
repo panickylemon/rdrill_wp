@@ -26,9 +26,14 @@ if ( empty( $product ) || ! $product->exists() ) {
 	return;
 }
 
-if ( ! $related = $product->get_related( $posts_per_page ) ) {
-	return;
+if ( $product->upsell_ids) {
+	$related = $product->upsell_ids;
+} else {
+	if ( ! $related = $product->get_related( $posts_per_page ) ) {
+		return;
+	}
 }
+
 
 $args = apply_filters( 'woocommerce_related_products_args', array(
 	'post_type'            => 'product',
@@ -46,20 +51,27 @@ $woocommerce_loop['columns'] = apply_filters( 'woocommerce_related_products_colu
 
 if ( $products->have_posts() ) : ?>
 
-	<div class="related products">
+	<div class="other-product">
+	<div class="l-container">
 
-		<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
+		<p class="other-news__title">Дополнительные товары. Обратите внимание:</p>
 
-		<?php woocommerce_product_loop_start(); ?>
-
+	<div class="other-product-slider">
+		<div id="other-product-slider" class="owl-carousel owl-theme">
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
-
-				<?php wc_get_template_part( 'content', 'product' ); ?>
-
+				<div class="product-slider__item">
+					<a class="product-slider__item-link">
+						<div class="product-slider__image">
+							<?php echo woocommerce_get_product_thumbnail()?>
+						</div>
+						<p class="product-slider__title"><span><?php echo get_the_title() ?></span></p>
+					</a>
+				</div>
 			<?php endwhile; // end of the loop. ?>
+		</div>
+	</div>
 
-		<?php woocommerce_product_loop_end(); ?>
-
+	</div>
 	</div>
 
 <?php endif;

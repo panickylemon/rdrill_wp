@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
-$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( 'Additional Information', 'woocommerce' ) );
+$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( '', 'woocommerce' ) );
 
 ?>
 
@@ -30,4 +30,13 @@ $heading = apply_filters( 'woocommerce_product_additional_information_heading', 
 	<h2><?php echo $heading; ?></h2>
 <?php endif; ?>
 
-<?php $product->list_attributes(); ?>
+<?php
+if ( has_term( 'machine', 'product_cat' ) ) {
+	wc_get_template('single-product/product-attributes-machine.php', array(
+			'product' => $product
+	));
+} else {
+	wc_get_template('single-product/product-attributes.php', array(
+			'product' => $product
+	));
+};?>

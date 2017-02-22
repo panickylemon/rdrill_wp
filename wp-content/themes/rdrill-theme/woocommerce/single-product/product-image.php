@@ -22,8 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 ?>
-<div class="images">
+<div id="card-product-slider" class="clearfix">
 	<?php
+	    do_action( 'woocommerce_product_thumbnails' );
 		if ( has_post_thumbnail() ) {
 			$attachment_count = count( $product->get_gallery_attachment_ids() );
 			$gallery          = $attachment_count > 0 ? '[product-gallery]' : '';
@@ -31,14 +32,14 @@ global $post, $product;
 			$image            = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
 				'title'	 => $props['title'],
 				'alt'    => $props['alt'],
+				'id'       => 'main-image'
 			) );
 			echo apply_filters(
 				'woocommerce_single_product_image_html',
 				sprintf(
-					'<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto%s">%s</a>',
+					'<div class="card-photo"><a href="%s" id="main-image" data-lightbox="images" title="%s">%s</a></div>',
 					esc_url( $props['url'] ),
 					esc_attr( $props['caption'] ),
-					$gallery,
 					$image
 				),
 				$post->ID
@@ -47,6 +48,6 @@ global $post, $product;
 			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
 		}
 
-		do_action( 'woocommerce_product_thumbnails' );
+
 	?>
 </div>
