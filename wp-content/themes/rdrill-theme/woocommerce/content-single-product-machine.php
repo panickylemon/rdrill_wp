@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     do_action( 'woocommerce_before_single_product_summary' );
                 ?>
 
-                <div class="card-main-text">
+                <div class="card-main-text clearfix">
                     <!-- Дополнительная инфа / Характеристики -->
                     <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
                     <?php $tab = $tabs['additional_information'] ?>
