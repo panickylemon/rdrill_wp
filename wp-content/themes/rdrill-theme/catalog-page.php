@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
 <main class="content">
-	<div class="l-container">
+	<div class="l-container cc">
 
 	</div>
 </main>
