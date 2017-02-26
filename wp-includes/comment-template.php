@@ -2200,9 +2200,9 @@ function comment_form( $args = array(), $post_id = null ) {
 		'url'    => '<p class="comment-form-url"><label for="url">' . __( 'Website' ) . '</label> ' .
 		            '<input id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" /></p>',
 
-			'comment_positive_field' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+			'comment_positive' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
 					'<input id="comment_positive" name="author" type="text" value="" size="30" maxlength="245"' . $aria_req . $html_req . ' /></p>',
-			'comment_negative_field' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+			'comment_negative' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
 					'<input id="comment_negative" name="author" type="text" value="" size="30" maxlength="245"' . $aria_req . $html_req . ' /></p>',
 	);
 
