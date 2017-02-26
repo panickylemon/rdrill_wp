@@ -360,7 +360,7 @@ if ( ! function_exists( 'woocommerce_content' ) ) {
 			endwhile;
 
 		} else { ?>
-
+            <div class="l-container">
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
 				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
@@ -368,7 +368,7 @@ if ( ! function_exists( 'woocommerce_content' ) ) {
 			<?php endif; ?>
 
 			<?php do_action( 'woocommerce_archive_description' ); ?>
-
+            </div>
 			<?php if ( have_posts() ) : ?>
 
 				<?php do_action('woocommerce_before_shop_loop'); ?>
