@@ -1645,11 +1645,11 @@ if ( ! function_exists( 'woocommerce_product_subcategories' ) ) {
 		if ( $product_categories ) {
 			echo $before;
 
-			foreach ( $product_categories as $category ) {
+			//foreach ( $product_categories as $category ) {
 				wc_get_template( 'content-product_cat.php', array(
-					'category' => $category
+			//		'category' => $category
 				) );
-			}
+			//}
 
 			// If we are hiding products disable the loop and pagination
 			if ( is_product_category() ) {
