@@ -61,7 +61,7 @@ if ( ! comments_open() ) {
 	<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->id ) ) : ?>
 
 		<div id="review_form_wrapper">
-			<div id="review_form">
+			<div id="review_formsss">
 				<?php
 					$commenter = wp_get_current_commenter();
 
@@ -77,7 +77,9 @@ if ( ! comments_open() ) {
 						),
 						'label_submit'  => __( 'Submit', 'woocommerce' ),
 						'logged_in_as'  => '',
-						'comment_field' => ''
+						'comment_field' => '',
+						'comment_positive_field' => '',
+						'comment_negative_field' => ''
 					);
 
 					if ( $account_page_url = wc_get_page_permalink( 'myaccount' ) ) {
