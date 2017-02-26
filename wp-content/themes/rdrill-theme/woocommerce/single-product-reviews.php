@@ -96,6 +96,12 @@ if ( ! comments_open() ) {
 					}
 
 					$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . __( 'Your Review', 'woocommerce' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>';
+					$comment_form['comment_positive_field'] .= '<p class="comment-form-comment"><label
+					for="comment">' . __( 'Your Review', 'woocommerce' ) . ' <span class="required">*</span></label><textarea
+					id="comment-positive" name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>';
+					$comment_form['comment_negative_field'] .= '<p class="comment-form-comment"><label
+					for="comment">' . __( 'Your Review', 'woocommerce' ) . ' <span class="required">*</span></label><textarea id="comment-negative"
+					name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>';
 
 					comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
 				?>

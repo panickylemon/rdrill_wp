@@ -1718,6 +1718,8 @@ function wp_insert_comment( $commentdata ) {
 
 	$comment_post_ID  = ! isset( $data['comment_post_ID'] )  ? 0  : $data['comment_post_ID'];
 	$comment_content  = ! isset( $data['comment_content'] )  ? '' : $data['comment_content'];
+	$comment_positive  = ! isset( $data['comment_positive'] )  ? '' : $data['comment_positive'];
+	$comment_negative  = ! isset( $data['comment_negative'] )  ? '' : $data['comment_negative'];
 	$comment_karma    = ! isset( $data['comment_karma'] )    ? 0  : $data['comment_karma'];
 	$comment_approved = ! isset( $data['comment_approved'] ) ? 1  : $data['comment_approved'];
 	$comment_agent    = ! isset( $data['comment_agent'] )    ? '' : $data['comment_agent'];
@@ -2922,7 +2924,7 @@ function _close_comments_for_old_post( $open, $post_id ) {
 function wp_handle_comment_submission( $comment_data ) {
 
 	$comment_post_ID = $comment_parent = 0;
-	$comment_author = $comment_author_email = $comment_author_url = $comment_content = null;
+	$comment_author = $comment_author_email = $comment_author_url = $comment_content = $comment_positive = $comment_negative = null;
 
 	if ( isset( $comment_data['comment_post_ID'] ) ) {
 		$comment_post_ID = (int) $comment_data['comment_post_ID'];
@@ -2938,6 +2940,12 @@ function wp_handle_comment_submission( $comment_data ) {
 	}
 	if ( isset( $comment_data['comment'] ) && is_string( $comment_data['comment'] ) ) {
 		$comment_content = trim( $comment_data['comment'] );
+	}
+	if ( isset( $comment_data['comment_positive'] ) && is_string( $comment_data['comment_positive'] ) ) {
+		$comment_positive = trim( $comment_data['comment_positive'] );
+	}
+	if ( isset( $comment_data['comment_negative'] ) && is_string( $comment_data['comment_negative'] ) ) {
+		$comment_negative = trim( $comment_data['comment_negative'] );
 	}
 	if ( isset( $comment_data['comment_parent'] ) ) {
 		$comment_parent = absint( $comment_data['comment_parent'] );
@@ -3078,6 +3086,8 @@ function wp_handle_comment_submission( $comment_data ) {
 		'comment_author_email',
 		'comment_author_url',
 		'comment_content',
+		'comment_positive',
+		'comment_negative',
 		'comment_type',
 		'comment_parent',
 		'user_ID'
