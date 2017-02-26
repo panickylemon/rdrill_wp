@@ -2372,6 +2372,7 @@ function comment_form( $args = array(), $post_id = null ) {
 						 * @param string $args_comment_field The content of the comment textarea field.
 						 */
 						echo apply_filters( 'comment_form_field_comment', $field );
+						echo apply_filters( "comment_form_field_comment-positive", $field ) . "\n";
 
 						echo $args['comment_notes_after'];
 
