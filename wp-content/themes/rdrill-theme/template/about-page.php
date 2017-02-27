@@ -14,11 +14,11 @@
     <div class="l-container about-page">
         <h1><?php the_title(); ?></h1>
 
-        <p class="about-page__text">
+        <div class="about-page__text">
             <?php while ( have_posts() ) : the_post();?>
                 <?php the_content(''); ?>
             <?php endwhile; ?>
-        </p>
+        </div>
 
         <div class="about-page__wrap-menu clearfix">
             <div class="about-navigation__item about-navigation__item-first">
