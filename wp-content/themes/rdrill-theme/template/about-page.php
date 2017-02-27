@@ -26,7 +26,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/brand">
                     <div class="about-navigation__image about-navigation__image-brand"></div>
                     <p class="about-navigation__title">
                         О бренде Rotabroach
@@ -42,7 +42,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/quality">
                     <div class="about-navigation__image about-navigation__image-quality"></div>
                     <p class="about-navigation__title">
                         Качество Rotabroach
@@ -58,7 +58,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/technologies">
                     <div class="about-navigation__image about-navigation__image-technologies"></div>
                     <p class="about-navigation__title">
                         Технологии Custmart
