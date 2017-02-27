@@ -14,9 +14,7 @@
     <div class="l-container about-page">
         <h1>О компании</h1>
         <p class="about-page__text">
-            <?php if (have_posts()): while (have_posts()): the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; endif; ?>
+            <?php the_content(''); ?>
         </p>
 
         <div class="about-page__wrap-menu clearfix">
