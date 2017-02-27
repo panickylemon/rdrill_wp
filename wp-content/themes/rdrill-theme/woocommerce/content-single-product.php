@@ -108,7 +108,7 @@ if ( post_password_required() ) {
                 <!-- Описание -->
                 <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
                 <?php $tab = $tabs['description'] ?>
-                <?php if (!$tab) { ?>
+                <?php if ($tab) { ?>
 	                <h2>Описание</h2>
                 <?php }?>
 
