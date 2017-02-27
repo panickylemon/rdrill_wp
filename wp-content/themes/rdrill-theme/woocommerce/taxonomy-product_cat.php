@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $category = get_queried_object()->term_id;
-$drills = array("8");
+$drills = array("8,10,11,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29");
 $machines = array("9");
 
 if (in_array($category, $drills)) {
