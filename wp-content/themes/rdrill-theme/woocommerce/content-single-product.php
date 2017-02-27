@@ -106,7 +106,7 @@ if ( post_password_required() ) {
                 </div>
 
                 <!-- Описание -->
-                <h2>Описание конкретного товара</h2>
+
                 <div class="clearfix">
                     <!-- Описание -->
                     <?php $tab = $tabs['description'] ?>
