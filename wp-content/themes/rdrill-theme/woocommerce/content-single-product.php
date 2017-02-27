@@ -108,12 +108,11 @@ if ( post_password_required() ) {
                 <!-- Описание -->
                 <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
                 <div class="clearfix">
-                    <!-- Описание -->
                     <?php $tab = $tabs['description'] ?>
                     <div class="catalog-text text-with-useful">
                         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
                     </div>
-                </div>
+
 
                 <!-- полезные статьи -->
                     <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true ); ?>
