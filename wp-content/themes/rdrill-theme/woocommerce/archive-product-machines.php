@@ -69,7 +69,7 @@ do_action('woocommerce_before_main_content');
                         <table class="table sorting-table tablesorter" id="sorting-table">
                             <thead>
                             <tr class="options-sorting">
-                                <th class="sorting-table__model">Модель</th>
+                                <th class="sorting-table__model sorter-false">Модель</th>
                                 <th class="diameter-core-bits options-item options-active">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
