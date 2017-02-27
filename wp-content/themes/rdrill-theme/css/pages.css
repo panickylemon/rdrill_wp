@@ -1084,7 +1084,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
     margin: -10px 0 30px;
 }
 
-.about-page__text {
+.about-page__text, .page-description {
     font-size: 16px;
     font-weight: 300;
     color: #666666;
