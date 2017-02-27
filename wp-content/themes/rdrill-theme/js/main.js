@@ -168,6 +168,11 @@ $(document).ready(function () {
         $('.options-active').removeClass('options-active');
         var cell = $(this).eq(0).find('th').eq(columnNum);
         cell.addClass('options-active');
+        if (orderType == 0) {
+            cell.find('buttons-sorting').find('buttons-sorting__top').addClass('active')
+        } else if (orderType == 1) {
+            cell.find('buttons-sorting').find('buttons-sorting__bottom').addClass('active')
+        }
     });
     initSticky();
 
