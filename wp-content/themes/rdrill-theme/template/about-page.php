@@ -15,7 +15,7 @@
         <h1><?php the_title(); ?></h1>
 
         <p class="about-page__text">
-            <?php echo category_description(); ?>
+            <?php the_content(); ?>
         </p>
 
         <div class="about-page__wrap-menu clearfix">
