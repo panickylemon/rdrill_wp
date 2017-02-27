@@ -29,7 +29,6 @@ function custom_js()
 {
 	// Подключение JS файла с зависимостью от jQuery
 	wp_enqueue_script('jquery-js', get_stylesheet_directory_uri() . '/js/jquery-2.0.0.min.js', array(), false, false);
-    //wp_enqueue_script('jquery-2', get_stylesheet_directory_uri() . '/js/jquery-1.4.js', array(), false, false);
 	wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/bootstrap/js/bootstrap.min.js', array(), false, false);
 	wp_enqueue_script('placeholder', get_stylesheet_directory_uri() . '/plugins/js/jquery.placeholder.js', array(), false, false);
 	wp_enqueue_script('owl-carousel', get_stylesheet_directory_uri() . '/plugins/js/owl.carousel.js', array(), false,
@@ -45,6 +44,7 @@ function custom_js()
 	wp_enqueue_script('lightbox', get_stylesheet_directory_uri() . '/plugins/lightbox/js/lightbox.js', array(), false, false);
 	wp_enqueue_script('video', get_stylesheet_directory_uri() . '/plugins/js/video.js', array(), false, false);
     wp_enqueue_script('tablesorter', get_stylesheet_directory_uri() . '/plugins/tablesorter/jquery.tablesorter.js', array(), false, false);
+    wp_enqueue_script('tablesorter-staticrow', get_stylesheet_directory_uri() . '/plugins/tablesorter/jquery.tablesorter.staticrow.js', array(), false, false);
 	wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/main.js', array(), false, false);
 
 }

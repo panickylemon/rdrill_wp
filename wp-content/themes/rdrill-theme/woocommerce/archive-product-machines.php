@@ -172,7 +172,13 @@ do_action('woocommerce_before_main_content');
                             </tr>
                             </thead>
                             <tbody>
-
+                            <tr>
+                                <td class="reset-options static" colspan="10">
+                                    <a href="#">
+                                        <span class="reset-options__icon"></span><span class="reset-options__text">Сбросить параметры фильтра</span>
+                                    </a>
+                                </td>
+                            </tr>
                             <?php while (have_posts()) : the_post(); ?>
 
                                 <?php wc_get_template_part('content', 'product-machines'); ?>
