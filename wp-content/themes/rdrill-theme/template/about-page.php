@@ -12,8 +12,8 @@
         <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
     </div>
     <div class="l-container about-page">
-        <h1>О компании</h1>
-        <?php the_title(); ?>
+        <h1><?php the_title(); ?></h1>
+
         <p class="about-page__text">
             Компания «Портал» предлагает купить сверлильные станки, инструменты и приспособления английской марки
             Rotabroach для образования и последующей обработки отверстий в стальных изделиях. Это выполненная
