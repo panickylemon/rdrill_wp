@@ -44,7 +44,7 @@ function custom_js()
 	wp_enqueue_script('lightbox', get_stylesheet_directory_uri() . '/plugins/lightbox/js/lightbox.js', array(), false, false);
 	wp_enqueue_script('video', get_stylesheet_directory_uri() . '/plugins/js/video.js', array(), false, false);
     wp_enqueue_script('tablesorter', get_stylesheet_directory_uri() . '/plugins/tablesorter/jquery.tablesorter.js', array(), false, false);
-    wp_enqueue_script('tablesorter-staticrow', get_stylesheet_directory_uri() . '/plugins/tablesorter/jquery.tablesorter.staticrow.js', array(), false, false);
+    wp_enqueue_script('tablesorter-widgets', get_stylesheet_directory_uri() . '/plugins/tablesorter/jquery.tablesorter.widgets.js', array(), false, false);
 	wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/main.js', array(), false, false);
 
 }
