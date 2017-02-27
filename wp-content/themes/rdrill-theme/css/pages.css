@@ -1080,7 +1080,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 
 /* BEGIN ABOUT PAGE */
 
-.about-page h1 {
+.about-page h1, .page-title {
     margin: -10px 0 30px;
 }
 
