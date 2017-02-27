@@ -1,5 +1,17 @@
 <div class="about-sidebar">
     <nav class="about-menu">
+        <?php
+        $walker = new mainMenuWalker();
+        wp_nav_menu( array(
+            'menu'  => 93,
+            'depth' => 2, //показывать 2 уровня вложенности
+            'container' => false,
+            'menu_class' => 'header__menu-list clearfix',
+            'walker' => $walker
+        ));
+        ?>
+    </nav>
+    <nav class="about-menu">
         <p class="about-sidebar__title">
             О компании
         </p>
