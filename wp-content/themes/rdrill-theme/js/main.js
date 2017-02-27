@@ -169,8 +169,10 @@ $(document).ready(function () {
         var cell = $(this).eq(0).find('th').eq(columnNum);
         cell.addClass('options-active');
         if (orderType == 0) {
+            console.log('777777');
             cell.find('buttons-sorting').find('buttons-sorting__top').addClass('active')
         } else if (orderType == 1) {
+            console.log('12345');
             cell.find('buttons-sorting').find('buttons-sorting__bottom').addClass('active')
         }
     });
