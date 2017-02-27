@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <a class="about-navigation__link" href="#">
                 <div class="about-navigation__image about-navigation__image-brand"></div>
                 <p class="about-navigation__title">
-                    О бренде Rotabroach
+                    Станки
                 </p>
                 <span class="delimiter-about-link delimiter-about-link-1"></span>
                 <span class="delimiter-about-link delimiter-about-link-2"></span>
@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <a class="about-navigation__link" href="#">
                 <div class="about-navigation__image about-navigation__image-quality"></div>
                 <p class="about-navigation__title">
-                    Качество Rotabroach
+                    Сверла
                 </p>
                 <span class="delimiter-about-link delimiter-about-link-1"></span>
                 <span class="delimiter-about-link delimiter-about-link-2"></span>
@@ -63,105 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <a class="about-navigation__link" href="#">
                 <div class="about-navigation__image about-navigation__image-technologies"></div>
                 <p class="about-navigation__title">
-                    Технологии Custmart
-                </p>
-                <span class="delimiter-about-link delimiter-about-link-1"></span>
-                <span class="delimiter-about-link delimiter-about-link-2"></span>
-                <span class="delimiter-about-link delimiter-about-link-3"></span>
-                <span class="delimiter-about-link delimiter-about-link-4"></span>
-            </a>
-        </div>
-
-        <div class="about-navigation__item about-navigation__item-first">
-            <span class="delimiter-about delimiter-about-1"></span>
-            <span class="delimiter-about delimiter-about-2"></span>
-            <span class="delimiter-about delimiter-about-3"></span>
-            <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
-                <div class="about-navigation__image about-navigation__image-guarantee"></div>
-                <p class="about-navigation__title">
-                    Гарантия
-                </p>
-                <span class="delimiter-about-link delimiter-about-link-1"></span>
-                <span class="delimiter-about-link delimiter-about-link-2"></span>
-                <span class="delimiter-about-link delimiter-about-link-3"></span>
-                <span class="delimiter-about-link delimiter-about-link-4"></span>
-            </a>
-        </div>
-        <div class="about-navigation__item about-navigation__item-middle">
-            <span class="delimiter-about delimiter-about-1"></span>
-            <span class="delimiter-about delimiter-about-2"></span>
-            <span class="delimiter-about delimiter-about-3"></span>
-            <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
-                <div class="about-navigation__image about-navigation__image-news"></div>
-                <p class="about-navigation__title">
-                    Новости
-                </p>
-                <span class="delimiter-about-link delimiter-about-link-1"></span>
-                <span class="delimiter-about-link delimiter-about-link-2"></span>
-                <span class="delimiter-about-link delimiter-about-link-3"></span>
-                <span class="delimiter-about-link delimiter-about-link-4"></span>
-            </a>
-        </div>
-        <div class="about-navigation__item about-navigation__item-third">
-            <span class="delimiter-about delimiter-about-1"></span>
-            <span class="delimiter-about delimiter-about-2"></span>
-            <span class="delimiter-about delimiter-about-3"></span>
-            <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
-                <div class="about-navigation__image about-navigation__image-representation"></div>
-                <p class="about-navigation__title">
-                    Представительство в России
-                </p>
-                <span class="delimiter-about-link delimiter-about-link-1"></span>
-                <span class="delimiter-about-link delimiter-about-link-2"></span>
-                <span class="delimiter-about-link delimiter-about-link-3"></span>
-                <span class="delimiter-about-link delimiter-about-link-4"></span>
-            </a>
-        </div>
-
-        <div class="about-navigation__item about-navigation__item-first">
-            <span class="delimiter-about delimiter-about-1"></span>
-            <span class="delimiter-about delimiter-about-2"></span>
-            <span class="delimiter-about delimiter-about-3"></span>
-            <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
-                <div class="about-navigation__image about-navigation__image-review"></div>
-                <p class="about-navigation__title">
-                    Отзывы клиентов
-                </p>
-                <span class="delimiter-about-link delimiter-about-link-1"></span>
-                <span class="delimiter-about-link delimiter-about-link-2"></span>
-                <span class="delimiter-about-link delimiter-about-link-3"></span>
-                <span class="delimiter-about-link delimiter-about-link-4"></span>
-            </a>
-        </div>
-        <div class="about-navigation__item about-navigation__item-middle">
-            <span class="delimiter-about delimiter-about-1"></span>
-            <span class="delimiter-about delimiter-about-2"></span>
-            <span class="delimiter-about delimiter-about-3"></span>
-            <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
-                <div class="about-navigation__image about-navigation__image-conditions"></div>
-                <p class="about-navigation__title">
-                    Условия сотрудничества
-                </p>
-                <span class="delimiter-about-link delimiter-about-link-1"></span>
-                <span class="delimiter-about-link delimiter-about-link-2"></span>
-                <span class="delimiter-about-link delimiter-about-link-3"></span>
-                <span class="delimiter-about-link delimiter-about-link-4"></span>
-            </a>
-        </div>
-        <div class="about-navigation__item about-navigation__item-third">
-            <span class="delimiter-about delimiter-about-1"></span>
-            <span class="delimiter-about delimiter-about-2"></span>
-            <span class="delimiter-about delimiter-about-3"></span>
-            <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
-                <div class="about-navigation__image about-navigation__image-news"></div>
-                <p class="about-navigation__title">
-                    Статьи
+                    Аксессуары
                 </p>
                 <span class="delimiter-about-link delimiter-about-link-1"></span>
                 <span class="delimiter-about-link delimiter-about-link-2"></span>
@@ -178,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <a class="about-navigation__link" href="#">
                 <div class="about-navigation__image about-navigation__image-sale"></div>
                 <p class="about-navigation__title">
-                    Акции
+                    Сверление рельс
                 </p>
                 <span class="delimiter-about-link delimiter-about-link-1"></span>
                 <span class="delimiter-about-link delimiter-about-link-2"></span>
