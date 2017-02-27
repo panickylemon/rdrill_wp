@@ -160,6 +160,8 @@ $(document).ready(function () {
         initSticky()
     });
     $(".tablesorter").tablesorter({ widgets: ['staticRow'] }).bind("sortEnd",function(e, t){
+        console.log(e);
+        console.log(t);
         $('.options-active').removeClass('options-active');
         this.addClass('options-active');
     });
