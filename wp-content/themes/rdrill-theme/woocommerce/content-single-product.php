@@ -106,16 +106,16 @@ if ( post_password_required() ) {
                 </div>
 
                 <!-- Описание -->
-                <?php $tab = $tabs['description'] ?>
-                <?php if (!empty($tabs['description'])) { ?>
-                    <h2>Описание конкретного товара</h2>
-                <?php }?>
+                <h2>Описание конкретного товара</h2>
                 <div class="clearfix">
+                    <!-- Описание -->
+                    <?php $tab = $tabs['description'] ?>
                     <div class="catalog-text text-with-useful">
                         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
                     </div>
+                </div>
 
-                    <!-- полезные статьи -->
+                <!-- полезные статьи -->
                     <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true ); ?>
                     <?php if (!empty($useful_articles)) { ?>
                         <div class="useful-articles">
