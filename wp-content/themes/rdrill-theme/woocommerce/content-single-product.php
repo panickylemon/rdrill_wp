@@ -85,7 +85,7 @@ if ( post_password_required() ) {
                     <?php if (!empty($features_machine)) { ?>
                         <h2>Характеристики</h2>
                     <?php }?>
-                    <?php echo $features_machine; ?>
+                    <?php echo $сharacteristics_drill; ?>
 
                     <!-- Видео -->
                     <?php $video_machine = get_post_meta( $post->ID, 'video_machine', true ); ?>
