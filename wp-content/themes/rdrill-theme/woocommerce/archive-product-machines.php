@@ -69,8 +69,8 @@ do_action('woocommerce_before_main_content');
                         <table class="table sorting-table tablesorter" id="sorting-table">
                             <thead>
                             <tr class="options-sorting">
-                                <td class="sorting-table__model">Модель</td>
-                                <td class="diameter-core-bits options-item options-active">
+                                <th class="sorting-table__model">Модель</th>
+                                <th class="diameter-core-bits options-item options-active">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Диаметр корончатых сверл, мм
@@ -80,8 +80,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom active"></div>
                                     </div>
-                                </td>
-                                <td class="drilling-depth options-item">
+                                </th>
+                                <th class="drilling-depth options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Глубина сверления, мм
@@ -91,8 +91,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
-                                <td class="diameter-twist-drills options-item">
+                                </th>
+                                <th class="diameter-twist-drills options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Диаметр спиральных сверл, мм
@@ -102,8 +102,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
-                                <td class="power options-item">
+                                </th>
+                                <th class="power options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Мощность
@@ -113,8 +113,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
-                                <td class="weight options-item">
+                                </th>
+                                <th class="weight options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Вес, кг
@@ -124,8 +124,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
-                                <td class="height options-item">
+                                </th>
+                                <th class="height options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Высота, мм
@@ -135,8 +135,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
-                                <td class="working-body options-item">
+                                </th>
+                                <th class="working-body options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Рабочий орган
@@ -146,8 +146,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
-                                <td class="spindle options-item">
+                                </th>
+                                <th class="spindle options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Ход шпинделя, мм
@@ -157,8 +157,8 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
-                                <td class="tapping options-item">
+                                </th>
+                                <th class="tapping options-item">
                                     <div class="options-sorting__icon"></div>
                                     <p class="options-title">
                                         Нарезание резьбы
@@ -168,7 +168,7 @@ do_action('woocommerce_before_main_content');
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
                                         <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
-                                </td>
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
