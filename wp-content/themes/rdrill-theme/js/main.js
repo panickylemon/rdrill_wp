@@ -161,7 +161,7 @@ $(document).ready(function () {
     });
     $(".tablesorter").tablesorter({ widgets: ['staticRow'] }).bind("sortEnd",function(e, t){
         $('.options-active').removeClass('options-active');
-        $(this).addClass('options-active');
+        this.addClass('options-active');
     });
     initSticky();
 
