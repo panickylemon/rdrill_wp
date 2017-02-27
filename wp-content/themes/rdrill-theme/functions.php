@@ -144,14 +144,14 @@ function dimox_breadcrumbs() {
     $home_url = home_url('/');
     $link_before = '<li class="breadcrumb-item">';
     $link_after = '</li>';
-    $link_attr = ' itemprop="item"';
+    //$link_attr = '';
     //$link_in_before = '<span itemprop="name">';
     //$link_in_after = '</span>';
-    $link = $link_before . '<a href="%1$s"' . $link_attr . '>' . '%2$s' . '</a>' . $link_after;
+    $link = $link_before . '<a href="%1$s">' . '%2$s' . '</a>' . $link_after;
     $frontpage_id = get_option('page_on_front');
     $parent_id = ($post) ? $post->post_parent : '';
     $sep = ' ' . $sep_before . $sep . $sep_after . ' ';
-    $home_link = $link_before . '<a href="' . $home_url . '"' . $link_attr . ' class="home">' . $text['home'] . '</a>' . $link_after;
+    $home_link = $link_before . '<a href="' . $home_url . '"' . '>' . $text['home'] . '</a>' . $link_after;
 
     if (is_home() || is_front_page()) {
 
