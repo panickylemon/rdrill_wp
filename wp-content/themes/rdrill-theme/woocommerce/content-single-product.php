@@ -17,72 +17,147 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+    exit; // Exit if accessed directly
 }
 
 ?>
 
 <?php
-	/**
-	 * woocommerce_before_single_product hook.
-	 *
-	 * @hooked wc_print_notices - 10
-	 */
-	 do_action( 'woocommerce_before_single_product' );
+/**
+ * woocommerce_before_single_product hook.
+ *
+ * @hooked wc_print_notices - 10
+ */
+do_action( 'woocommerce_before_single_product' );
 
-	 if ( post_password_required() ) {
-	 	echo get_the_password_form();
-	 	return;
-	 }
+if ( post_password_required() ) {
+    echo get_the_password_form();
+    return;
+}
 ?>
 
 <?php global $product; ?>
 
+    <div class="catalog catalog-item">
+        <div class="l-container">
+            <div class="wrap-card">
+                <h1><?php echo get_the_title() ?></h1>
+                <div class="card-main-info clearfix">
 
-<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <?php
+                    /**
+                     * woocommerce_before_single_product_summary hook.
+                     *
+                     * @hooked woocommerce_show_product_sale_flash - 10
+                     * @hooked woocommerce_show_product_images - 20
+                     */
+                    do_action( 'woocommerce_before_single_product_summary' );
+                    ?>
 
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
+                    <!-- Правая часть -->
+                    <div class="card-main-text card-main-text--grey">
+                        <!-- Краткое описание около фото -->
+                        <div>
+                            <?php echo get_post_meta( $post->ID, 'сontents_delivery', true ); ?>
+                        </div>
 
-	<div class="summary entry-summary">
+                        <div class="clearfix card-main-info__bottom">
+                            <div class="product-price">
+                                <p class="product-price__text">Цена с НДС:</p>
+                                <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
+                                <a class="base-button base-button--red button-buy" href="#">Запросить коммерчесткое
+                                    предложение</a>
+                            </div>
+                            <div class="wrap-give-feedback">
+                                <a class="base-button base-button--grey button-give-feedback" href="#">
+                                    <span class="button-star"></span>
+                                    Оставить отзыв
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-		<?php
-			/**
-			 * woocommerce_single_product_summary hook.
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 */
-			do_action( 'woocommerce_single_product_summary' );
-		?>
+                </div><!-- end card-main-info -->
 
-	</div><!-- .summary -->
+                <div class="clearfix">
+                    <!-- Характеристики -->
+                    <?php $сharacteristics_drill = get_post_meta( $post->ID, 'сharacteristics_drill', true ); ?>
+                    <?php if (!empty($features_machine)) { ?>
+                        <h2>Характеристики</h2>
+                    <?php }?>
+                    <?php echo $features_machine; ?>
 
-	<?php
-		/**
-		 * woocommerce_after_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
+                    <!-- Видео -->
+                    <?php $video_machine = get_post_meta( $post->ID, 'video_machine', true ); ?>
+                    <?php if (!empty($video_machine)) { ?>
+                        <div class="video-container-2">
+                            <h2>Видео</h2>
+                            <div class="video-wrapper">
+                                <div id="player" data-video-id="<?php echo $video_machine ?>"></div>
+                                <div id="thumbnail_container" class="thumbnail_container">
+                                    <img class="thumbnail" id="thumbnail"
+                                         src="http://img.youtube.com/vi/<?php echo $video_machine ?>/sddefault.jpg" alt="превью"/>
+                                </div>
+                                <a class="start-video"><img src="/wp-content/themes/rdrill-theme/image/icons/play.png" alt="play">
+                                </a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </div>
 
-	<meta itemprop="url" content="<?php the_permalink(); ?>" />
+                <h2>Описание конкретного товара</h2>
+                <div class="clearfix">
+                    <!-- Описание -->
+                    <?php $tab = $tabs['description'] ?>
+                    <div class="catalog-text text-with-useful">
+                        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+                    </div>
 
-</div><!-- #product-<?php the_ID(); ?> -->
+                    <!-- полезные статьи -->
+                    <?php $useful_articles = get_post_meta( $post->ID, 'useful_articles', true ); ?>
+                    <?php if (!empty($useful_articles)) { ?>
+                        <div class="useful-articles">
+                            <p class="useful-articles__title">Полезные статьи по теме</p>
+                            <div class="useful-articles__content">
+                                <?php foreach ( $useful_articles as $useful_article ): ?>
+                                    <a href="<?php echo get_permalink($useful_article);?>">
+                                        <span><?php echo get_the_title($useful_article);?></span>
+                                    </a>
+                                <?php endforeach;?>
+                            </div>
+                        </div>
+                    <?php }?>
+                </div>
+
+
+
+            </div>  <!-- end wrap-card -->
+        </div> <!-- end l-container -->
+
+
+        <!-- Похожие товары -->
+        <?php
+        $args = array(
+            'posts_per_page' 	=> -1,
+            'columns' 			=> 4,
+            'orderby' 			=> 'rand'
+        );
+
+        woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
+        ?>
+
+
+
+        <!-- Отзывы -->
+        <div class="l-container">
+            <?php $tab = $tabs['reviews'] ?>
+            <div>
+                <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+            </div>
+        </div>
+
+
+    </div><!-- #end catalog catalog-item -->
+
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
