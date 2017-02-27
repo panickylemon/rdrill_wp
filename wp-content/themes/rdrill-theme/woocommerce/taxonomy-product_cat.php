@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $category = get_queried_object()->term_id;
 $drills = array("8,11,13,14,15,16,17,18,19,20");
 $machines = array("9");
-$machines = array("10,21,22,23,24,25,26,27,28,29");
+$accessories = array("10,21,22,23,24,25,26,27,28,29");
 
 if (in_array($category, $drills)) {
     wc_get_template( 'archive-product-drills.php' );
