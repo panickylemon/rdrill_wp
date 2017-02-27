@@ -162,12 +162,11 @@ $(document).ready(function () {
     $(".tablesorter").tablesorter({ widgets: ['staticRow'] }).bind("sortEnd",function(e, t){
         console.log(e);
         console.log(t);
-        var table = event.target;
-        var currentSort = table.config.sortList;
+        var currentSort = e.target.config.sortList;
         var columnNum = currentSort[0][0];
         var orderType = currentSort[0][1];
         $('.options-active').removeClass('options-active');
-        var cell = table.eq(0).find('th').eq(columnNum);
+        var cell = $(this).eq(0).find('th').eq(columnNum);
         cell.addClass('options-active');
     });
     initSticky();
