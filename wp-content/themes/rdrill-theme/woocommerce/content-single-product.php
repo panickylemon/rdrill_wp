@@ -106,7 +106,7 @@ if ( post_password_required() ) {
                 </div>
 
                 <!-- Описание -->
-
+                <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
                 <div class="clearfix">
                     <!-- Описание -->
                     <?php $tab = $tabs['description'] ?>
