@@ -131,8 +131,8 @@ function dimox_breadcrumbs() {
     $wrap_before = '<ul class="breadcrumb">'; // открывающий тег обертки
     $wrap_after = '</ul><!-- .breadcrumbs -->'; // закрывающий тег обертки
     $sep = '›'; // разделитель между "крошками"
-   // $sep_before = '<span class="sep">'; // тег перед разделителем
-   // $sep_after = '</span>'; // тег после разделителя
+    $sep_before = ' '; // тег перед разделителем
+    $sep_after = ' '; // тег после разделителя
     $show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
     $show_on_home = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
     $show_current = 1; // 1 - показывать название текущей страницы, 0 - не показывать
@@ -142,12 +142,12 @@ function dimox_breadcrumbs() {
 
     global $post;
     $home_url = home_url('/');
-    $link_before = '<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
-    $link_after = '</span>';
+    $link_before = '<li class="breadcrumb-item">';
+    $link_after = '</li>';
     $link_attr = ' itemprop="item"';
-    $link_in_before = '<span itemprop="name">';
-    $link_in_after = '</span>';
-    $link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . '%2$s' . $link_in_after . '</a>' . $link_after;
+    //$link_in_before = '<span itemprop="name">';
+    //$link_in_after = '</span>';
+    $link = $link_before . '<a href="%1$s"' . $link_attr . '>' . '%2$s' . '</a>' . $link_after;
     $frontpage_id = get_option('page_on_front');
     $parent_id = ($post) ? $post->post_parent : '';
     $sep = ' ' . $sep_before . $sep . $sep_after . ' ';
