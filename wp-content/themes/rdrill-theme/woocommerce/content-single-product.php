@@ -107,8 +107,13 @@ if ( post_password_required() ) {
 
                 <!-- Описание -->
                 <?php $tabs = apply_filters( 'woocommerce_product_tabs', array() );?>
+                <?php $tab = $tabs['description'] ?>
+                <?php if (!$tab) { ?>
+	                <h2>Описание</h2>
+                <?php }?>
+
                 <div class="clearfix">
-                    <?php $tab = $tabs['description'] ?>
+
                     <div class="catalog-text text-with-useful">
                         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
                     </div>
