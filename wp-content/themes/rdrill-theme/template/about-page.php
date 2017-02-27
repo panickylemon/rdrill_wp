@@ -15,7 +15,9 @@
         <h1><?php the_title(); ?></h1>
 
         <p class="about-page__text">
-            <?php the_content(); ?>
+            <?php while ( have_posts() ) : the_post();?>
+                <?php the_content(''); ?>
+            <?php endwhile; ?>
         </p>
 
         <div class="about-page__wrap-menu clearfix">
