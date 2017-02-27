@@ -12,12 +12,14 @@
 </div>
 
 <main class="content">
-    <?php get_sidebar('about-inner'); ?>
+    <div class="l-container">
+        <?php get_sidebar('about-inner'); ?>
 
-    <div class="about-content">
-        <?php if (have_posts()): while (have_posts()): the_post(); ?>
-            <?php the_content(); ?>
-        <?php endwhile; endif; ?>
+        <div class="about-content">
+            <?php if (have_posts()): while (have_posts()): the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; endif; ?>
+        </div>
     </div>
 </main>
 
