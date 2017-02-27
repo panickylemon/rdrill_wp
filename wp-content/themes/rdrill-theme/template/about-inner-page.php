@@ -7,8 +7,10 @@
 
 <?php get_header(); ?>
 
+<div class="l-container">
+    <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+</div>
 
-<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
 <main class="content">
 
 </main>

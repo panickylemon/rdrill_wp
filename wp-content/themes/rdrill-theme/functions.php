@@ -128,16 +128,16 @@ function dimox_breadcrumbs() {
     $text['page'] = 'Страница %s'; // текст 'Страница N'
     $text['cpage'] = 'Страница комментариев %s'; // текст 'Страница комментариев N'
 
-    $wrap_before = '<div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">'; // открывающий тег обертки
-    $wrap_after = '</div><!-- .breadcrumbs -->'; // закрывающий тег обертки
+    $wrap_before = '<ul class="breadcrumb">'; // открывающий тег обертки
+    $wrap_after = '</ul><!-- .breadcrumbs -->'; // закрывающий тег обертки
     $sep = '›'; // разделитель между "крошками"
-    $sep_before = '<span class="sep">'; // тег перед разделителем
-    $sep_after = '</span>'; // тег после разделителя
+   // $sep_before = '<span class="sep">'; // тег перед разделителем
+   // $sep_after = '</span>'; // тег после разделителя
     $show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
     $show_on_home = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
     $show_current = 1; // 1 - показывать название текущей страницы, 0 - не показывать
-    $before = '<span class="current">'; // тег перед текущей "крошкой"
-    $after = '</span>'; // тег после текущей "крошки"
+   // $before = '<span class="current">'; // тег перед текущей "крошкой"
+   // $after = '</span>'; // тег после текущей "крошки"
     /* === КОНЕЦ ОПЦИЙ === */
 
     global $post;
