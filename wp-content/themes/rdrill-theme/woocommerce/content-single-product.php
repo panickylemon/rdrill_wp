@@ -105,10 +105,12 @@ if ( post_password_required() ) {
                     <?php }?>
                 </div>
 
-                <h2>Описание конкретного товара</h2>
+                <!-- Описание -->
+                <?php $tab = $tabs['description'] ?>
+                <?php if (!empty($tabs['description'])) { ?>
+                    <h2>Описание конкретного товара</h2>
+                <?php }?>
                 <div class="clearfix">
-                    <!-- Описание -->
-                    <?php $tab = $tabs['description'] ?>
                     <div class="catalog-text text-with-useful">
                         <?php call_user_func( $tab['callback'], $key, $tab ); ?>
                     </div>
