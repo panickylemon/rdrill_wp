@@ -159,7 +159,10 @@ $(document).ready(function () {
     $('.table-responsive').scroll( function() {
         initSticky()
     });
-    $(".tablesorter").tablesorter({ widgets: ['staticRow'] });
+    $(".tablesorter").tablesorter({ widgets: ['staticRow'] }).bind("sortEnd",function(e, t){
+        $('.options-active').removeClass('options-active');
+        $(this).addClass('options-active');
+    });
     initSticky();
 
     $('.card-slider').bxSlider({
