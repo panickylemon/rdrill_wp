@@ -82,7 +82,7 @@ if ( post_password_required() ) {
                 <div class="clearfix">
                     <!-- Характеристики -->
                     <?php $сharacteristics_drill = get_post_meta( $post->ID, 'сharacteristics_drill', true ); ?>
-                    <?php if (!empty($features_machine)) { ?>
+                    <?php if (!empty($сharacteristics_drill)) { ?>
                         <h2>Характеристики</h2>
                     <?php }?>
                     <?php echo $сharacteristics_drill; ?>
