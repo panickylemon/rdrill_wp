@@ -60,6 +60,9 @@ if ( post_password_required() ) {
                         <div>
                             <?php echo get_post_meta( $post->ID, 'description_photo', true ); ?>
                         </div>
+	                    <div>
+		                    <?php echo get_post_meta( $post->ID, 'description_photo2', true ); ?>
+	                    </div>
 
                         <div class="clearfix card-main-info__bottom">
                             <div class="product-price">
