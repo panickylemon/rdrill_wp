@@ -75,7 +75,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/guarantee">
                     <div class="about-navigation__image about-navigation__image-guarantee"></div>
                     <p class="about-navigation__title">
                         Гарантия
@@ -91,7 +91,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/news">
                     <div class="about-navigation__image about-navigation__image-news"></div>
                     <p class="about-navigation__title">
                         Новости
@@ -107,7 +107,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/representation">
                     <div class="about-navigation__image about-navigation__image-representation"></div>
                     <p class="about-navigation__title">
                         Представительство в России
@@ -124,7 +124,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/reviews">
                     <div class="about-navigation__image about-navigation__image-review"></div>
                     <p class="about-navigation__title">
                         Отзывы клиентов
@@ -140,7 +140,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/terms-cooperation">
                     <div class="about-navigation__image about-navigation__image-conditions"></div>
                     <p class="about-navigation__title">
                         Условия сотрудничества
@@ -156,7 +156,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/article">
                     <div class="about-navigation__image about-navigation__image-news"></div>
                     <p class="about-navigation__title">
                         Статьи
@@ -173,7 +173,7 @@
                 <span class="delimiter-about delimiter-about-2"></span>
                 <span class="delimiter-about delimiter-about-3"></span>
                 <span class="delimiter-about delimiter-about-4"></span>
-                <a class="about-navigation__link" href="#">
+                <a class="about-navigation__link" href="/about/sale">
                     <div class="about-navigation__image about-navigation__image-sale"></div>
                     <p class="about-navigation__title">
                         Акции
