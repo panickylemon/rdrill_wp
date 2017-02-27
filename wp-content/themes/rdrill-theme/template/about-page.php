@@ -8,6 +8,9 @@
 <?php get_header(); ?>
 
 <main class="content">
+    <div class="l-container">
+        <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+    </div>
     <div class="l-container about-page">
         <h1>О компании</h1>
         <p class="about-page__text">
