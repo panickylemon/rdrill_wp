@@ -12,7 +12,7 @@
 </div>
 
 <main class="content">
-    <?php get_sidebar('about-page'); ?>
+    <?php get_sidebar('about-inner'); ?>
 
     <div class="about-content">
         <?php if (have_posts()): while (have_posts()): the_post(); ?>
