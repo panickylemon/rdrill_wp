@@ -7,6 +7,8 @@
 
 <?php get_header(); ?>
 
+
+<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
 <main class="content">
 
 </main>
