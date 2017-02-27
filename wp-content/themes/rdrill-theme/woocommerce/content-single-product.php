@@ -58,7 +58,7 @@ if ( post_password_required() ) {
                     <div class="card-main-text card-main-text--grey">
                         <!-- Краткое описание около фото -->
                         <div>
-                            <?php echo get_post_meta( $post->ID, 'description_photo', true ); ?>
+                            <?php echo wpautop(get_post_meta( $post->ID, 'description_photo', true )); ?>
                         </div>
 	                    <div>
 		                    <?php echo get_post_meta( $post->ID, 'description_photo2', true ); ?>
