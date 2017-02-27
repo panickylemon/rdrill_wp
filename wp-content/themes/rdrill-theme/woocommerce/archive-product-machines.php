@@ -66,7 +66,7 @@ do_action('woocommerce_before_main_content');
                 <form id="sorting-form" action="">
 
                     <div class="table-responsive">
-                        <table class="table sorting-table" id="sorting-table">
+                        <table class="table sorting-table tablesorter" id="sorting-table">
                             <thead>
                             <tr class="options-sorting">
                                 <td class="sorting-table__model">Модель</td>

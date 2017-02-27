@@ -159,6 +159,7 @@ $(document).ready(function () {
     $('.table-responsive').scroll( function() {
         initSticky()
     });
+    $(".tablesorter").tablesorter();
     initSticky();
 
     $('.card-slider').bxSlider({

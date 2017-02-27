@@ -12,6 +12,7 @@ function custom_css()
 	wp_enqueue_style('build', get_stylesheet_directory_uri() . '/plugins/css/build.css');
 	wp_enqueue_style('bxslider', get_stylesheet_directory_uri() . '/plugins/css/jquery.bxslider.css');
 	wp_enqueue_style('lightbox', get_stylesheet_directory_uri() . '/plugins/lightbox/css/lightbox.css');
+	wp_enqueue_style('tablesorter', get_stylesheet_directory_uri() . '/plugins/tablesorter/tablesorter.css');
 	wp_enqueue_style('typography', get_stylesheet_directory_uri() . '/css/typography.css');
 	wp_enqueue_style('base', get_stylesheet_directory_uri() . '/css/base.css');
 	wp_enqueue_style('header', get_stylesheet_directory_uri() . '/css/header.css');
@@ -42,7 +43,9 @@ function custom_js()
 	wp_enqueue_script('bxslider', get_stylesheet_directory_uri() . '/plugins/js/jquery.bxslider.min.js', array(), false, false);
 	wp_enqueue_script('lightbox', get_stylesheet_directory_uri() . '/plugins/lightbox/js/lightbox.js', array(), false, false);
 	wp_enqueue_script('video', get_stylesheet_directory_uri() . '/plugins/js/video.js', array(), false, false);
+    wp_enqueue_script('tablesorter', get_stylesheet_directory_uri() . '/plugins/tablesorter/tablesorter.js', array(), false, false);
 	wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/main.js', array(), false, false);
+
 }
 add_action('wp_enqueue_scripts', 'custom_js');
 
