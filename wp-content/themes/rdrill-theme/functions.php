@@ -130,9 +130,9 @@ function dimox_breadcrumbs() {
 
     $wrap_before = '<ul class="breadcrumb">'; // открывающий тег обертки
     $wrap_after = '</ul><!-- .breadcrumbs -->'; // закрывающий тег обертки
-    $sep = '›'; // разделитель между "крошками"
-    $sep_before = ' '; // тег перед разделителем
-    $sep_after = ' '; // тег после разделителя
+    $sep = ''; // разделитель между "крошками"
+    $sep_before = ''; // тег перед разделителем
+    $sep_after = ''; // тег после разделителя
     $show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
     $show_on_home = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
     $show_current = 1; // 1 - показывать название текущей страницы, 0 - не показывать
@@ -151,7 +151,7 @@ function dimox_breadcrumbs() {
     $frontpage_id = get_option('page_on_front');
     $parent_id = ($post) ? $post->post_parent : '';
     $sep = ' ' . $sep_before . $sep . $sep_after . ' ';
-    $home_link = $link_before . '<a href="' . $home_url . '"' . $link_attr . ' class="home">' . $link_in_before . $text['home'] . $link_in_after . '</a>' . $link_after;
+    $home_link = $link_before . '<a href="' . $home_url . '"' . $link_attr . ' class="home">' . $text['home'] . '</a>' . $link_after;
 
     if (is_home() || is_front_page()) {
 
