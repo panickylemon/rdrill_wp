@@ -160,8 +160,6 @@ $(document).ready(function () {
         initSticky()
     });
     $(".tablesorter").tablesorter({ widgets: ['staticRow'] }).bind("sortEnd",function(e, t){
-        console.log(e);
-        console.log(t);
         var currentSort = e.target.config.sortList;
         var columnNum = currentSort[0][0];
         var orderType = currentSort[0][1];
@@ -169,10 +167,12 @@ $(document).ready(function () {
         var cell = $(this).eq(0).find('th').eq(columnNum);
         cell.addClass('options-active');
         if (orderType == 0) {
-            console.log('777777');
+            $('.buttons-sorting__bottom').removeClass('active');
+            $('.buttons-sorting__top').removeClass('active');
             cell.find('.buttons-sorting').find('.buttons-sorting__top').addClass('active')
         } else if (orderType == 1) {
-            console.log('12345');
+            $('.buttons-sorting__bottom').removeClass('active');
+            $('.buttons-sorting__top').removeClass('active');
             cell.find('.buttons-sorting').find('.buttons-sorting__bottom').addClass('active')
         }
     });
