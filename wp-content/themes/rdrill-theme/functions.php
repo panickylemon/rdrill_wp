@@ -12,7 +12,7 @@ function custom_css()
 	wp_enqueue_style('build', get_stylesheet_directory_uri() . '/plugins/css/build.css');
 	wp_enqueue_style('bxslider', get_stylesheet_directory_uri() . '/plugins/css/jquery.bxslider.css');
 	wp_enqueue_style('lightbox', get_stylesheet_directory_uri() . '/plugins/lightbox/css/lightbox.css');
-	wp_enqueue_style('tablesorter', get_stylesheet_directory_uri() . '/plugins/tablesorter/tablesorter.css');
+	//wp_enqueue_style('tablesorter', get_stylesheet_directory_uri() . '/plugins/tablesorter/tablesorter.css');
 	wp_enqueue_style('typography', get_stylesheet_directory_uri() . '/css/typography.css');
 	wp_enqueue_style('base', get_stylesheet_directory_uri() . '/css/base.css');
 	wp_enqueue_style('header', get_stylesheet_directory_uri() . '/css/header.css');
