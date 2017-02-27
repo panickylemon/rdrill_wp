@@ -13,6 +13,14 @@
         top: 45px;
     }
 
+    .card-main-text--grey {
+        min-height: 440px;
+    }
+
+    .card-main-info {
+        min-height: 0;
+    }
+
     .card-photo {
         margin: 10px 20px 10px 120px;
     }
@@ -116,6 +124,7 @@
     }
 
     .card-main-text--grey {
+        min-height: 0;
         background: #ffffff;
         font-weight: 300;
     }
@@ -435,6 +444,4 @@
     }
 
 }
-
-
 

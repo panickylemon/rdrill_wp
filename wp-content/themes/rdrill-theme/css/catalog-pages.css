@@ -743,7 +743,7 @@ tr.sorting-model__item {
 
 #card-product-slider {
 	position: relative;
-	top: 55px;
+	top: 45px;
 	left: 10px;
 	width: 45%;
 	float: left;
@@ -775,7 +775,7 @@ tr.sorting-model__item {
 
 .card-main-info {
 	width: 100%;
-	/*height: 530px;*/
+	min-height: 505px;
 	border: 1px solid #e9eff1;
 }
 
@@ -810,11 +810,9 @@ tr.sorting-model__item {
 
 .card-main-text--grey {
 	background: #fafbfb;
-}
-
-.card-main-text--grey {
 	font-size: 16px;
 	color: #434242;
+	min-height: 505px;
 }
 
 .card-main-text--grey p {
