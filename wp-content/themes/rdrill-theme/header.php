@@ -53,7 +53,7 @@
 					<?php
 					$walker = new mainMenuWalker();
 					wp_nav_menu( array(
-							        'menu'  => 2,
+							        'menu'  => 2, // id меню
 									'depth' => 2, //показывать 2 уровня вложенности
 									'container' => false,
 									'menu_class' => 'header__menu-list clearfix',
