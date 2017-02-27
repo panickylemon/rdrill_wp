@@ -213,6 +213,10 @@ input.b-search__expand:focus::-moz-placeholder {
 	color: #333333;
 }
 
+.header__menu-link:focus{
+	color: #333333;
+}
+
 .dropdown:hover .dropdown-menu {
 	display: block;
 	margin-top: 0;
