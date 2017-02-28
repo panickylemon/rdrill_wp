@@ -16,8 +16,7 @@
                         <?php the_post_thumbnail(); ?>
                     <?php endif; ?>
 
-                    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a> </h2>
-
+                    <h2 class="news-preview__title"><?php the_title(); ?></h2>
 
 
                     <?php the_content(''); ?>
@@ -25,6 +24,7 @@
                         <li><?php the_time('F jS, Y') ?><li>
                         <li>автор</li>
                     </ul>
+                    <a href="<?php the_permalink() ?>">читать далее</a>
                 </div>
             <?php endwhile; ?>
 
