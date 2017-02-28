@@ -31,7 +31,9 @@
                     </div>
 
                     <?php if ( has_post_thumbnail()) : ?>
-                        <?php the_post_thumbnail( ); ?>
+                        <div class="zz">
+                            <?php the_post_thumbnail(); ?>
+                        </div>
                     <?php endif; ?>
 
                     <div class="news-item__text">
