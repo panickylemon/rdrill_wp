@@ -16,6 +16,7 @@
         <?php get_sidebar('about-inner'); ?>
 
         <div class="about-content">
+            <h1>Новости</h1>
 
             <?php
             $wp_query = new WP_Query(array(
@@ -25,7 +26,6 @@
             )); ?>
             <?php while ( have_posts() ) : the_post();?>
 
-                <h1>Статьи</h1>
 
                 <div class="news-preview">
                     <?php if ( has_post_thumbnail()) : ?>

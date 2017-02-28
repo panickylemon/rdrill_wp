@@ -9,11 +9,9 @@
         <?php get_sidebar('about-inner'); ?>
 
         <div class="about-content">
+            <h1>Статьи</h1>
 
             <?php while ( have_posts() ) : the_post();?>
-
-                <h1>Статьи</h1>
-
                 <div class="news-preview">
                     <?php if ( has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
