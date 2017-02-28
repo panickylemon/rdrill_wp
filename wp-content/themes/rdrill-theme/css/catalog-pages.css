@@ -116,7 +116,7 @@ input:disabled + label:hover {
 	display: block;
 }
 
-.sorting-table td {
+.sorting-table td, .sorting-table th {
 	text-align: center;
 	border: 1px solid #e9eff1 !important;
 }
@@ -176,6 +176,7 @@ input:disabled + label:hover {
 }
 
 .options-title {
+	font-weight: normal;
 	line-height: 1.2;
 }
 
