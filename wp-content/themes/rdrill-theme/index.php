@@ -9,12 +9,33 @@
         <?php get_sidebar('about-inner'); ?>
 
         <div class="about-content">
-            <h1><?php the_title(); ?></h1>
-            <div class="brand-content">
-                <?php if (have_posts()): while (have_posts()): the_post(); ?>
-                    <?php the_content(); ?>
-                <?php endwhile; endif; ?>
+
+            <?php while ( have_posts() ) : the_post();?>
+                <div <?php post_class()?>>
+                    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a> </h2>
+
+                    <?php if ( has_post_thumbnail()) : ?>
+                        <div class="post-thumb">
+                            a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php the_content(''); ?>
+                    <ul class="meta">
+                        <li><?php the_time('F jS, Y') ?><li>
+                        <li>Posted in <?php the_category(', ') ?></li>
+                        <li><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></li>
+                    </ul>
+                </div>
+            <?php endwhile; ?>
+
+            <div class="pagination">
+                <ul>
+                    <li class="older"><?php next_posts_link('Предыдущие') ?></li>
+                    <li class="newer"><?php previous_posts_link('Следующие') ?></li>
+                </ul>
             </div>
+
         </div>
     </div>
 </main>
