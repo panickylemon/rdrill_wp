@@ -205,9 +205,10 @@
                     <li>
                         <div class="cell">
                             <?php if ( the_post_thumbnail('similar-thumb') ) { ?>
-                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail('similar-thumb'); ?>
-                            </a>
+                                eeeeeeee
+                                <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                                    <?php the_post_thumbnail('similar-thumb'); ?>
+                                </a>
                             <?php } else { ?>
                                 DDDDDDDDDDD
                             <?php } ?><br>
