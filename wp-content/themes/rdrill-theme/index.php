@@ -34,7 +34,13 @@
                         <?php the_content(''); ?>
                     </div>
 
-                    <a href="<?php the_permalink() ?>">читать далее</a>
+
+                    <div class="news-preview__wrap-button">
+                        <a class="base-button base-button--grey news-preview__button" href="<?php the_permalink() ?>">
+                            Читать далее
+                            <span class="button-arrows">»</span>
+                        </a>
+                    </div>
 
                 </div>
             <?php endwhile; ?>
