@@ -21,7 +21,7 @@
             <?php
             $wp_query = new WP_Query(array(
                 'category__in' => 90,
-                'posts_per_page' => 5,
+                'posts_per_page' => 1,
                 'paged' => $paged
             )); ?>
             <?php while ( have_posts() ) : the_post();?>
