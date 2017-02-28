@@ -126,22 +126,17 @@ class asideMenuWalker extends Walker_Nav_Menu
     //всем внутренним ul
     function start_lvl(&$output, $depth) {
         $indent = str_repeat("\t", $depth);
-        $output .= '<ul class="oooooyt-menu">';
+        $output .= '<ul>';
     }
 
     function start_el(&$output, $item, $depth, $args) {
-
         $output.= '<li>';
 
-        // назначаем атрибуты a-элементу
         $attributes = !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
         $item_output = $args->before;
         //всем ссылкам первого уровня
         if ($depth == 0) {
-            $item_output.= '<a class = "89"'. $attributes .'>'.$item->title.'</a>';
-        } else {
-            //всем ссылкам глубже первого уровня
-            $item_output.= '<a class = "009-link"'. $attributes .'>'.$item->title.'</a>';
+            $item_output.= '<a class = "about-sidebar__list-item"'. $attributes .'>'.$item->title.'</a>';
         }
 
         // заканчиваем вывод элемента
