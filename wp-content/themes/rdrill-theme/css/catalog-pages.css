@@ -153,6 +153,10 @@ input:disabled + label:hover {
 	position: relative;
 }
 
+.options-item:focus {
+	outline: none;
+}
+
 .buttons-sorting {
 	width: 45px;
 	margin: auto;
