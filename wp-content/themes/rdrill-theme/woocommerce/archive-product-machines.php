@@ -78,7 +78,7 @@ do_action('woocommerce_before_main_content');
 
                                     <div class="buttons-sorting clearfix">
                                         <div class="buttons-sorting__item buttons-sorting__top"></div>
-                                        <div class="buttons-sorting__item buttons-sorting__bottom active"></div>
+                                        <div class="buttons-sorting__item buttons-sorting__bottom"></div>
                                     </div>
                                 </th>
                                 <th class="drilling-depth options-item">
