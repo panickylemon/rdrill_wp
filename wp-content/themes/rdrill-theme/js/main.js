@@ -203,7 +203,8 @@ $(document).ready(function () {
     });
 
     $('#reset-sort-link').click(function(){
-        console.log('qweqe');
+        $('.buttons-sorting__bottom').removeClass('active');
+        $('.buttons-sorting__top').removeClass('active');
         $('#sorting-table').trigger('sortReset');
         return false;
     });
