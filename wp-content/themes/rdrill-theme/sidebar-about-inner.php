@@ -1,12 +1,13 @@
 <div class="about-sidebar">
     <nav class="about-menu">
         <?php
-        wp_nav_menu( array(
-            'menu'  => 93,
-            'depth' => 2, //показывать 2 уровня вложенности
-            'container' => false,
-            'menu_class' => 'header__menu-list clearfix'
-        ));
+            $walker = new asideMenuWalker();
+            wp_nav_menu( array(
+                'menu'  => 93,
+                'depth' => 1, // уровень вложенности
+                'container' => false,
+                'menu_class' => 'xyz'
+            ));
         ?>
     </nav>
     <nav class="about-menu">
