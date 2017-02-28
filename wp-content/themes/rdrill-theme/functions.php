@@ -353,3 +353,4 @@ function dimox_breadcrumbs() {
 
 
 add_theme_support( 'post-thumbnails' );
+

@@ -182,40 +182,36 @@
     <?php endif; ?>
     </div>
 
-    <div class="relatedposts">
-        <h3>Похожие записи</h3>
+    <div id="interesting_articles">
+
+        <h3>Интересное на блоге</h3>
         <?php
-        $orig_post = $post;
-        global $post;
-        $tags = wp_get_post_tags($post->ID);
-
-        if ($tags) {
-            $tag_ids = array();
-            foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
+        $categories = get_the_category($post->ID);
+        if ($categories) {
+            $category_ids = array();
+            foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
             $args=array(
-                'tag__in' => $tag_ids,
+                'tag__in' => $tag_ids,  //сортировка по тегам (меткам)
                 'post__not_in' => array($post->ID),
-                'posts_per_page'=>4, // Количество записей, которые выводятся
-                'caller_get_posts'=>1
-            );
-
-            $my_query = new wp_query( $args );
-
-            while( $my_query->have_posts() ) {
-                $my_query->the_post();
-                ?>
-
-                <div class="relatedthumb">
-                    <a rel="external" href="<? the_permalink()?>"><?php the_post_thumbnail(array(150,100)); ?><br />
-                        <?php the_title(); ?>
-                    </a>
-                </div>
-
-            <? }
+                'showposts'=>4,  //количество выводимых ячеек
+                'orderby'=>'rand', // в случайном порядке
+                'ignore_sticky_posts'=>1); //исключаем одинаковые записи
+            $my_query = new wp_query($args);
+            if( $my_query->have_posts() ) {
+                echo '<ul>';
+                while ($my_query->have_posts()) {
+                    $my_query->the_post();
+                    ?>
+                    <li><div class="cell"><a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail'); ?></a><br>
+                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></div></li>
+                    <?php
+                }
+                echo '</ul>';
+            }
+            wp_reset_query();
         }
-        $post = $orig_post;
-        wp_reset_query();
         ?>
+    </div>
     </div>
 
 
