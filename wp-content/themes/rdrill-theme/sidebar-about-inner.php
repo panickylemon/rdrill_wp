@@ -1,5 +1,8 @@
 <div class="about-sidebar">
     <nav class="about-menu">
+        <p class="about-sidebar__title">
+            О компании
+        </p>
         <?php
             $walker = new asideMenuWalker();
             wp_nav_menu( array(
@@ -10,6 +13,7 @@
             ));
         ?>
     </nav>
+
     <nav class="about-menu">
         <p class="about-sidebar__title">
             О компании
