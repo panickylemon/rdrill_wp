@@ -369,7 +369,6 @@ function wp_corenavi() {
     $a['next_text'] = '&raquo;'; //текст ссылки "Следующая страница"
 
     if ($max > 1) echo '<ul class="pagination">';
-    if ($total == 1 && $max > 1) $pages = '<span class="pages">Страница ' . $current . ' из ' . $max . '</span>'."\r\n";
     echo $pages . paginate_links($a);
     if ($max > 1) echo '</ul>';
 }
