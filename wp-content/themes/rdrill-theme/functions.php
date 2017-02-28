@@ -171,6 +171,20 @@ add_filter('pre_get_posts', 'exclude_cat');
  * лицензия: MIT
 */
 
+function get_top_parent_page_id() {
+    global $post;
+    $ancestors = $post->ancestors;
+
+    // Check if page is a child page (any level)
+    if ($ancestors) {
+        //  Grab the ID of top-level page from the tree
+        return end($ancestors);
+    } else {
+        // Page is the top level, so use  it's own id
+        return $post->ID;
+    }
+}
+
 function dimox_breadcrumbs() {
 
     /* === ОПЦИИ === */
@@ -269,7 +283,7 @@ function dimox_breadcrumbs() {
                 $cats = get_category_parents($cat, TRUE, $sep);
                 if (!$show_current || get_query_var('cpage')) $cats = preg_replace("#^(.+)$sep$#", "$1", $cats);
                 $cats = preg_replace('#<a([^>]+)>([^<]+)<\/a>#', $link_before . '<a$1' . $link_attr .'>' . $link_in_before . '$2' . $link_in_after .'</a>' . $link_after, $cats);
-                echo get_post_ancestors( $post )[0];
+                echo get_top_parent_page_id();
                 //echo $cats;
                 if ( get_query_var('cpage') ) {
                     echo $sep . sprintf($link, get_permalink(), get_the_title()) . $sep . $before . sprintf($text['cpage'], get_query_var('cpage')) . $after;
