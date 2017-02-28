@@ -205,12 +205,13 @@
                     <li>
                         <div class="cell">
                             <?php if ( has_post_thumbnail() ) { ?>
-                                <p>eeeeeeee</p>
                                 <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
                                     <?php the_post_thumbnail('similar-thumb'); ?>
                                 </a>
                             <?php } else { ?>
-                                <p>DDDDDDDDDDD</p>
+                                <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                                    <img class="other-news__item-img" src="image/base/advantages-1.png" alt="фото">
+                                </a>
                             <?php } ?><br>
                             <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                         </div>
