@@ -211,7 +211,14 @@ $(document).ready(function () {
 
     $('.button-sorting-choose').click(function(){
         $( ".sorting-checkbox-input:not(:checked)" ).each(function() {
-            $(this).parent().parent().hide()
+            $(this).parent().parent().parent().hide()
+        });
+        return false;
+    });
+
+    $('.button-sorting-reset').click(function(){
+        $("#sorting-table.tr").each(function() {
+            $(this).show()
         });
         return false;
     });
