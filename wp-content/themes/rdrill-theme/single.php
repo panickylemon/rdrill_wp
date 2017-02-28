@@ -13,19 +13,22 @@
         <?php while ( have_posts() ) : the_post();?>
 
             <div class="about-content">
-                <h1><?php the_title(); ?></h1>
+                <h1>Новости</h1>
 
-                <?php if ( has_post_thumbnail()) : ?>
-                    <div class="post-thumb">
-                        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-                    </div>
-                <?php endif; ?>
+                <div class="news-item">
+                    <h2 class="news-item__title"><?php the_title(); ?></h2>
+                    <?php if ( has_post_thumbnail()) : ?>
+                        <div class="post-thumb">
+                            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+                        </div>
+                    <?php endif; ?>
 
-                <?php the_content(''); ?>
+                    <?php the_content(''); ?>
 
+                </div>
             </div>
 
-            <?php comments_template();?>
+
 
         <?php endwhile; ?>
 
