@@ -271,9 +271,9 @@ function dimox_breadcrumbs() {
                 if (!$show_current || get_query_var('cpage')) $cats = preg_replace("#^(.+)$sep$#", "$1", $cats);
                 $cats = preg_replace('#<a([^>]+)>([^<]+)<\/a>#', $link_before . '<a$1' . $link_attr .'>' . $link_in_before . '$2' . $link_in_after .'</a>' . $link_after, $cats);
                 if (in_category('novosti')) {
-                    echo $sep.'<a href="/about/news/">Новости</a>';
+                    echo $link_before.'<a href="/about/news/">Новости</a>'.$link_after;
                 } elseif (in_category('bez-rubriki')) {
-                    echo $sep.'<a href="/about/article/">Статьи</a>';
+                    echo $link_before.'<a href="/about/article/">Статьи</a>'.$link_after;
                 }
 
                 //echo $cats;
