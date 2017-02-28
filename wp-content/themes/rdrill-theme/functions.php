@@ -199,6 +199,9 @@ function dimox_breadcrumbs() {
     $home_url = home_url('/');
     $link_before = '<li class="breadcrumb-item">';
     $link_after = '</li>';
+    $link_attr = '';
+    $link_in_before = '';
+    $link_in_after = '';
     $link = $link_before . '<a href="%1$s">' . '%2$s' . '</a>' . $link_after;
     $frontpage_id = get_option('page_on_front');
     $parent_id = ($post) ? $post->post_parent : '';
