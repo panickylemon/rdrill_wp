@@ -182,9 +182,8 @@
     <?php endif; ?>
     </div>
 
-    <div id="interesting_articles">
-
-        <h3>Интересное на блоге</h3>
+    <div class="l-container other-news">
+        <p class="other-news__title">Рекомендуем почитать дополнительно:</p>
         <?php
         $categories = get_the_category($post->ID);
         if ($categories) {
