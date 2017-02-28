@@ -604,6 +604,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 
 .news-preview img {
     width: 100%;
+    height: auto;
     margin: 0 0 35px;
 }
 
