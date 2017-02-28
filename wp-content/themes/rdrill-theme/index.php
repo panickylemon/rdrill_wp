@@ -22,7 +22,7 @@
                     <div class="news-item__additional-info clearfix">
                         <p class="news-date">
                             <span class="news__additional-title">Дата:</span>
-                            <span><?php the_date(); ?></span>
+                            <span><?php the_time('d.m.Y') ?></span>
                         </p>
 
                         <p class="news-author">
