@@ -6,7 +6,7 @@
                 'menu'  => 93,
                 'depth' => 1, // уровень вложенности
                 'container' => false,
-                'menu_class' => 'xyz'
+                'menu_class' => 'about-sidebar__list'
             ));
         ?>
     </nav>

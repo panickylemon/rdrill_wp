@@ -126,20 +126,13 @@ class asideMenuWalker extends Walker_Nav_Menu
     function start_el(&$output, $item, $depth, $args) {
         // назначаем классы li-элементу и выводим его
         $class_names = join( ' ', $item->classes );
-        //всем li первого уровня
-        if ($depth == 0) {
-            $class_names .= ' zzzzzzz';
-        }
 
         // назначаем атрибуты a-элементу
         $attributes = !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
         $item_output = $args->before;
         //всем ссылкам первого уровня
         if ($depth == 0) {
-            $item_output.= '<a class = "header__menu-link"'. $attributes .'>'.$item->title.'</a>';
-        } else {
-            //всем ссылкам глубже первого уровня
-            $item_output.= '<a class = "header__submenu-link"'. $attributes .'>'.$item->title.'</a>';
+            $item_output.= '<a class = "about-sidebar__list-item"'. $attributes .'>'.$item->title.'</a>';
         }
 
         // заканчиваем вывод элемента
