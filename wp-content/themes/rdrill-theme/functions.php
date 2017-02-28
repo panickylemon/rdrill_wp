@@ -155,6 +155,14 @@ class asideMenuWalker extends Walker_Nav_Menu
 // Конец Меню
 
 
+function exclude_cat($query)
+{
+    if ($query->is_home) {
+        $query->set('cat', '-90');
+    } // id категории
+    return $query;
+}
+add_filter('pre_get_posts', 'exclude_cat');
 
 
 /*
