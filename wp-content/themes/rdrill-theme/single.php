@@ -204,7 +204,7 @@
                     ?>
                     <li>
                         <div class="cell">
-                            <?php if ( the_post_thumbnail('similar-thumb') ) { ?>
+                            <?php if ( has_post_thumbnail() ) { ?>
                                 <p>eeeeeeee</p>
                                 <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
                                     <?php the_post_thumbnail('similar-thumb'); ?>
