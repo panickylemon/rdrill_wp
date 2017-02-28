@@ -23,7 +23,7 @@
                     <?php the_content(''); ?>
                     <ul class="meta">
                         <li><?php the_time('F jS, Y') ?><li>
-                        <li>Posted in <?php the_category(', ') ?></li>
+                        <li>автор</li>
                     </ul>
                 </div>
             <?php endwhile; ?>
