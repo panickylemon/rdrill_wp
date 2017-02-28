@@ -351,3 +351,5 @@ function dimox_breadcrumbs() {
     }
 } // end of dimox_breadcrumbs()
 
+
+add_theme_support( 'post-thumbnails' );
