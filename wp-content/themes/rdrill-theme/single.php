@@ -13,7 +13,7 @@
         <?php while ( have_posts() ) : the_post();?>
 
             <div class="about-content">
-                <h1><?php single_cat_title(); ?></h1>
+                <h1><?php the_category(', ') ?></h1>
 
                 <div class="news-item">
                     <h2 class="news-item__title"><?php the_title(); ?></h2>
