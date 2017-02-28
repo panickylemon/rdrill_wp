@@ -140,7 +140,6 @@ if ( post_password_required() ) {
             </div>  <!-- end wrap-card -->
         </div> <!-- end l-container -->
 
-
         <!-- Похожие товары -->
         <?php
         $args = array(
@@ -151,7 +150,6 @@ if ( post_password_required() ) {
 
         woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
         ?>
-
 
 
         <!-- Отзывы -->

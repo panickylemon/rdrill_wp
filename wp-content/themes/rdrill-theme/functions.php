@@ -51,15 +51,17 @@ add_action('wp_enqueue_scripts', 'custom_js');
 
 
 // Меню
+
 if(function_exists('register_nav_menus')){
 	register_nav_menus(
-			array( // создаём любое количество областей
-					'main_menu' => 'Главное меню', // 'имя' => 'описание'
+			array(
+					'main_menu' => 'Главное меню',
 					'aside_menu' => 'Меню для дочерних раздела > О компании'
 			)
 	);
 }
 
+// Главное меню
 class mainMenuWalker extends Walker_Nav_Menu
 {
 	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output )
@@ -109,6 +111,44 @@ class mainMenuWalker extends Walker_Nav_Menu
 	}
 }
 
+//Боковое меню
+class asideMenuWalker extends Walker_Nav_Menu
+{
+    function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output )
+    {
+        $id_field = $this->db_fields['id'];
+        if ( is_object( $args[0] ) ) {
+            $args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
+        }
+        return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+    }
+
+    function start_el(&$output, $item, $depth, $args) {
+        // назначаем классы li-элементу и выводим его
+        $class_names = join( ' ', $item->classes );
+        //всем li первого уровня
+        if ($depth == 0) {
+            $class_names .= ' zzzzzzz';
+        }
+
+        // назначаем атрибуты a-элементу
+        $attributes = !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
+        $item_output = $args->before;
+        //всем ссылкам первого уровня
+        if ($depth == 0) {
+            $item_output.= '<a class = "header__menu-link"'. $attributes .'>'.$item->title.'</a>';
+        } else {
+            //всем ссылкам глубже первого уровня
+            $item_output.= '<a class = "header__submenu-link"'. $attributes .'>'.$item->title.'</a>';
+        }
+
+        // заканчиваем вывод элемента
+        $item_output.= $args->after;
+        $output.= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+    }
+}
+
+
 // Конец Меню
 
 
@@ -119,6 +159,7 @@ class mainMenuWalker extends Walker_Nav_Menu
  * версия: 2017.01.21
  * лицензия: MIT
 */
+
 function dimox_breadcrumbs() {
 
     /* === ОПЦИИ === */
@@ -147,9 +188,6 @@ function dimox_breadcrumbs() {
     $home_url = home_url('/');
     $link_before = '<li class="breadcrumb-item">';
     $link_after = '</li>';
-    //$link_attr = '';
-    //$link_in_before = '<span itemprop="name">';
-    //$link_in_after = '</span>';
     $link = $link_before . '<a href="%1$s">' . '%2$s' . '</a>' . $link_after;
     $frontpage_id = get_option('page_on_front');
     $parent_id = ($post) ? $post->post_parent : '';
