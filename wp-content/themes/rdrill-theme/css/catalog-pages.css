@@ -55,7 +55,7 @@
     color: #252525;
 }
 
-.banner-catalog__description p {
+.banner-catalog__description p{
     margin: 0;
 }
 
@@ -153,10 +153,6 @@ input:disabled + label:hover {
     position: relative;
 }
 
-.options-item:hover {
-    cursor: pointer;
-}
-
 .options-item:focus {
     outline: none;
 }
@@ -199,7 +195,11 @@ input:disabled + label:hover {
     background: url("../image/icons/sorting-arrows.png") no-repeat 100% 0;
 }
 
-.buttons-sorting__top:hover, .buttons-sorting__top.active {
+/*.buttons-sorting__top:hover, .buttons-sorting__top.active {*/
+/*background: url("../image/icons/sorting-arrows.png") no-repeat 0 0;*/
+/*}*/
+
+.buttons-sorting__top.active {
     background: url("../image/icons/sorting-arrows.png") no-repeat 0 0;
 }
 
@@ -208,7 +208,11 @@ input:disabled + label:hover {
     background: url("../image/icons/sorting-arrows.png") no-repeat 33% 0;
 }
 
-.buttons-sorting__bottom:hover, .buttons-sorting__bottom.active {
+/*.buttons-sorting__bottom:hover, .buttons-sorting__bottom.active {*/
+/*background: url("../image/icons/sorting-arrows.png") no-repeat 68% 0;*/
+/*}*/
+
+.buttons-sorting__bottom.active {
     background: url("../image/icons/sorting-arrows.png") no-repeat 68% 0;
 }
 
@@ -869,7 +873,7 @@ tr.sorting-model__item {
     border-bottom: 1px dotted #d8d8d8;
 }
 
-.value-characteristics p {
+.value-characteristics p{
     margin: 0;
 }
 
@@ -1005,6 +1009,7 @@ tr.sorting-model__item {
     float: right;
 }
 
+
 /*video*/
 
 .video-container {
@@ -1129,7 +1134,8 @@ img.thumbnail {
     padding: 15px 20px;
 }
 
-.useful-articles__content a {
+
+.useful-articles__content a{
     display: block;
     margin: 10px 0;
     font-size: 14px;
