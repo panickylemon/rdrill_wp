@@ -193,7 +193,8 @@ do_action('woocommerce_before_main_content');
                             Сравнить выбранные станки
                         </button>
 
-                        <button class="base-button base-button--grey button-sorting button-sorting-reset">Сбросить
+                        <button class="base-button base-button--grey button-sorting button-sorting-reset">
+                            Сбросить
                         </button>
                     </div>
 

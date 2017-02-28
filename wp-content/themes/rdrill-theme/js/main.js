@@ -217,7 +217,7 @@ $(document).ready(function () {
     });
 
     $('.button-sorting-reset').click(function(){
-        $("#sorting-table.tr").each(function() {
+        $("#sorting-table").find("tr").each(function() {
             $(this).show()
         });
         return false;
