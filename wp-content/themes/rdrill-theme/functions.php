@@ -131,7 +131,7 @@ class asideMenuWalker extends Walker_Nav_Menu
         $attributes = !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
         $item_output = $args->before;
         //всем ссылкам первого уровня
-        if ($depth == 1) {
+        if ($depth == 2) {
             $item_output.= '<a class = "about-sidebar__list-item"'. $attributes .'>'.$item->title.'</a>';
         }
 
