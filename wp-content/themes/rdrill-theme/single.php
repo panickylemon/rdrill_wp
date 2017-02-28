@@ -192,7 +192,6 @@
             foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
             $args=array(
                 'category__in' => $category_ids,
-                //'tag__in' => $tag_ids,  //сортировка по тегам (меткам)
                 'post__not_in' => array($post->ID),
                 'showposts'=>4,  //количество выводимых ячеек
                 'orderby'=>'rand', // в случайном порядке
@@ -203,7 +202,15 @@
                 while ($my_query->have_posts()) {
                     $my_query->the_post();
                     ?>
-                    <li><div class="cell"><a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail'); ?></a><br>
+                    <li>
+                        <div class="cell">
+                            <?php if ( the_post_thumbnail('similar-thumb') ) { ?>
+                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                                <?php the_post_thumbnail('similar-thumb'); ?>
+                            </a>
+                            <?php } else { ?>
+                                DDDDDDDDDDD
+                            <?php } ?><br>
                             <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></div></li>
                     <?php
                 }

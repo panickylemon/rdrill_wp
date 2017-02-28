@@ -351,6 +351,7 @@ function dimox_breadcrumbs() {
     }
 } // end of dimox_breadcrumbs()
 
-
-
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'similar-thumb', 433, 254, true ); // Кадрирование изображения
+}
 
