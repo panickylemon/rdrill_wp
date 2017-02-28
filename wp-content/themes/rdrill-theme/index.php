@@ -14,11 +14,13 @@
 
         <div class="about-content">
             <h1>Статьи</h1>
+
             <?php
             $wp_query = new WP_Query(array(
-                'posts_per_page' => 1,
+                'posts_per_page' => 6,
                 'paged' => $paged
             )); ?>
+
             <?php while ( have_posts() ) : the_post();?>
                 <div class="news-preview">
                     <?php if ( has_post_thumbnail()) : ?>
