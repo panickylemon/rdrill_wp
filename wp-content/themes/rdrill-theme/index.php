@@ -18,13 +18,24 @@
 
                     <h2 class="news-preview__title"><?php the_title(); ?></h2>
 
+                    <div class="news-item__additional-info clearfix">
+                        <p class="news-date">
+                            <span class="news__additional-title">Дата</span>
+                            <span><?php the_time('F jS, Y') ?></span>
+                        </p>
 
-                    <?php the_content(''); ?>
-                    <ul class="meta">
-                        <li><?php the_time('F jS, Y') ?><li>
-                        <li>автор</li>
-                    </ul>
+                        <p class="news-author">
+                            <span class="news__additional-title">Автор:</span>
+                            <span class="news-name">Фамилия Имя</span>
+                        </p>
+                    </div>
+
+                    <div class="news-preview__text">
+                        <?php the_content(''); ?>
+                    </div>
+
                     <a href="<?php the_permalink() ?>">читать далее</a>
+
                 </div>
             <?php endwhile; ?>
 
