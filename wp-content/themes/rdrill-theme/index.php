@@ -11,6 +11,9 @@
         <div class="about-content">
 
             <?php while ( have_posts() ) : the_post();?>
+
+                <h1>Статьи</h1>
+
                 <div class="news-preview">
                     <?php if ( has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
