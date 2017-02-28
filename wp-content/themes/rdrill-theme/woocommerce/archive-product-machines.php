@@ -189,7 +189,8 @@ do_action('woocommerce_before_main_content');
                     </div>
 
                     <div class="sorting-buttons">
-                        <button class="base-button base-button--red button-sorting">Сравнить выбранные станки
+                        <button class="base-button base-button--red button-sorting button-sorting-choose">
+                            Сравнить выбранные станки
                         </button>
 
                         <button class="base-button base-button--grey button-sorting button-sorting-reset">Сбросить

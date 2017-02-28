@@ -208,5 +208,12 @@ $(document).ready(function () {
         $('#sorting-table').trigger('sortReset');
         return false;
     });
+
+    $('.button-sorting-choose').click(function(){
+        $( ".sorting-checkbox-input:not(:checked)" ).each(function() {
+            $(this).parent().parent().hide()
+        });
+        return false;
+    });
 });
 
