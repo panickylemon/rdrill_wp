@@ -352,7 +352,7 @@ function dimox_breadcrumbs() {
 } // end of dimox_breadcrumbs()
 
 
-
+// пагинация
 function wp_corenavi() {
     global $wp_query;
     $pages = '';
