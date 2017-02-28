@@ -123,15 +123,28 @@ class asideMenuWalker extends Walker_Nav_Menu
         return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
     }
 
+
     function start_el(&$output, $item, $depth, $args) {
         // назначаем классы li-элементу и выводим его
         $class_names = join( ' ', $item->classes );
+        //всем li первого уровня
+        if ($depth == 0) {
+            $class_names .= ' header__menu-item';
+        }
+        //всем li, у которых есть дочерние элементы
+        if ($args->has_children) {
+            $class_names .= ' qqq';
+        }
+        $class_names = ' class="' .esc_attr( $class_names ). '"';
+
+        $output.= '<li id="12-' . $item->ID . '"' .$class_names. '>';
+
 
         // назначаем атрибуты a-элементу
         $attributes = !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
         $item_output = $args->before;
         //всем ссылкам первого уровня
-        if ($depth == 1) {
+        if ($depth == 0) {
             $item_output.= '<a class = "about-sidebar__list-item"'. $attributes .'>'.$item->title.'</a>';
         } else {
             //всем ссылкам глубже первого уровня
