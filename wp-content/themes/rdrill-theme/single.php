@@ -31,9 +31,7 @@
                     </div>
 
                     <?php if ( has_post_thumbnail()) : ?>
-
-
-                        <?php the_post_thumbnail('full', array('class' => 'alignleft')); ?>
+                        <?php the_post_thumbnail( ); ?>
                     <?php endif; ?>
 
                     <div class="news-item__text">
