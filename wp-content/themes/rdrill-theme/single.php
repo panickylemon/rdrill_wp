@@ -191,7 +191,8 @@
             $category_ids = array();
             foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
             $args=array(
-                'tag__in' => $tag_ids,  //сортировка по тегам (меткам)
+                'category__in' => $category_ids,
+                //'tag__in' => $tag_ids,  //сортировка по тегам (меткам)
                 'post__not_in' => array($post->ID),
                 'showposts'=>4,  //количество выводимых ячеек
                 'orderby'=>'rand', // в случайном порядке
