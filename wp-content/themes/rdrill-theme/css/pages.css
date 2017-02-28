@@ -583,7 +583,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
     color: #fc0013;
 }
 
-.about-active, .about-sidebar__list .current-menu-item {
+.about-active, .about-sidebar__list .current-menu-item a{
     color: #fc0013;
 }
 
