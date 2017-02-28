@@ -61,20 +61,9 @@
                 </div>
             <?php endwhile; ?>
 
-<!--            <div class="pagination-wrap">-->
-<!--                <ul class="pagination">-->
-<!--                    <li class="pagination-prev lateral-page">-->
-<!--                        <a class="pagination__text" aria-label="Previous" href="#"><span-->
-<!--                                    class="button-arrows">«</span> --><?php //previous_posts_link('Назад') ?><!-- </a>-->
-<!--                    </li>-->
-<!--                    <li class="pagination-next lateral-page">-->
-<!--                        <a class="pagination__text" aria-label="Next" href="#">--><?php //next_posts_link('Вперед') ?><!--  <span-->
-<!--                                    class="button-arrows">»</span></a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-
-            <?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
+            <div class="pagination-wrap">
+                <?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
+            </div>
 
         </div>
     </div>
