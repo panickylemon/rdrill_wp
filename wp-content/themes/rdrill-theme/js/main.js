@@ -203,6 +203,7 @@ $(document).ready(function () {
     });
 
     $('#reset-sort-link').click(function(){
+        console.log('qweqe');
         $('#sorting-table').trigger('sortReset');
         return false;
     });
