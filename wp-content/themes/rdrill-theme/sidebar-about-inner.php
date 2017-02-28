@@ -47,7 +47,7 @@
         <p class="sidebar__subtitle">
             Есть <strong>вопросы?</strong>
         </p>
-        <img class="contact-manager__image" src="image/base/man.png" alt="менеджер">
+        <img class="contact-manager__image" src="/wp-content/themes/rdrill-theme/image/base/man.png" alt="менеджер">
         <p class="contact-manager__text">
             Свяжитесь с нашим менеджером по продажам
         </p>
