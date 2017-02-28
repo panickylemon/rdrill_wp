@@ -15,64 +15,6 @@
         ?>
     </nav>
 
-    <nav class="about-menu">
-        <p class="about-sidebar__title">
-            О компании
-        </p>
-        <ul class="about-sidebar__list">
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    О бренде Rotabroach
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Качество Rotabroach
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Технологии Custmart
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Гарантия
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item about-active" href="#">
-                    Новости
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Статьи
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Представительство в России
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Отзывы клиентов
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Условия сотрудничества
-                </a>
-            </li>
-            <li>
-                <a class="about-sidebar__list-item" href="#">
-                    Акции
-                </a>
-            </li>
-        </ul>
-    </nav>
-
     <div class="wrap-interview">
         <div class="interview-block">
             <p class="sidebar__subtitle">
