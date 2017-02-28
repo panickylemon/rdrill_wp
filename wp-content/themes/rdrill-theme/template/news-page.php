@@ -67,9 +67,13 @@
                         <a class="pagination__text" aria-label="Previous" href="#"><span
                                     class="button-arrows">«</span> <?php next_posts_link('Назад') ?> </a>
                     </li>
-                    <li class="newer"><?php previous_posts_link('Следующие') ?></li>
+                    <li class="pagination-next lateral-page">
+                        <a class="pagination__text" aria-label="Next" href="#"><?php previous_posts_link('Вперед') ?> <span
+                                    class="button-arrows">»</span></a>
+                    </li>
                 </ul>
             </div>
+
 
         </div>
     </div>
