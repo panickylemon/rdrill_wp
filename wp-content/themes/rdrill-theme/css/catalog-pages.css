@@ -153,6 +153,10 @@ input:disabled + label:hover {
     position: relative;
 }
 
+.options-item:hover {
+    cursor: pointer;
+}
+
 .options-item:focus {
     outline: none;
 }
