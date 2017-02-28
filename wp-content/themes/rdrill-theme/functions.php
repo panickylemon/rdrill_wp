@@ -271,7 +271,7 @@ function dimox_breadcrumbs() {
                 if (!$show_current || get_query_var('cpage')) $cats = preg_replace("#^(.+)$sep$#", "$1", $cats);
                 $cats = preg_replace('#<a([^>]+)>([^<]+)<\/a>#', $link_before . '<a$1' . $link_attr .'>' . $link_in_before . '$2' . $link_in_after .'</a>' . $link_after, $cats);
                 $page = get_page($parent_id);
-                echo get_the_title($page);
+                echo 'ddddd'.get_the_title($page);
                 //echo $cats;
                 if ( get_query_var('cpage') ) {
                     echo $sep . sprintf($link, get_permalink(), get_the_title()) . $sep . $before . sprintf($text['cpage'], get_query_var('cpage')) . $after;
