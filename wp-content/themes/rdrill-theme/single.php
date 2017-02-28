@@ -17,6 +17,19 @@
 
                 <div class="news-item">
                     <h2 class="news-item__title"><?php the_title(); ?></h2>
+
+                    div class="news-item__additional-info clearfix">
+                    <p class="news-date">
+                        <span class="news__additional-title">Дата</span>
+                        <span><?php the_time('d.m.Y') ?></span>
+                    </p>
+
+                    <p class="news-author">
+                        <span class="news__additional-title">Автор:</span>
+                        <span class="news-name"><?php the_author(); ?></span>
+                    </p>
+                </div>
+
                     <?php if ( has_post_thumbnail()) : ?>
                         <div class="post-thumb">
                             <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
