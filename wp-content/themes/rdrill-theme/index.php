@@ -12,13 +12,13 @@
 
             <?php while ( have_posts() ) : the_post();?>
                 <div class="news-preview">
+                    <?php if ( has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail(); ?>
+                    <?php endif; ?>
+
                     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a> </h2>
 
-                    <?php if ( has_post_thumbnail()) : ?>
-                        <div class="post-thumb">
-                            a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-                        </div>
-                    <?php endif; ?>
+
 
                     <?php the_content(''); ?>
                     <ul class="meta">
