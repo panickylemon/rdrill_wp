@@ -31,7 +31,7 @@
                     </div>
 
                     <?php if ( has_post_thumbnail()) : ?>
-                        <div class="zz">
+                        <div class="news-item__image">
                             <?php the_post_thumbnail(); ?>
                         </div>
                     <?php endif; ?>

@@ -866,7 +866,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
     cursor: pointer;
 }
 
-.news-item__image {
+.news-item__image img{
     max-width: 100%;
     margin-top: 30px;
 }
