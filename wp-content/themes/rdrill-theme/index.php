@@ -50,8 +50,8 @@
                 </div>
             <?php endwhile; ?>
 
-            <div class="pagination-wrap">
-                <ul class="pagination">
+            <div class="pagination">
+                <ul>
                     <li class="older"><?php next_posts_link('Предыдущие') ?></li>
                     <li class="newer"><?php previous_posts_link('Следующие') ?></li>
                 </ul>
