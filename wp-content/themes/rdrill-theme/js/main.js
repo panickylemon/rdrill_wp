@@ -202,5 +202,9 @@ $(document).ready(function () {
         return false
     });
 
+    $('#reset-sort-link').click(function(){
+        $('#sorting-table').trigger('sortReset');
+        return false;
+    });
 });
 

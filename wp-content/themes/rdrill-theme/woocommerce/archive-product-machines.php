@@ -174,7 +174,7 @@ do_action('woocommerce_before_main_content');
                             <tbody>
                             <tr class="static">
                                 <td class="reset-options" colspan="10">
-                                    <a href="#">
+                                    <a href="#" id="reset-sort-link">
                                         <span class="reset-options__icon"></span><span class="reset-options__text">Сбросить параметры фильтра</span>
                                     </a>
                                 </td>
