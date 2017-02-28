@@ -142,7 +142,7 @@ class asideMenuWalker extends Walker_Nav_Menu
         }
         $class_names = ' class="' .esc_attr( $class_names ). '"';
 
-        $output.= '<li id="567-' . $item->ID . '"' .$class_names. '>';
+        $output.= '<li>';
 
 
         // назначаем атрибуты a-элементу
