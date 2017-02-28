@@ -16,7 +16,7 @@
                 <h1>Новости</h1>
 
                 <div class="news-item">
-                    <h2 class="news-item__title"><?php the_title(); ?></h2>
+                    <h2 class="news-item__title"><?php get_cat_name( $cat_id ) ?></h2>
 
                     <div class="news-item__additional-info clearfix">
                         <p class="news-date">
