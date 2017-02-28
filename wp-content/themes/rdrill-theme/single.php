@@ -182,6 +182,36 @@
     <?php endif; ?>
     </div>
 
+    <div id="interesting_articles">
+
+        <h3>Интересное на блоге</h3>
+        <?php
+        $categories = get_the_category($post->ID);
+        if ($categories) {
+            $category_ids = array();
+            foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+            $args=array(
+                'tag__in' => $tag_ids,  //сортировка по тегам (меткам)
+                'post__not_in' => array($post->ID),
+                'showposts'=>4,  //количество выводимых ячеек
+                'orderby'=>'rand', // в случайном порядке
+                'ignore_sticky_posts'=>1); //исключаем одинаковые записи
+            $my_query = new wp_query($args);
+            if( $my_query->have_posts() ) {
+                echo '<ul>';
+                while ($my_query->have_posts()) {
+                    $my_query->the_post();
+                    ?>
+                    <li><div class="cell"><a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail'); ?></a><br>
+                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></div></li>
+                    <?php
+                }
+                echo '</ul>';
+            }
+            wp_reset_query();
+        }
+        ?>
+    </div>
 
     <div class="l-container other-news">
         <p class="other-news__title">Рекомендуем почитать дополнительно:</p>
