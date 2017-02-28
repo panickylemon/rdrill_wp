@@ -198,27 +198,26 @@
                 'ignore_sticky_posts'=>1); //исключаем одинаковые записи
             $my_query = new wp_query($args);
             if( $my_query->have_posts() ) {
-                echo '<ul>';
+                echo '<div class="other-news__wrap clearfix">';
                 while ($my_query->have_posts()) {
                     $my_query->the_post();
                     ?>
-                    <li>
-                        <div class="cell">
-                            <?php if ( has_post_thumbnail() ) { ?>
-                                <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
-                                    <?php the_post_thumbnail('similar-thumb'); ?>
-                                </a>
-                            <?php } else { ?>
-                                <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
-                                    <img class="other-news__item-img" src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
-                                </a>
-                            <?php } ?><br>
-                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                        </div>
-                    </li>
+                    <div class="other-news__item">
+                        <?php if ( has_post_thumbnail() ) { ?>
+                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                                <?php the_post_thumbnail('similar-thumb'); ?>
+                            </a>
+                        <?php } else { ?>
+                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                                <img class="other-news__item-img" src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
+                            </a>
+                        <?php } ?><br>
+                        <a class="other-news__item-link" onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"
+                            rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                    </div>
                     <?php
                 }
-                echo '</ul>';
+                echo '</div>';
             }
             wp_reset_query();
         }
