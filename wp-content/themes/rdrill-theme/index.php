@@ -24,7 +24,6 @@
                     <ul class="meta">
                         <li><?php the_time('F jS, Y') ?><li>
                         <li>Posted in <?php the_category(', ') ?></li>
-                        <li><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></li>
                     </ul>
                 </div>
             <?php endwhile; ?>
