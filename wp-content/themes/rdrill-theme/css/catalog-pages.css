@@ -145,6 +145,7 @@ input:disabled + label:hover {
 }
 
 .sorting-table__model {
+	font-weight: normal;
 	text-align: left !important;
 }
 
