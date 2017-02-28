@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
 <div class="l-container">
-    <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+        <li class="breadcrumb-item"><a href="/about">О компании</a></li>
+        <li class="breadcrumb-item active">Статьи</li>
+    </ul>
 </div>
 
 <main class="content">
