@@ -351,3 +351,12 @@ function dimox_breadcrumbs() {
     }
 } // end of dimox_breadcrumbs()
 
+
+/** Remove width & height images attributes */
+function remove_images_width_height($content) {
+    $content = preg_replace('/<img>/iu', "<img>", $content);
+    $content = preg_replace('/<img>/iu', "<img>", $content);
+    return $content;
+}
+add_filter('the_content', 'remove_images_width_height');
+add_filter('post_thumbnail_html', 'remove_images_width_height');
