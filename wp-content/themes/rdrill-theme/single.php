@@ -32,7 +32,7 @@
 
                     <?php if ( has_post_thumbnail()) : ?>
 
-                        <?php echo get_the_post_thumbnail( $id, 'thumbnail', array('class' => 'alignleft') ); ?>
+                        <?php echo get_the_post_thumbnail( array('class' => 'alignleft') ); ?>
                     <?php endif; ?>
 
                     <div class="news-item__text">
