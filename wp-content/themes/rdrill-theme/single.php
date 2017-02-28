@@ -38,129 +38,129 @@
                         <?php the_content(''); ?>
                     </div>
 
-                    <div class="news-item__sales-leader clearfix">
-                        <div class="sales-leader__wrap-item">
-                            <div class="sales-leader__item sales-leader__first">
-                                <p class="sales-leader__title">
-                                    Станок
-                                    <span class="sales-leader__name">COMMANDO 40</span>
-                                </p>
-                                <img class="sales-leader__img" src="image/base/news-machine.png" alt="станок">
-                                <p class="sales-raiting">
-                                    <span class="sales-raiting--large">Лидер</span>
-                                    по продажам
-                                </p>
-                                <div class="sales-leader__characteristics">
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Мощность</span> <span
-                                            class="characteristics-item__value">1100 Вт</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Скор. вращ.</span> <span
-                                            class="characteristics-item__value">270-610 об/мин</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Диаметр сверления</span> <span
-                                            class="characteristics-item__value">макс. 13 мм</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Глубина</span> <span
-                                            class="characteristics-item__value">макс. 50 мм</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Вес</span> <span
-                                            class="characteristics-item__value">14.2 кг</span>
-                                    </p>
-                                </div>
-                                <a class="base-button base-button--grey sales-leader__button" href="#">
-                                    Описание
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="sales-leader__wrap-item">
-                            <div class="sales-leader__item sales-leader__not-first sales-leader__second">
-                                <p class="sales-leader__title">
-                                    Станок
-                                    <span class="sales-leader__name">ELEMENT 30</span>
-                                </p>
-                                <img class="sales-leader__img" src="image/base/news-machine.png" alt="станок">
-                                <p class="sales-raiting">
-                                    <span class="sales-raiting--large"><span
-                                            class="sales-raiting--red">2 </span>место</span>
-                                    по продажам
-                                </p>
-                                <div class="sales-leader__characteristics">
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Мощность</span> <span
-                                            class="characteristics-item__value">850 Вт</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Скор. вращ.</span> <span
-                                            class="characteristics-item__value">600 об/мин</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Диаметр сверления</span> <span
-                                            class="characteristics-item__value">макс. 13 мм</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Глубина</span> <span
-                                            class="characteristics-item__value">макс. 35 мм</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Вес</span> <span
-                                            class="characteristics-item__value">10.8 кг</span>
-                                    </p>
-                                </div>
-                                <a class="base-button base-button--grey sales-leader__button" href="#">
-                                    Описание
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="sales-leader__wrap-item">
-                            <div class="sales-leader__item sales-leader__not-first sales-leader__item-third">
-                                <p class="sales-leader__title">
-                                    Станок
-                                    <span class="sales-leader__name">FALCON</span>
-                                </p>
-                                <img class="sales-leader__img" src="image/base/news-machine.png" alt="станок">
-                                <p class="sales-raiting">
-                                    <span class="sales-raiting--large"><span
-                                            class="sales-raiting--red">3 </span>место</span>
-                                    по продажам
-                                </p>
-                                <div class="sales-leader__characteristics">
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Мощность</span> <span
-                                            class="characteristics-item__value">1250 Вт</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Скор. вращ.</span> <span
-                                            class="characteristics-item__value">100-500 об/мин</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Диаметр сверления</span> <span
-                                            class="characteristics-item__value">макс. 13 мм</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Глубина</span> <span
-                                            class="characteristics-item__value">макс. 550 мм</span>
-                                    </p>
-                                    <p class="sales-leader__characteristics-item">
-                                        <span class="characteristics-item__name">Вес</span> <span
-                                            class="characteristics-item__value">13.5 кг</span>
-                                    </p>
-                                </div>
-                                <a class="base-button base-button--grey sales-leader__button" href="#">
-                                    Описание
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="news-item__sales-leader clearfix">-->
+<!--                        <div class="sales-leader__wrap-item">-->
+<!--                            <div class="sales-leader__item sales-leader__first">-->
+<!--                                <p class="sales-leader__title">-->
+<!--                                    Станок-->
+<!--                                    <span class="sales-leader__name">COMMANDO 40</span>-->
+<!--                                </p>-->
+<!--                                <img class="sales-leader__img" src="image/base/news-machine.png" alt="станок">-->
+<!--                                <p class="sales-raiting">-->
+<!--                                    <span class="sales-raiting--large">Лидер</span>-->
+<!--                                    по продажам-->
+<!--                                </p>-->
+<!--                                <div class="sales-leader__characteristics">-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Мощность</span> <span-->
+<!--                                            class="characteristics-item__value">1100 Вт</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Скор. вращ.</span> <span-->
+<!--                                            class="characteristics-item__value">270-610 об/мин</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Диаметр сверления</span> <span-->
+<!--                                            class="characteristics-item__value">макс. 13 мм</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Глубина</span> <span-->
+<!--                                            class="characteristics-item__value">макс. 50 мм</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Вес</span> <span-->
+<!--                                            class="characteristics-item__value">14.2 кг</span>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                                <a class="base-button base-button--grey sales-leader__button" href="#">-->
+<!--                                    Описание-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!---->
+<!--                        <div class="sales-leader__wrap-item">-->
+<!--                            <div class="sales-leader__item sales-leader__not-first sales-leader__second">-->
+<!--                                <p class="sales-leader__title">-->
+<!--                                    Станок-->
+<!--                                    <span class="sales-leader__name">ELEMENT 30</span>-->
+<!--                                </p>-->
+<!--                                <img class="sales-leader__img" src="image/base/news-machine.png" alt="станок">-->
+<!--                                <p class="sales-raiting">-->
+<!--                                    <span class="sales-raiting--large"><span-->
+<!--                                            class="sales-raiting--red">2 </span>место</span>-->
+<!--                                    по продажам-->
+<!--                                </p>-->
+<!--                                <div class="sales-leader__characteristics">-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Мощность</span> <span-->
+<!--                                            class="characteristics-item__value">850 Вт</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Скор. вращ.</span> <span-->
+<!--                                            class="characteristics-item__value">600 об/мин</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Диаметр сверления</span> <span-->
+<!--                                            class="characteristics-item__value">макс. 13 мм</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Глубина</span> <span-->
+<!--                                            class="characteristics-item__value">макс. 35 мм</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Вес</span> <span-->
+<!--                                            class="characteristics-item__value">10.8 кг</span>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                                <a class="base-button base-button--grey sales-leader__button" href="#">-->
+<!--                                    Описание-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!---->
+<!--                        <div class="sales-leader__wrap-item">-->
+<!--                            <div class="sales-leader__item sales-leader__not-first sales-leader__item-third">-->
+<!--                                <p class="sales-leader__title">-->
+<!--                                    Станок-->
+<!--                                    <span class="sales-leader__name">FALCON</span>-->
+<!--                                </p>-->
+<!--                                <img class="sales-leader__img" src="image/base/news-machine.png" alt="станок">-->
+<!--                                <p class="sales-raiting">-->
+<!--                                    <span class="sales-raiting--large"><span-->
+<!--                                            class="sales-raiting--red">3 </span>место</span>-->
+<!--                                    по продажам-->
+<!--                                </p>-->
+<!--                                <div class="sales-leader__characteristics">-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Мощность</span> <span-->
+<!--                                            class="characteristics-item__value">1250 Вт</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Скор. вращ.</span> <span-->
+<!--                                            class="characteristics-item__value">100-500 об/мин</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Диаметр сверления</span> <span-->
+<!--                                            class="characteristics-item__value">макс. 13 мм</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Глубина</span> <span-->
+<!--                                            class="characteristics-item__value">макс. 550 мм</span>-->
+<!--                                    </p>-->
+<!--                                    <p class="sales-leader__characteristics-item">-->
+<!--                                        <span class="characteristics-item__name">Вес</span> <span-->
+<!--                                            class="characteristics-item__value">13.5 кг</span>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                                <a class="base-button base-button--grey sales-leader__button" href="#">-->
+<!--                                    Описание-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                     <div class="news-item__director">
-                        <img class="news-item__director-img" src="image/base/advantages-1.png" alt="фото">
+                        <img class="news-item__director-img" src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
                         <div class="news-item__director-text">
                             <p class="news-item__director-name">Фамилия Имя Отчество</p>
                             <p class="news-item__director-position">Директор по маркетингу ОАО «Портал»</p>
