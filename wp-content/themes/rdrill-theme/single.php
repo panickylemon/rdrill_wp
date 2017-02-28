@@ -230,7 +230,7 @@
         <div class="other-news__wrap clearfix">
 
             <div class="other-news__item other-news__item-first">
-                <img class="other-news__item-img" src="image/base/advantages-1.png" alt="фото">
+                <img class="other-news__item-img" src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
                 <a class="other-news__item-link" href="#"><span>Заголовок новости</span></a>
             </div>
 
