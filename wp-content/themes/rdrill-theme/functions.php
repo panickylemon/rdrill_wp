@@ -130,6 +130,9 @@ class asideMenuWalker extends Walker_Nav_Menu
     }
 
     function start_el(&$output, $item, $depth, $args) {
+        // назначаем классы li-элементу и выводим его
+        $class_names = join( ' ', $item->classes );
+
 
         // назначаем атрибуты a-элементу
         $attributes = !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
