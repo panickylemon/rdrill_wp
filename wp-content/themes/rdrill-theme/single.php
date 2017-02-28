@@ -205,14 +205,16 @@
                     <li>
                         <div class="cell">
                             <?php if ( the_post_thumbnail('similar-thumb') ) { ?>
-                                eeeeeeee
+                                <p>eeeeeeee</p>
                                 <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
                                     <?php the_post_thumbnail('similar-thumb'); ?>
                                 </a>
                             <?php } else { ?>
-                                DDDDDDDDDDD
+                                <p>DDDDDDDDDDD</p>
                             <?php } ?><br>
-                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></div></li>
+                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                        </div>
+                    </li>
                     <?php
                 }
                 echo '</ul>';
