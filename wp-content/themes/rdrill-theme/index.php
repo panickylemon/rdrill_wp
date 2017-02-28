@@ -20,13 +20,13 @@
 
                     <div class="news-item__additional-info clearfix">
                         <p class="news-date">
-                            <span class="news__additional-title">Дата</span>
+                            <span class="news__additional-title">Дата:</span>
                             <span><?php the_time('F jS, Y') ?></span>
                         </p>
 
                         <p class="news-author">
                             <span class="news__additional-title">Автор:</span>
-                            <span class="news-name">Фамилия Имя</span>
+                            <span class="news-name"><?php the_author(); ?></span>
                         </p>
                     </div>
 
