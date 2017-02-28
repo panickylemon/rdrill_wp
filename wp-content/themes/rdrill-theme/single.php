@@ -6,11 +6,14 @@
         <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
     </div>
 
+    <div class="l-container">
+    <?php get_sidebar('about-inner'); ?>
+
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post();?>
 
-            <div class="post">
-                <h2 class="title-post"><?php the_title(); ?></h2>
+            <div class="about-content">
+                <h1><?php the_title(); ?></h1>
 
                 <?php if ( has_post_thumbnail()) : ?>
                     <div class="post-thumb">
@@ -27,7 +30,7 @@
         <?php endwhile; ?>
 
     <?php endif; ?>
-
+    </div>
 </main>
 
 <?php get_footer(); ?>
