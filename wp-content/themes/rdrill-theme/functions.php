@@ -124,12 +124,12 @@ class asideMenuWalker extends Walker_Nav_Menu
     }
 
     //всем внутренним ul
-    function start_lvl2(&$output, $depth) {
+    function start_lvl(&$output, $depth) {
         $indent = str_repeat("\t", $depth);
         $output .= '<ul class="oooooyt-menu">';
     }
 
-    function start_el2(&$output, $item, $depth, $args) {
+    function start_el(&$output, $item, $depth, $args) {
         // назначаем классы li-элементу и выводим его
         $class_names = join( ' ', $item->classes );
         //всем li первого уровня

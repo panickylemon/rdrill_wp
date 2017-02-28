@@ -9,7 +9,8 @@
                 'menu'  => 93,
                 'depth' => 1, // уровень вложенности
                 'container' => false,
-                'menu_class' => 'about-sidebar__list'
+                'menu_class' => 'about-sidebar__list',
+                'walker' => $walker
             ));
         ?>
     </nav>
