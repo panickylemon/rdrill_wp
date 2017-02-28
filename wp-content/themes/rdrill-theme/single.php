@@ -1,21 +1,33 @@
-<?php if ( have_posts() ) : ?>
-    <?php while ( have_posts() ) : the_post();?>
+<?php get_header(); ?>
 
-        <div class="post">
-            <h2 class="title-post"><?php the_title(); ?></h2>
+<main class="content">
 
-            <?php if ( has_post_thumbnail()) : ?>
-                <div class="post-thumb">
-                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-                </div>
-            <?php endif; ?>
+    <div class="l-container">
+        <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+    </div>
 
-            <?php the_content(''); ?>
+    <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post();?>
 
-        </div>
+            <div class="post">
+                <h2 class="title-post"><?php the_title(); ?></h2>
 
-        <?php comments_template();?>
+                <?php if ( has_post_thumbnail()) : ?>
+                    <div class="post-thumb">
+                        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+                    </div>
+                <?php endif; ?>
 
-    <?php endwhile; ?>
+                <?php the_content(''); ?>
 
-<?php endif; ?>
+            </div>
+
+            <?php comments_template();?>
+
+        <?php endwhile; ?>
+
+    <?php endif; ?>
+
+</main>
+
+<?php get_footer(); ?>
