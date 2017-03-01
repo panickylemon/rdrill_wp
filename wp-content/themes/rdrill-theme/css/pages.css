@@ -436,8 +436,9 @@ h2.resp-accordion:first-child, h2.resp-accordion {
     border-radius: 4px;
 }
 
-.news-slider__image {
+.news-slider__image, .news-slider__item img {
     margin-bottom: 20px;
+    height: auto;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
