@@ -63,7 +63,7 @@
     <div class="home-about">
         <div class="l-container">
             <div class="home-about__image">
-                <img src="image/base/stanok-home.png" alt="станок">
+                <img src="/wp-content/themes/rdrill-theme/image/base/stanok-home.png" alt="станок">
             </div>
             <div class="home-about__text">
                 <!--<img class="home-about__logo" src="image/icons/logo-2.png" alt="лого">-->
@@ -106,7 +106,7 @@
                     <div class="content-tab content-tab1 ">
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-1.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-1.png">
 
                                 <p class="product-tab-title">
                                     <span>Магнитные сверлильные станки</span>
@@ -115,7 +115,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-2.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-2.png">
 
                                 <p class="product-tab-title">
                                     <span>Сверла из быстрорежущей стали</span>
@@ -124,7 +124,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-3.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-3.png">
 
                                 <p class="product-tab-title">
                                     <span>Сверла с напаянными пластинами</span>
@@ -133,7 +133,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-4.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
 
                                 <p class="product-tab-title">
                                     <span>Спиральные сверла (Weldon 19.05)</span>
@@ -142,7 +142,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-5.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
 
                                 <p class="product-tab-title">
                                     <span>Твердосплавные коронки</span>
@@ -151,7 +151,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-6.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-6.png">
 
                                 <p class="product-tab-title">
                                     <span>Мини-сверла</span>
@@ -162,7 +162,7 @@
                     <div class="content-tab content-tab2">
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-4.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
 
                                 <p class="product-tab-title">
                                     <span>Спиральные сверла (Weldon 19.05)</span>
@@ -171,7 +171,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-5.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
 
                                 <p class="product-tab-title">
                                     <span>Твердосплавные коронки</span>
@@ -180,7 +180,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-6.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-6.png">
 
                                 <p class="product-tab-title">
                                     <span>Мини-сверла</span>
@@ -189,7 +189,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-1.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-1.png">
 
                                 <p class="product-tab-title">
                                     <span>Магнитные сверлильные станки</span>
@@ -198,7 +198,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-2.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-2.png">
 
                                 <p class="product-tab-title">
                                     <span>Сверла из быстрорежущей стали</span>
@@ -207,7 +207,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-3.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-3.png">
 
                                 <p class="product-tab-title">
                                     <span>Сверла с напаянными пластинами</span>
@@ -218,7 +218,7 @@
                     <div class="content-tab content-tab3 is-active">
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-1.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-1.png">
 
                                 <p class="product-tab-title">
                                     <span>Магнитные сверлильные станки</span>
@@ -227,7 +227,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-2.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-2.png">
 
                                 <p class="product-tab-title">
                                     <span>Сверла из быстрорежущей стали</span>
@@ -236,7 +236,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-3.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-3.png">
 
                                 <p class="product-tab-title">
                                     <span>Сверла с напаянными пластинами</span>
@@ -245,7 +245,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-4.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
 
                                 <p class="product-tab-title">
                                     <span>Спиральные сверла (Weldon 19.05)</span>
@@ -254,7 +254,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-5.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
 
                                 <p class="product-tab-title">
                                     <span>Твердосплавные коронки</span>
@@ -263,7 +263,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="image/products/product-home-6.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-6.png">
 
                                 <p class="product-tab-title">
                                     <span>Мини-сверла</span>
@@ -276,34 +276,35 @@
         </div>
     </div>
 
-    <div class="l-container">
-        <div class="wrap-offers clearfix">
-            <div class="offer-item special-offer">
-                <img src="image/icons/special-offer.png">
-
-                <h3 class="offer-item__title">
-                    Специальное предложение от Rotabroach
-                </h3>
-
-                <p class="offer-item__description">
-                    Компания Rotabroach расширила ассортимент кольцевых сверел с твердосплавными напаянными
-                    пластинами. Теперь в наличии диаметры 12 и 13 миллиметров.
-                </p>
-            </div>
-            <div class="offer-item delivery-offer">
-                <img src="image/icons/delivery.png">
-
-                <h3 class="offer-item__title">
-                    Доставка продукции по всей России
-                </h3>
-
-                <p class="offer-item__description">
-                    Товар отпускается со склада в Санкт-Петербурге, доставка в регионы транспортной компанией
-                    или предложенным заказчиком способом.
-                </p>
-            </div>
-        </div>
-    </div>
+<!--    Блоки специальное предложение и Доставка продукции-->
+<!--    <div class="l-container">-->
+<!--        <div class="wrap-offers clearfix">-->
+<!--            <div class="offer-item special-offer">-->
+<!--                <img src="/wp-content/themes/rdrill-theme/image/icons/special-offer.png">-->
+<!---->
+<!--                <h3 class="offer-item__title">-->
+<!--                    Специальное предложение от Rotabroach-->
+<!--                </h3>-->
+<!---->
+<!--                <p class="offer-item__description">-->
+<!--                    Компания Rotabroach расширила ассортимент кольцевых сверел с твердосплавными напаянными-->
+<!--                    пластинами. Теперь в наличии диаметры 12 и 13 миллиметров.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="offer-item delivery-offer">-->
+<!--                <img src="/wp-content/themes/rdrill-theme/image/icons/delivery.png">-->
+<!---->
+<!--                <h3 class="offer-item__title">-->
+<!--                    Доставка продукции по всей России-->
+<!--                </h3>-->
+<!---->
+<!--                <p class="offer-item__description">-->
+<!--                    Товар отпускается со склада в Санкт-Петербурге, доставка в регионы транспортной компанией-->
+<!--                    или предложенным заказчиком способом.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <div class="marketing-block marketing-block-1">
         <div class="marketing-block__container">
@@ -342,12 +343,12 @@
                         </p>
                     </div>
                     <div class="advantages-image advantages-image--right">
-                        <img src="image/base/advantages-1.png">
+                        <img src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png">
                     </div>
                 </div>
                 <div class="advantages-item clearfix">
                     <div class="advantages-image advantages-image--left">
-                        <img src="image/base/advantages-2.png">
+                        <img src="/wp-content/themes/rdrill-theme/image/base/advantages-2.png">
                     </div>
                     <div class="advantages-text">
                         <p class="advantages-numbering">
@@ -390,7 +391,7 @@
                         </p>
                     </div>
                     <div class="advantages-image advantages-image--right">
-                        <img src="image/base/advantages-3.png">
+                        <img src="/wp-content/themes/rdrill-theme/image/base/advantages-3.png">
                     </div>
                 </div>
             </div>
@@ -409,7 +410,7 @@
                         <div class="news-slider__item">
                             <p class="news-slider__date">23 марта 2016</p>
                             <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="image/base/news-home.png" alt="">
+                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
                                 <p class="news-slider__title">
 										<span>
@@ -434,7 +435,7 @@
                         <div class="news-slider__item">
                             <p class="news-slider__date">23 марта 2016</p>
                             <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="image/base/news-home.png" alt="">
+                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
                                 <p class="news-slider__title">
 										<span>
@@ -459,7 +460,7 @@
                         <div class="news-slider__item">
                             <p class="news-slider__date">23 марта 2016</p>
                             <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="image/base/news-home.png" alt="">
+                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
                                 <p class="news-slider__title">
 										<span>
@@ -484,7 +485,7 @@
                         <div class="news-slider__item">
                             <p class="news-slider__date">23 марта 2016</p>
                             <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="image/base/news-home.png" alt="">
+                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
                                 <p class="news-slider__title">
 										<span>
@@ -509,7 +510,7 @@
                         <div class="news-slider__item">
                             <p class="news-slider__date">23 марта 2016</p>
                             <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="image/base/news-home.png" alt="">
+                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
                                 <p class="news-slider__title">
 										<span>
@@ -534,7 +535,7 @@
                         <div class="news-slider__item">
                             <p class="news-slider__date">23 марта 2016</p>
                             <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="image/base/news-home.png" alt="">
+                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
                                 <p class="news-slider__title">
 										<span>
