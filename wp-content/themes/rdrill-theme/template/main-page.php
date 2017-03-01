@@ -420,13 +420,9 @@
                                         <p class="news-slider__date"><?php the_time('j F Y'); ?></p>
                                         <a class="news-slider__item-link" href="<?php the_permalink() ?>">
                                             <?php if ( has_post_thumbnail() ) { ?>
-                                                <a href="<?php the_permalink() ?>">
                                                     <?php the_post_thumbnail('news-thumb'); ?>
-                                                </a>
                                             <?php } else { ?>
-                                                <a href="<?php the_permalink() ?>">
                                                     <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="фото">
-                                                </a>
                                             <?php } ?>
 
                                             <p class="news-slider__title">
