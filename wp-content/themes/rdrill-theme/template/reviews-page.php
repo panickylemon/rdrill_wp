@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Трололо
+ * Template Name: Страница отзывов
  */
 ?>
 
