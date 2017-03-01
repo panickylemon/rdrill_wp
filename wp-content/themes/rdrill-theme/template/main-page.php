@@ -403,187 +403,51 @@
             <h2>Новости</h2>
 
             <div>
-                <!--—BEGIN SLIDER -->
-                <div class="news-slider">
-                    <div id="news-slider" class="owl-carousel owl-theme">
+                <div class="other-news">
+                    <!--—BEGIN SLIDER -->
+                    <?php
+                    $wp_query = new WP_Query(array(
+                        'category__in' => 90,
+                        'posts_per_page' => 4,
+                        'paged' => $paged
+                    )); ?>
+                    <div class="news-slider">
+                        <div id="news-slider" class="owl-carousel owl-theme">
+                            <?php while ( have_posts() ) : the_post();?>
 
-                        <div class="news-slider__item">
-                            <p class="news-slider__date">23 марта 2016</p>
-                            <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
+                                <div class="news-slider__item">
+                                    <div class="news-slider__item">
+                                        <p class="news-slider__date">23 марта 2016</p>
+                                        <a class="news-slider__item-link">
+                                            <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
-                                <p class="news-slider__title">
+                                            <p class="news-slider__title">
 										<span>
-										Итоги продаж за первый квартал 2016 года
+										<?php the_title(); ?>
 										</span>
-                                </p>
+                                            </p>
 
-                                <div class="news-slider__item-hover">
-                                    <h3>Итоги продаж за первый квартал 2016 года</h3>
+                                            <div class="news-slider__item-hover">
+                                                <h3><?php the_title(); ?></h3>
 
-                                    <p class="news-slider__item-description">
-                                        Работа выполнена на тлично. Вежливо, доходчиво,
-                                        с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
-                                        специалистов Автомамы.
-                                    </p>
+                                                <p class="news-slider__item-description">
+                                                    Работа выполнена на тлично. Вежливо, доходчиво,
+                                                    с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
+                                                    специалистов Автомамы.
+                                                </p>
 
-                                    <p class="news-slider__item-read">Читать дальше</p>
+                                                <p class="news-slider__item-read">Читать дальше</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
 
-                        <div class="news-slider__item">
-                            <p class="news-slider__date">23 марта 2016</p>
-                            <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
-
-                                <p class="news-slider__title">
-										<span>
-										Расширение ассортимента!
-										</span>
-                                </p>
-
-                                <div class="news-slider__item-hover">
-                                    <h3>Расширение ассортимента</h3>
-
-                                    <p class="news-slider__item-description">
-                                        Работа выполнена на тлично. Вежливо, доходчиво,
-                                        с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
-                                        специалистов Автомамы.
-                                    </p>
-
-                                    <p class="news-slider__item-read">Читать дальше</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="news-slider__item">
-                            <p class="news-slider__date">23 марта 2016</p>
-                            <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
-
-                                <p class="news-slider__title">
-										<span>
-										Расширение ассортимента!
-										</span>
-                                </p>
-
-                                <div class="news-slider__item-hover">
-                                    <h3>Расширение ассортимента</h3>
-
-                                    <p class="news-slider__item-description">
-                                        Работа выполнена на тлично. Вежливо, доходчиво,
-                                        с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
-                                        специалистов Автомамы.
-                                    </p>
-
-                                    <p class="news-slider__item-read">Читать дальше</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="news-slider__item">
-                            <p class="news-slider__date">23 марта 2016</p>
-                            <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
-
-                                <p class="news-slider__title">
-										<span>
-										Итоги продаж за первый квартал 2016 года
-										</span>
-                                </p>
-
-                                <div class="news-slider__item-hover">
-                                    <h3>Итоги продаж за первый квартал 2016 года</h3>
-
-                                    <p class="news-slider__item-description">
-                                        Работа выполнена на тлично. Вежливо, доходчиво,
-                                        с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
-                                        специалистов Автомамы.
-                                    </p>
-
-                                    <p class="news-slider__item-read">Читать дальше</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="news-slider__item">
-                            <p class="news-slider__date">23 марта 2016</p>
-                            <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
-
-                                <p class="news-slider__title">
-										<span>
-										Компания «Портал» поздравляет Вас с Новым...
-										</span>
-                                </p>
-
-                                <div class="news-slider__item-hover">
-                                    <h3>Компания «Портал» поздравляет Вас с Новым...</h3>
-
-                                    <p class="news-slider__item-description">
-                                        Работа выполнена на тлично. Вежливо, доходчиво,
-                                        с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
-                                        специалистов Автомамы.
-                                    </p>
-
-                                    <p class="news-slider__item-read">Читать дальше</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="news-slider__item">
-                            <p class="news-slider__date">23 марта 2016</p>
-                            <a class="news-slider__item-link">
-                                <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
-
-                                <p class="news-slider__title">
-										<span>
-										Итоги продаж за первый квартал 2016 года
-										</span>
-                                </p>
-
-                                <div class="news-slider__item-hover">
-                                    <h3>Итоги продаж за первый квартал 2016 года</h3>
-
-                                    <p class="news-slider__item-description">
-                                        Работа выполнена на тлично. Вежливо, доходчиво,
-                                        с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
-                                        специалистов Автомамы.
-                                    </p>
-
-                                    <p class="news-slider__item-read">Читать дальше</p>
-                                </div>
-                            </a>
-                        </div>
-
-
-                    </div>
-                </div>
-                <!--—END SLIDER -->
-            </div>
-
-            <div class="other-news">
-                <?php
-                $wp_query = new WP_Query(array(
-                    'category__in' => 90,
-                    'posts_per_page' => 4,
-                    'paged' => $paged
-                )); ?>
-                <?php while ( have_posts() ) : the_post();?>
-                <div class="news-slider">
-                    <div id="news-slider" class="owl-carousel owl-theme">
-                        <div class="news-slider__item">
-
-                             <h2 class="news-preview__title"><?php the_title(); ?></h2>
-
+                            <?php endwhile; ?>
                         </div>
                     </div>
+                    <!--—END SLIDER -->
                 </div>
-                <?php endwhile; ?>
-
             </div>
-
         </div>
     </div>
 
