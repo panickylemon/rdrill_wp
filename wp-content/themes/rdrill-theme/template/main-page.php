@@ -417,7 +417,7 @@
 
                                 <div class="news-slider__item">
                                     <div class="news-slider__item">
-                                        <p class="news-slider__date">23 марта 2016</p>
+                                        <p class="news-slider__date"><?php the_date('j F Y'); ?></p>
                                         <a class="news-slider__item-link">
                                             <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
