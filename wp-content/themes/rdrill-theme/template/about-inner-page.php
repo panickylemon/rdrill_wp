@@ -16,7 +16,14 @@
         <?php get_sidebar('about-inner'); ?>
 
         <div class="about-content">
-            <h1><?php the_title(); ?></h1>
+
+            <?php $page_title = get_post_meta( $post->ID, 'page_title', true ); ?>
+            <?php if (!empty($page_title)) { ?>
+                <h1><?php echo $page_title ?></h1>
+            <?php } else { ?>
+                <h1><?php the_title(); ?></h1>
+            <?php } ?>
+
             <div class="brand-content">
                 <?php if (have_posts()): while (have_posts()): the_post(); ?>
                     <?php the_content(); ?>
