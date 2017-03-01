@@ -208,7 +208,7 @@
                             </a>
                         <?php } else { ?>
                             <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
-                                <img class="other-news__item-img" src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
+                                <img src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
                             </a>
                         <?php } ?>
                         <a class="other-news__item-link" onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"
