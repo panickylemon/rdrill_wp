@@ -8,7 +8,14 @@
     <div class="contacts-wrap">
         <div class="l-container">
             <h1><?php the_title(); ?></h1>
-            <p><?php echo get_field('page_title'); ?></p>
+
+            <?php $page_title = get_post_meta( $post->ID, 'page_title', true ); ?>
+            <?php if (!empty($page_title)) { ?>
+                <p><?php echo $page_title ?></p>
+
+            <?php }?>
+
+
             <?php if (have_posts()): while (have_posts()): the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; endif; ?>
