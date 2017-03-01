@@ -408,7 +408,7 @@
                     <?php
                     $wp_query = new WP_Query(array(
                         'category__in' => 90,
-                        'posts_per_page' => 4,
+                        'posts_per_page' => 6,
                         'paged' => $paged
                     )); ?>
                     <div class="news-slider">
