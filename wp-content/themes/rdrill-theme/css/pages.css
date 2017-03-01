@@ -387,6 +387,10 @@ h2.resp-accordion:first-child, h2.resp-accordion {
     color: #f84630;
 }
 
+.advantages-number{
+    padding: 0 3px;
+}
+
 .advantages-line {
     display: inline-block;
     margin-bottom: 6px;
