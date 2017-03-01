@@ -62,8 +62,8 @@ do_action('woocommerce_before_main_content');
     </div>
 
     <div class="l-container">
-        <?php echo do_shortcode( '[woof sid="auto_shortcode" autohide=0 taxonomies=product_cat:9 ]' ); ?>
-<?php echo do_shortcode( '[woof_products per_page=8 columns=3 is_ajax=0 taxonomies=product_cat:9]' ); ?>
+        <?php echo do_shortcode( '[woof sid="auto_shortcode" autohide=0]' ); ?>
+<?php echo do_shortcode( '[woof_products per_page=8 columns=3 is_ajax=0]' ); ?>
 
         <div class="button-show-filter"><span>Показать фильтр</span></div>
         <div class="filter-sidebar">
