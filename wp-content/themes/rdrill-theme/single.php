@@ -212,7 +212,7 @@
                             </a>
                         <?php } ?>
                         <a class="other-news__item-link" onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"
-                            rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                            rel="bookmark" title="<?php the_title(); ?>"><span><?php the_title(); ?></span></a>
                     </div>
                     <?php
                 }
