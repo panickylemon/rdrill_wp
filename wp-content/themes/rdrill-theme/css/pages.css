@@ -1099,7 +1099,11 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 }
 
 .help-page .news-preview{
-    margin: 20px 0 0;
+    margin: 40px 0 0;
+}
+
+.help-page .news-preview img{
+    margin: 0 !important;
 }
 
 .about-page h1, .page-title {
