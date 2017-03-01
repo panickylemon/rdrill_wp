@@ -562,6 +562,47 @@
                 </div>
                 <!--—END SLIDER -->
             </div>
+
+            <div class="other-news">
+                <?php
+                $categories = get_the_category($post->ID);
+                if ($categories) {
+                    $category_ids = array();
+                    foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+                    $args=array(
+                        'category__in' => $category_ids,
+                        'post__not_in' => array($post->ID),
+                        'showposts'=>14,  //количество выводимых ячеек
+                        'orderby'=>'rand', // в случайном порядке
+                        'ignore_sticky_posts'=>1); //исключаем одинаковые записи
+                    $my_query = new wp_query($args);
+                    if( $my_query->have_posts() ) {
+                        echo '<div class="other-news__wrap clearfix">';
+                        while ($my_query->have_posts()) {
+                            $my_query->the_post();
+                            ?>
+                            <div class="other-news__item">
+                                <?php if ( has_post_thumbnail() ) { ?>
+                                    <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                                        <?php the_post_thumbnail('similar-thumb'); ?>
+                                    </a>
+                                <?php } else { ?>
+                                    <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                                        <img src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
+                                    </a>
+                                <?php } ?>
+                                <a class="other-news__item-link" onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"
+                                   rel="bookmark" title="<?php the_title(); ?>"><span><?php the_title(); ?></span></a>
+                            </div>
+                            <?php
+                        }
+                        echo '</div>';
+                    }
+                    wp_reset_query();
+                }
+                ?>
+            </div>
+
         </div>
     </div>
 
