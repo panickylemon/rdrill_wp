@@ -153,6 +153,47 @@ class asideMenuWalker extends Walker_Nav_Menu
 }
 
 
+//Боковое меню
+class helpMenuWalker extends Walker_Nav_Menu
+{
+    function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output )
+    {
+        $id_field = $this->db_fields['id'];
+        if ( is_object( $args[0] ) ) {
+            $args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
+        }
+        return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+    }
+
+    //всем внутренним ul
+    function start_lvl(&$output, $depth) {
+        $indent = str_repeat("\t", $depth);
+        $output .= '<ul>';
+    }
+
+    function start_el(&$output, $item, $depth, $args) {
+        // назначаем классы li-элементу и выводим его
+        $class_names = join( ' ', $item->classes );
+
+        $class_names = ' class="' .esc_attr( $class_names ). '"';
+
+        $output.= '<li id="menu-item-' . $item->ID . '"' .$class_names. '>';
+
+
+        $attributes = !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
+        $item_output = $args->before;
+        //всем ссылкам первого уровня
+        if ($depth == 0) {
+            $item_output.= '<a class = "about-sidebar__list-item"'. $attributes .'>'.$item->title.'</a>';
+        }
+
+        // заканчиваем вывод элемента
+        $item_output.= $args->after;
+        $output.= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+    }
+}
+
+
 // Конец Меню
 
 

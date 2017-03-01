@@ -4,9 +4,9 @@
             О компании
         </p>
         <?php
-            $walker = new asideMenuWalker();
+            $walker = new helpMenuWalker();
             wp_nav_menu( array(
-                'menu'  => 93,
+                'menu'  => 94,
                 'depth' => 1, // уровень вложенности
                 'container' => false,
                 'menu_class' => 'about-sidebar__list',
