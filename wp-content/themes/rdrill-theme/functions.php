@@ -56,7 +56,8 @@ if(function_exists('register_nav_menus')){
 	register_nav_menus(
 			array(
 					'main_menu' => 'Главное меню',
-					'aside_menu' => 'Меню для дочерних раздела > О компании'
+					'aside_menu' => 'Меню для дочерних раздела > О компании',
+                    'aside-help_menu' => 'Меню для дочерних раздела > Помощь'
 			)
 	);
 }
