@@ -1098,6 +1098,10 @@ h2.resp-accordion:first-child, h2.resp-accordion {
     margin: 0 0 15px !important;
 }
 
+.help-page .news-preview{
+    margin: 20px 0 0;
+}
+
 .about-page h1, .page-title {
     margin: -10px 0 30px;
 }
