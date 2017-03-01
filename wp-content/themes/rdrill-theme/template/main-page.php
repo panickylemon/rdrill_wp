@@ -431,9 +431,7 @@
                                                 <h3><?php the_title(); ?></h3>
 
                                                 <p class="news-slider__item-description">
-                                                    Работа выполнена на тлично. Вежливо, доходчиво,
-                                                    с вниманием. Большие профессионалы. Рекомендую воспользоваться услугами
-                                                    специалистов Автомамы.
+                                                    <?php echo get_field('news_description'); ?>
                                                 </p>
 
                                                 <p class="news-slider__item-read">Читать дальше</p>
