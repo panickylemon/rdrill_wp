@@ -1073,6 +1073,11 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 
 .other-news__item-link span {
     border-bottom: 1px solid #d8d8d8;
+    color: #666666;
+}
+
+.other-news__item-link:focus span{
+    color: #666666;
 }
 
 .other-news__item-link:hover {
