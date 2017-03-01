@@ -13,7 +13,7 @@
 
 <main class="content">
     <div class="l-container">
-        <?php get_sidebar('about-inner'); ?>
+        <?php get_sidebar('help-inner'); ?>
 
         <div class="about-content">
             <h1><?php the_title(); ?></h1>
