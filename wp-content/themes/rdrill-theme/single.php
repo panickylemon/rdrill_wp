@@ -223,33 +223,6 @@
         ?>
     </div>
 
-    <div class="l-container other-news">
-        <p class="other-news__title">Рекомендуем почитать дополнительно:</p>
-        <div class="other-news__wrap clearfix">
-
-            <div class="other-news__item other-news__item-first">
-                <img class="other-news__item-img" src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
-                <a class="other-news__item-link" href="#"><span>Заголовок новости</span></a>
-            </div>
-
-            <div class="other-news__item other-news__item-second">
-                <img class="other-news__item-img" src="image/base/advantages-1.png" alt="фото">
-                <a class="other-news__item-link" href="#"><span>Заголовок новости</span></a>
-            </div>
-
-            <div class="other-news__item other-news__item-third">
-                <img class="other-news__item-img" src="image/base/advantages-1.png" alt="фото">
-                <a class="other-news__item-link" href="#"><span>Заголовок новости</span></a>
-            </div>
-
-            <div class="other-news__item other-news__item-last">
-                <img class="other-news__item-img" src="image/base/advantages-1.png" alt="фото">
-                <a class="other-news__item-link" href="#"><span>Заголовок новости</span></a>
-            </div>
-
-        </div>
-    </div>
-
 </main>
 
 <?php get_footer(); ?>
