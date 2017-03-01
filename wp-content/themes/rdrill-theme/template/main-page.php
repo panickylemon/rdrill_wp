@@ -571,7 +571,15 @@
                     'paged' => $paged
                 )); ?>
                 <?php while ( have_posts() ) : the_post();?>
-                    <h2 class="news-preview__title"><?php the_title(); ?></h2>
+                <div class="news-slider">
+                    <div id="news-slider" class="owl-carousel owl-theme">
+                        <div class="news-slider__item">
+
+                             <h2 class="news-preview__title"><?php the_title(); ?></h2>
+
+                        </div>
+                    </div>
+                </div>
                 <?php endwhile; ?>
 
             </div>
