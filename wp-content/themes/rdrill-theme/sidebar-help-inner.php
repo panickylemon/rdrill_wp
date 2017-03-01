@@ -1,7 +1,7 @@
 <div class="about-sidebar">
     <nav class="about-menu">
         <p class="about-sidebar__title">
-            О компании
+            Помощь
         </p>
         <?php
             $walker = new helpMenuWalker();
