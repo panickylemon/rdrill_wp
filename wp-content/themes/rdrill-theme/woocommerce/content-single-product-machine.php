@@ -169,6 +169,20 @@ if ( ! defined( 'ABSPATH' ) ) {
          </div>
      </div>
 
+    <!-- Баннер -->
+    <div class="marketing-block marketing-block-2">
+        <div class="marketing-block__container">
+            <div class="l-container marketing-block__content">
+                <p class="marketing-block__text">У Вас есть вопросы?</p>
+
+                <p class="marketing-block__text">Свяжитесь с нашим менеджером по продажам</p>
+                <a class="base-button base-button--red marketing-block__button" href="#">
+                    Связаться с менеджером
+                </a>
+            </div>
+        </div>
+    </div>
+
 
 </div><!-- #end catalog catalog-item -->
 
