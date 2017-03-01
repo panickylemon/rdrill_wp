@@ -418,7 +418,7 @@
                                 <div class="news-slider__item">
                                     <div class="news-slider__item">
                                         <p class="news-slider__date"><?php the_time('j F Y'); ?></p>
-                                        <a class="news-slider__item-link">
+                                        <a class="news-slider__item-link" href="<?php the_permalink() ?>">
                                             <img class="news-slider__image" src="/wp-content/themes/rdrill-theme/image/base/news-home.png" alt="">
 
                                             <p class="news-slider__title">
