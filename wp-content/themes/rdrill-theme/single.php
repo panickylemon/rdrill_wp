@@ -203,11 +203,11 @@
                     ?>
                     <div class="other-news__item">
                         <?php if ( has_post_thumbnail() ) { ?>
-                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                            <a href="<?php the_permalink() ?>">
                                 <?php the_post_thumbnail('similar-thumb'); ?>
                             </a>
                         <?php } else { ?>
-                            <a onclick="return !window.open(this.href)" href="<?php the_permalink() ?>">
+                            <a href="<?php the_permalink() ?>">
                                 <img src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
                             </a>
                         <?php } ?>

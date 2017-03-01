@@ -361,7 +361,13 @@ function dimox_breadcrumbs() {
     }
 } // end of dimox_breadcrumbs()
 
+
+//Создание миниатюр
 if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'similar-thumb', 433, 254, array( 'left', 'top' ) );
+}
+
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'news-thumb', 401, 378, array( 'left', 'top' ) );
 }
 
