@@ -1058,6 +1058,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 
 .other-news__item img {
     width: 95%;
+    height: auto;
 }
 
 .other-news__item-link {
