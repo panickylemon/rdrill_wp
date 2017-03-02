@@ -66,7 +66,7 @@ do_action('woocommerce_before_main_content');
        // echo do_shortcode( '[woof sid="auto_shortcode" autohide=0 autosubmit=0 taxonomies=product_cat:8 ]' );
 
 
-        echo do_shortcode( '[Form id="1"]' );
+        echo do_shortcode( '[huge_it_forms id="3"]' );
         ?>
         <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
