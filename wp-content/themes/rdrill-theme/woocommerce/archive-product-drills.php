@@ -67,7 +67,6 @@ do_action('woocommerce_before_main_content');
         ?>
         <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
-
 <?php
 
 echo do_shortcode( '[woof_products per_page=8 columns=3 is_ajax=1 taxonomies=product_cat:8]' );
