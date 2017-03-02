@@ -59,7 +59,7 @@ class WC_Template_Loader {
 			if ( is_tax( 'product_cat' ) || is_tax( 'product_tag' ) ) {
 				$file = 'taxonomy-' . $term->taxonomy . '.php';
 			} else {
-				$file = 'archive-product.php';
+				$file = 'archive-product111.php';
 			}
 
 			$find[] = 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
