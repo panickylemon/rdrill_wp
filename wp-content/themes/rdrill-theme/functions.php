@@ -413,3 +413,14 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'news-thumb', 401, 378, array( 'left', 'top' ) );
 }
 
+
+
+// Поддрежка виджетов
+if ( function_exists('register_sidebar') ) {
+    register_sidebar(array(
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<span class="widgettitle">',
+        'after_title' => '</span>',
+    ));
+}
