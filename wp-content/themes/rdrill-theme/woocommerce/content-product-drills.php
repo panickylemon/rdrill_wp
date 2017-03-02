@@ -30,13 +30,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 <div class="catalog-product">
     <h1><?php echo get_the_title() ?></h1>
-    <a href="<?php echo get_the_permalink() ?>" class="catalog-product__content">
-        <div class="catalog-product__img">
-            <?php do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
-        </div>
-        <p class="catalog-product__title"><span><?php echo get_the_title() ?></span></p>
-        <div itemprop="description" class="catalog-product__description">
-            <?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
-        </div>
-    </a>
+
 </div>
