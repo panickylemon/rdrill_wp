@@ -59,7 +59,7 @@ class WC_Template_Loader {
 			if ( is_tax( 'product_cat' ) || is_tax( 'product_tag' ) ) {
 				$file = 'taxonomy-' . $term->taxonomy . '.php';
 			} else {
-				$file = 'archive-product111.php';
+				$file = 'archive-product.php';
 			}
 
 			$find[] = 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
@@ -71,7 +71,7 @@ class WC_Template_Loader {
 
 		} elseif ( is_post_type_archive( 'product' ) || is_page( wc_get_page_id( 'shop' ) ) ) {
 
-			$file 	= 'archive-product.php';
+			$file 	= 'archive-productsss.php';
 			$find[] = $file;
 			$find[] = WC()->template_path() . $file;
 
