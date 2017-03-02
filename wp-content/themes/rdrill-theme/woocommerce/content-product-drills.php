@@ -29,7 +29,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 
 <div class="catalog-product">
-    <h1><?php echo get_the_title() ?></h1>
     <a href="<?php echo get_the_permalink() ?>" class="catalog-product__content">
         <div class="catalog-product__img">
             <?php do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
