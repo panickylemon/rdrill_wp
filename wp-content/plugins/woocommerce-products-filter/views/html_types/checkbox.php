@@ -203,7 +203,7 @@ if (!function_exists('woof_draw_checkbox_childs'))
                         echo apply_filters('woof_before_term_name', $term, $taxonomy_info);
                     else
                         echo $term['name'];
-                    ?><?php echo $count_string ?></label>
+                    ?></label>
                 <?php
                 if (!empty($term['childs']))
                 {
