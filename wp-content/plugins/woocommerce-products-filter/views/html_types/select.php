@@ -180,7 +180,7 @@ $tax_slug ?>">
                     echo apply_filters('woof_before_term_name', $term, $taxonomy_info);
                 else
                     echo $term['name'];
-                ?> <?php echo $count_string ?></option>
+                ?></option>
             <?php
             if (!isset($collector[$tax_slug]))
             {
