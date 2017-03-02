@@ -108,7 +108,7 @@ if (!function_exists('woof_print_tax'))
             <div class="woof_container_overlay_item"></div>
             <div class="woof_container_inner woof_container_inner_<?php echo $primax_class ?>">
                 <?php
-                $css_classes = "woof_block_html_items";
+                $css_classes = "woof_block_html_items filter-item__content";
                 $show_toggle = 0;
                 if (isset($WOOF->settings['show_toggle_button'][$tax_slug]))
                 {
