@@ -137,9 +137,9 @@ if (!function_exists('woof_print_tax'))
                         if ($WOOF->settings['show_title_label'][$tax_slug])
                         {
                             ?>
-                            <<?php echo apply_filters('woof_title_tag', 'p'); ?>><?php echo
+                            <<?php echo '<p class="filter-item__title">'; ?>><?php echo
                             WOOF_HELPER::wpml_translate($taxonomies_info[$tax_slug]) ?><?php
-                            WOOF_HELPER::draw_title_toggle($show_toggle, $block_is_closed); ?></<?php echo apply_filters('woof_title_tag', 'p'); ?>>
+                            WOOF_HELPER::draw_title_toggle($show_toggle, $block_is_closed); ?></<?php echo '<p>'; ?>>
                             <?php
                         }
 
