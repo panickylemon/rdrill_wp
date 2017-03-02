@@ -34,7 +34,7 @@ elseif (in_array($category, $accessories)) {
     wc_get_template( 'archive-product-accessories.php' );
 }
 else {
-    wc_get_template( 'archive-productxxx.php' );
+    wc_get_template( 'archive-product.php' );
 }
 
 //wc_get_template( 'archive-product.php' );
