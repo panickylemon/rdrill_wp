@@ -111,7 +111,8 @@ if (!function_exists('woof_draw_select_childs'))
 
 }
 ?>
-<select class="woof_select woof_select_<?php echo $tax_slug ?>" name="<?php echo $tax_slug ?>">
+<select class="selectpicker diameter-select woof_select woof_select_<?php echo $tax_slug ?>" name="<?php echo
+$tax_slug ?>">
     <option value="0"><?php echo WOOF_HELPER::wpml_translate($taxonomy_info) ?></option>
     <?php
     $woof_tax_values = array();
