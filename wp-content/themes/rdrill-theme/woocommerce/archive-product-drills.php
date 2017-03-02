@@ -64,8 +64,6 @@ do_action('woocommerce_before_main_content');
     <div class="l-container">
         <?php
        // echo do_shortcode( '[woof sid="auto_shortcode" autohide=0 autosubmit=0 taxonomies=product_cat:8 ]' );
-        echo do_shortcode( '[contact-form-7 id="296" title="Контактная форма 1"]' );
-
         ?>
         <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
