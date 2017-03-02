@@ -528,9 +528,10 @@ if (!function_exists('woof_print_item_by_key'))
                                 $woof_reset_btn_txt = WOOF_HELPER::wpml_translate(null, $woof_reset_btn_txt);
                                 ?>
 
-                                <?php if ($woof_reset_btn_txt != 'none'): ?>
-                                    <button style="float: right;" class="button woof_reset_search_form" data-link="<?php echo $woof_link ?>"><?php echo $woof_reset_btn_txt ?></button>
-                                <?php endif; ?>
+
+                                    <button style="float: right;" class="button woof_reset_search_form" data-link="<?php echo
+                                    $woof_link ?>">Сбросить</button>
+
                             <?php endif; ?>
 
                             <?php if (!$autosubmit OR $ajax_redraw): ?>
@@ -538,7 +539,7 @@ if (!function_exists('woof_print_item_by_key'))
                                 $woof_filter_btn_txt = __('Filter', 'woocommerce-products-filter');
                                 $woof_filter_btn_txt = WOOF_HELPER::wpml_translate(null, $woof_filter_btn_txt);
                                 ?>
-                                <button style="float: left;" class="button woof_submit_search_form"><?php echo $woof_filter_btn_txt ?></button>
+                                <button style="float: left;" class="button woof_submit_search_form">Показать</button>
     <?php endif; ?>
 
                         </div>
