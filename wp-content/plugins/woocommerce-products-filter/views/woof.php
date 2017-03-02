@@ -163,7 +163,7 @@ if (!function_exists('woof_print_tax'))
                             <?php
                         }
                         ?>
-                        <div class="<?php echo $css_classes ?>">
+                        <div class="filter-select-wrap <?php echo $css_classes ?>">
                             <?php
                             echo $WOOF->render_html(WOOF_PATH . 'views/html_types/select.php', $args);
                             ?>
