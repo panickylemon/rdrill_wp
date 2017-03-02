@@ -1,17 +1,18 @@
 <?php
 /**
- * Template Name: Внутренние страницы раздела "Помощь"
+ * Template Name: Страницы раздела "Помощь"
  */
 ?>
 
 
 <?php get_header(); ?>
 
-<div class="l-container">
-    <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
-</div>
-
 <main class="content">
+
+    <div class="l-container">
+        <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+    </div>
+
     <div class="l-container">
         <?php get_sidebar('help-inner'); ?>
 
