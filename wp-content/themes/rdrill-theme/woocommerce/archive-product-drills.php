@@ -70,7 +70,7 @@ do_action('woocommerce_before_main_content');
 
 <?php
 
-echo do_shortcode( '[woof_products per_page=1 columns=3 is_ajax=1 taxonomies=product_cat:8]' );
+echo do_shortcode( '[woof_products per_page=1 columns=3 is_ajax=1 taxonomies=product_cat:8 ustom_tpl=themes\rdrill-theme\woocommerce\content-single-product.php]' );
 ?>
 
         <div class="button-show-filter"><span>Показать фильтр</span></div>
