@@ -62,19 +62,7 @@ do_action('woocommerce_before_main_content');
     </div>
 
     <div class="l-container">
-        <div class="filter-sidebar">
-            <div class="filter-catalog" id="filter-form">
-                <?php
-                echo do_shortcode( '[woof sid="auto_shortcode" tax_only="product_cat,pa_glubina-sverl" autohide=0 autosubmit=0
-                    taxonomies=product_cat:8]' );
-                ?>
 
-                <?php
-                echo do_shortcode( '[woof_products per_page=1 columns=3 is_ajax=1 taxonomies=product_cat:8
-                    custom_tpl=themes/rdrill-theme/woocommerce/content-product-drills.php]' );
-                ?>
-            </div>
-        </div>
 
         <div class="button-show-filter"><span>Показать фильтр</span></div>
         <div class="filter-sidebar">
