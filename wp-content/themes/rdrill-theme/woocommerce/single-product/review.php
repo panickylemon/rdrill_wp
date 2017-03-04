@@ -69,3 +69,4 @@ comment_ID() ?>">
 
 		</div>
 	</div>
+</div>
