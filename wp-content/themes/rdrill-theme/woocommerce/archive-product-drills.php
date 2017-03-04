@@ -71,7 +71,8 @@ do_action('woocommerce_before_main_content');
                 ?>
 
                 <?php
-                echo do_shortcode( '[woof_products per_page=1 columns=3 is_ajax=1 taxonomies=product_cat:8 custom_tpl="rdrill-theme\woocommerce\content-product-drills2.php"]' );
+                echo do_shortcode( '[woof_products per_page=1 columns=3 is_ajax=1 taxonomies=product_cat:8
+                custom_tpl="themes/rdrill-theme/woocommerce/content-product-drills2.php"]' );
                 ?>
             </div>
 
