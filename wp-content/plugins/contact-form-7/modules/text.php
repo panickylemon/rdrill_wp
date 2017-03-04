@@ -87,9 +87,15 @@ function wpcf7_text_form_tag_handler( $tag ) {
 
 	$atts = wpcf7_format_atts( $atts );
 
-	$html = sprintf(
-		'<input %1$s />%2$s',
-		$atts, $validation_error );
+	if ( $tag->is_required() ) {
+		$html = sprintf(
+				'<input %1$s required=""/>%2$s',
+				$atts, $validation_error);
+	} else {
+		$html = sprintf(
+				'<input %1$s />%2$s',
+				$atts, $validation_error);
+	}
 
 	return $html;
 }
