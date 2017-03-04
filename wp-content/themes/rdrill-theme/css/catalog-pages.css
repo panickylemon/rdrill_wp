@@ -359,6 +359,10 @@ tr.sorting-model__item {
     padding: 0 !important;
 }
 
+ul.woof_list {
+    padding: 0 0 0 9px !important;
+}
+
 .sorting-buttons {
     font-size: 12px;
     font-weight: 900;
@@ -573,8 +577,8 @@ tr.sorting-model__item {
 }
 
 .filter-item__content .checkbox {
-    padding: 0 0 17px 20px;
-    margin: 0;
+    padding: 0 0 17px 20px !important;
+    margin: 0 !important;
 }
 
 #filter-form .dropdown-toggle, .dropdown-menu {
