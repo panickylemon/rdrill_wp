@@ -222,5 +222,9 @@ $(document).ready(function () {
         });
         return false;
     });
+
+    $('#request-form').on('show.bs.modal', function (e) {
+        $('#product').val(window.location.pathname);
+    })
 });
 
