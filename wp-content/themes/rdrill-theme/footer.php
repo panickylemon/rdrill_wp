@@ -5,23 +5,13 @@
 	<div class="b-modal modal-dialog" role="document">
 		<a href="#" class="modal-close" data-dismiss="modal"></a>
 		<?php echo do_shortcode( '[contact-form-7 id="316" html_id="feedback" title="Обратная связь"]' ); ?>
-<!--		<form class="modal-form" id="feeadback" data-parsley-validate="">-->
-<!--			-->
-<!--			<label for="name">ФИО</label>-->
-<!--			<input placeholder="ФИО*" type="text" name="name" id="name" required="">-->
-<!---->
-<!--			<label for="phone">Телефон для связи</label>-->
-<!--			<input placeholder="Телефон для связи*" type="text" name="phone" id="phone" required="">-->
-<!---->
-<!--			<label for="email">Email</label>-->
-<!--			<input placeholder="Email" type="email" name="email" id="email">-->
-<!--			<label for="comment">Комментарий</label>-->
-<!--			<textarea placeholder="Дополнительный комментарий" name="comment" id="comment"></textarea>-->
-<!---->
-<!--			<div class="wrap-button">-->
-<!--				<button class="base-button base-button--red button-submit">Отправить</button>-->
-<!--			</div>-->
-<!--		</form>-->
+	</div>
+</div>
+
+<div class="l-modal modal fade" id="make-request-form" tabindex="-1" role="dialog">
+	<div class="b-modal modal-dialog" role="document">
+		<a href="#" class="modal-close" data-dismiss="modal"></a>
+		<?php echo do_shortcode( '[contact-form-7 id="323" html_id="request" title="Заявка (товар)"]' ); ?>
 	</div>
 </div>
 
