@@ -370,6 +370,7 @@ class WPCF7_ContactForm {
 			'enctype' => wpcf7_enctype_value( $enctype ),
 			'autocomplete' => $autocomplete,
 			'novalidate' => $novalidate ? 'novalidate' : '',
+			'data-parsley-validate' => ''
 		);
 
 		if ( '' !== $id_attr ) {
