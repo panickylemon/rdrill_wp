@@ -62,6 +62,7 @@ if ( ! comments_open() ) {
 
 		<div id="review_form_wrapper" class="l-modal modal fade" tabindex="-1" role="dialog">
 			<div id="review_form" class="b-modal modal-dialog" role="document">
+				<a href="#" class="modal-close" data-dismiss="modal"></a>
 				<?php
 					$commenter = wp_get_current_commenter();
 
