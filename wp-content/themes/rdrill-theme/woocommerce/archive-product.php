@@ -55,7 +55,7 @@ do_action('woocommerce_before_main_content');
 				</div>
 			</div>
 		<?php else: ?>
-				<p>На хуй иди!!</p>
+				<p>Товаров не найдено!</p>
 		<?php endif; ?>
 
 		<?php
