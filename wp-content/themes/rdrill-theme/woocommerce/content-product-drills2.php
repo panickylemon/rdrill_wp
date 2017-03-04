@@ -52,14 +52,14 @@ define('WOOF_EXT_PATH', WOOF_PATH . 'ext/');
 define('WOOF_VERSION', '1.1.6.1');
 define('WOOF_MIN_WOOCOMMERCE_VERSION', '2.4');
 //classes
-include WOOF_PATH . 'classes/storage.php';
-include WOOF_PATH . 'classes/helper.php';
-include WOOF_PATH . 'classes/cron.php';
-include WOOF_PATH . 'classes/hooks.php';
-include WOOF_PATH . 'classes/ext.php';
+include WOOF_PATH . 'wp-content/plugins/woocommerce-products-filter/classes/storage.php';
+include WOOF_PATH . 'wp-content/plugins/woocommerce-products-filter/classes/helper.php';
+include WOOF_PATH . 'wp-content/plugins/woocommerce-products-filter/classes/cron.php';
+include WOOF_PATH . 'wp-content/plugins/woocommerce-products-filter/classes/hooks.php';
+include WOOF_PATH . 'wp-content/plugins/woocommerce-products-filter/classes/ext.php';
 //***
-include WOOF_PATH . 'classes/counter.php';
-include WOOF_PATH . 'classes/widgets.php';
+include WOOF_PATH . 'wp-content/plugins/woocommerce-products-filter/classes/counter.php';
+include WOOF_PATH . 'wp-content/plugins/woocommerce-products-filter/classes/widgets.php';
 
 //***
 //05-12-2016
