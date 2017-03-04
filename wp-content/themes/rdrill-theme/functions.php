@@ -316,6 +316,8 @@ function dimox_breadcrumbs() {
                     echo $link_before.'<a href="/about/news/">Новости</a>'.$link_after;
                 } elseif (in_category('bez-rubriki')) {
                     echo $link_before.'<a href="/about/article/">Статьи</a>'.$link_after;
+                } else {
+                    echo $cat;
                 }
 
                 //echo $cats;
