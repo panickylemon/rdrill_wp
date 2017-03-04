@@ -8,7 +8,7 @@
 	</div>
 </div>
 
-<div class="l-modal modal fade" id="make-request-form" tabindex="-1" role="dialog">
+<div class="l-modal modal fade" id="request-form" tabindex="-1" role="dialog">
 	<div class="b-modal modal-dialog" role="document">
 		<a href="#" class="modal-close" data-dismiss="modal"></a>
 		<?php echo do_shortcode( '[contact-form-7 id="323" html_id="request" title="Заявка (товар)"]' ); ?>
