@@ -2150,7 +2150,7 @@ final class WOOF {
                     if (empty($custom_tpl) AND empty($tpl_index))
                     {
                         while ($products->have_posts()) : $products->the_post();
-                            wc_get_template_part('content', 'product');
+                            wc_get_template_part('content', 'product-drills');
                         endwhile; // end of the loop.
                     }else
                     {
