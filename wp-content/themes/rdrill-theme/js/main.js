@@ -141,7 +141,7 @@ $(document).ready(function () {
             $('.bs-callout-warning').toggleClass('hidden', ok);
         })
         .on('form:submit', function () {
-            window.location.href = "/spasibo/";
+            //window.location.href = "/spasibo/";
         });
 
     $('#questions').parsley().on('field:validated', function () {
