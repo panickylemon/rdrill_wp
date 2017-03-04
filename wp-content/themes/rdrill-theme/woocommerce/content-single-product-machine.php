@@ -66,11 +66,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <div class="product-price">
                             <p class="product-price__text">Цена с НДС:</p>
                             <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
-                            <a class="base-button base-button--red button-buy" href="#">Оформить заявку</a>
+                            <a class="base-button base-button--red button-buy" href="#make-request-form">Оформить заявку</a>
                         </div>
                         <div class="wrap-give-feedback">
 
-                            <a class="base-button base-button--grey button-give-feedback" href="#make-request-form">
+                            <a class="base-button base-button--grey button-give-feedback" href="#">
                                 <span class="button-star"></span>
                                 Оставить отзыв
                             </a>
