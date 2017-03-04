@@ -66,12 +66,14 @@
 							<span class="header__feedback-text">Напишите нам</span>
 						</a>
 					</div>
+
 					<div class="header__search">
-						<form action="" id="search-form">
-							<input class="b-search__expand" type="search" placeholder="Поиск">
-							<input class="b-search__button" name="submit" type="submit"
-							       value="" id="search-button">
-						</form>
+						<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<!--						<form action="" id="search-form">-->
+<!--							<input class="b-search__expand" type="search" placeholder="Поиск">-->
+<!--							<input class="b-search__button" name="submit" type="submit"-->
+<!--							       value="" id="search-button">-->
+<!--						</form>-->
 					</div>
 				</div>
 

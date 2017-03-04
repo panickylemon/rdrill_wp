@@ -63,8 +63,6 @@ do_action('woocommerce_before_main_content');
 
     <div class="l-container">
 
-        <?php dynamic_sidebar( 'sidebar-1' ); ?>
-
         <div class="button-show-filter"><span>Показать фильтр</span></div>
         <div class="filter-sidebar">
             <div class="filter-catalog" id="filter-form">
