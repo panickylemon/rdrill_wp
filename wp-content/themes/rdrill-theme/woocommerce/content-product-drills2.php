@@ -2497,6 +2497,12 @@ $woof_use_beauty_scroll = $this->get_option('use_beauty_scroll', 0);
     }
 
     //shortcode
+    public function woof_search_options($args = array())
+    {
+        return $this->render_html(WOOF_PATH . 'views/shortcodes/woof_search_options.php', $args);
+    }
+
+    //shortcode
     public function woof_found_count($args = array())
     {
         return $this->render_html(WOOF_PATH . 'views/shortcodes/woof_found_count.php', $args);
