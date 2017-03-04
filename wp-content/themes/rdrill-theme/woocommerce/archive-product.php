@@ -36,9 +36,7 @@ do_action('woocommerce_before_main_content');
 
 	<div class="l-container">
 
-
-
-		<div class="filter-sidebar">
+		<div class="filter-sidebar contact-manager__only">
 			<?php get_sidebar('questions'); ?>
 		</div>
 
