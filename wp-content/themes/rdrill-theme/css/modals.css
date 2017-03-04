@@ -148,7 +148,7 @@ input, textarea {
 	color: #ff0000;
 	font-style: italic;
 	font-size: 13px;
-	list-style: none;
+	list-style: none !important;
 }
 
 .parsley-errors-list .parsley-required{
