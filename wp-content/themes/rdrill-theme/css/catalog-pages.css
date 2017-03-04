@@ -363,6 +363,10 @@ ul.woof_list {
     padding: 0 !important;
 }
 
+.woof_products_top_panel{
+    display: none;
+}
+
 .sorting-buttons {
     font-size: 12px;
     font-weight: 900;
