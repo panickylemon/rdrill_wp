@@ -529,9 +529,10 @@ if (!function_exists('woof_print_item_by_key'))
                                 ?>
                                 <button class="base-button base-button--red button-filter woof_submit_search_form">Показать</button>
 
-		                        <button class="base-button base-button--grey button-filter button-filter-reset" data-link="<?php echo
-		                                    $woof_link ?>"><a href="<?php echo $_SERVER['REQUEST_URI']
-		                                    ?>">Сбросить</a></button>
+		                        <button class="base-button base-button--grey button-filter button-filter-reset" onclick="window.location.href='<?php echo $_SERVER['REQUEST_URI']
+		                                    ?>'"
+		                        data-link="<?php echo
+		                                    $woof_link  ?>">Сбросить</button>
 		                    <?php endif; ?>
                         </div>
 
