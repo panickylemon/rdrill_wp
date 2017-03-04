@@ -4,9 +4,6 @@
 <div class="l-modal modal fade" id="feedback-form" tabindex="-1" role="dialog">
 	<div class="b-modal modal-dialog" role="document">
 		<a href="#" class="modal-close" data-dismiss="modal"></a>
-		<p class="modal-form__title">
-			Обратная связь
-		</p>
 		<?php echo do_shortcode( '[contact-form-7 id="316" html_id="feedback" title="Обратная связь"]' ); ?>
 <!--		<form class="modal-form" id="feeadback" data-parsley-validate="">-->
 <!--			-->
