@@ -317,7 +317,7 @@ function dimox_breadcrumbs() {
                 } elseif (in_category('bez-rubriki')) {
                     echo $link_before.'<a href="/about/article/">Статьи</a>'.$link_after;
                 } else {
-                    echo $cat;
+                    echo $cats;
                 }
 
                 //echo $cats;
