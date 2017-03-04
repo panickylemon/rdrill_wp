@@ -36,7 +36,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         <p class="catalog-product__title"><span><?php echo get_the_title() ?></span></p>
         <div itemprop="description" class="catalog-product__description">
             <?php $excerpt = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
-                echo substr('1234567890qwe', 0, 10);
+                echo substr($excerpt, 0, 10);
                 echo $excerpt;
             ?>
             <?php //echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
