@@ -36,8 +36,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         <p class="catalog-product__title"><span><?php echo get_the_title() ?></span></p>
         <div itemprop="description" class="catalog-product__description">
             <?php $description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
-                if (strlen($description) > 75) {
-                    echo mb_substr($description, 0, 75).'...';
+                if (strlen($description) > 70) {
+                    echo mb_substr($description, 0, 70).'...';
                 } else {
                     echo $description;
                 }
