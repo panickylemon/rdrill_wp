@@ -2240,8 +2240,8 @@ function comment_form( $args = array(), $post_id = null ) {
 		'action'               => site_url( '/wp-comments-post.php' ),
 		'id_form'              => 'commentform',
 		'id_submit'            => 'submit',
-		'class_form'           => 'comment-form',
-		'class_submit'         => 'submit',
+		'class_form'           => 'comment-form modal-form',
+		'class_submit'         => 'submit base-button base-button--red button-submit',
 		'name_submit'          => 'submit',
 		'title_reply'          => __( 'Leave a Reply' ),
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),
@@ -2252,7 +2252,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'cancel_reply_link'    => __( 'Cancel reply' ),
 		'label_submit'         => __( 'Post Comment' ),
 		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
-		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
+		'submit_field'         => '<p class="form-submit wrap-button">%1$s %2$s</p>',
 		'format'               => 'xhtml',
 	);
 
