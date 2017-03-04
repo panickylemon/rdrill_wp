@@ -2108,7 +2108,7 @@ final class WOOF {
                 $_REQUEST['woof_before_shop_loop_done'] = true;
                 ?>
 
-                <div class="woocommerce columns-<?php echo $columns ?> woocommerce-page woof_shortcode_output">
+                <div class="woocommerce columns-<?php echo $columns ?> woocommerce-page woof_shortcode_output clearfix">
 
                     <?php
                     $show_loop_filters = true; //for attribute behavior of the shortcode
