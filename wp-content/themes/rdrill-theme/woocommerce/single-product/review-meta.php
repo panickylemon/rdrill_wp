@@ -29,14 +29,14 @@ if ( '0' === $comment->comment_approved ) { ?>
 
 <?php } else { ?>
 
-	<p class="meta">
-		<strong itemprop="author"><?php comment_author(); ?></strong> <?php
+
+	<p class="review-name"><?php comment_author(); ?></p> <?php
 
 		if ( 'yes' === get_option( 'woocommerce_review_rating_verification_label' ) && $verified ) {
 			echo '<em class="verified">(' . esc_attr__( 'verified owner', 'woocommerce' ) . ')</em> ';
 		}
 
 		?>&ndash; <time itemprop="datePublished" datetime="<?php echo get_comment_date( 'c' ); ?>"><?php echo get_comment_date( wc_date_format() ); ?></time>:
-	</p>
+
 
 <?php }
