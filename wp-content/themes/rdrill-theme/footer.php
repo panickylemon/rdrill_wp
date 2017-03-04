@@ -59,7 +59,7 @@
 
 <!--—BEGIN FOOTER -->
 
-<?php echo do_shortcode( '[contact-form-7 id="316" title="Обратная связь"]' ); ?>
+<?php echo do_shortcode( '[contact-form-7 id="316" html_id="feedback" title="Обратная связь"]' ); ?>
 
 <footer>
 	<div class="wrap-footer">
