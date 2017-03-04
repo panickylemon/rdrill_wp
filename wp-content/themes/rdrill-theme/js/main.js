@@ -132,7 +132,7 @@ $(document).ready(function () {
             $('.bs-callout-warning').toggleClass('hidden', ok);
         })
         .on('form:submit', function () {
-            //return false; // Don't submit form for this demo
+            window.location.href = "/spasibo/";
         });
 
     $('#questions').parsley().on('field:validated', function () {
@@ -141,7 +141,7 @@ $(document).ready(function () {
             $('.bs-callout-warning').toggleClass('hidden', ok);
         })
         .on('form:submit', function () {
-            //return false; // Don't submit form for this demo
+            window.location.href = "/spasibo/";
         });
 
 
