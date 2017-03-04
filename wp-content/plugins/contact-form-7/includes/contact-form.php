@@ -370,7 +370,6 @@ class WPCF7_ContactForm {
 			'enctype' => wpcf7_enctype_value( $enctype ),
 			'autocomplete' => $autocomplete,
 			'novalidate' => $novalidate ? 'novalidate' : '',
-			'data-parsley-validate' => ''
 		);
 
 		if ( '' !== $id_attr ) {
@@ -383,7 +382,7 @@ class WPCF7_ContactForm {
 
 		$atts = wpcf7_format_atts( $atts );
 
-		$html .= sprintf( '<form %s>', $atts ) . "\n";
+		$html .= sprintf( '<form %s "data-parsley-validate" ="">', $atts ) . "\n";
 		$html .= $this->form_hidden_fields();
 		$html .= $this->form_elements();
 
