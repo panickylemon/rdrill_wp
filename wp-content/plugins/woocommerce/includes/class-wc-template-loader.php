@@ -70,8 +70,12 @@ class WC_Template_Loader {
 			$find[] = WC()->template_path() . $file;
 
 		} elseif ( is_post_type_archive( 'product' ) || is_page( wc_get_page_id( 'shop' ) ) ) {
+			if ( is_search() ) {
+				$file 	= 'archive-product.php';
+			} else {
+				$file 	= 'archive-catalog.php';
+			}
 
-			$file 	= 'archive-catalog.php';
 			$find[] = $file;
 			$find[] = WC()->template_path() . $file;
 
