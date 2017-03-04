@@ -60,7 +60,7 @@ if ( $products->have_posts() ) : ?>
 		<div id="other-product-slider" class="owl-carousel owl-theme">
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 				<div class="product-slider__item">
-					<a class="product-slider__item-link">
+					<a class="product-slider__item-link" href="<?php echo get_the_permalink() ?>">
 						<div class="product-slider__image">
 							<?php echo woocommerce_get_product_thumbnail()?>
 						</div>
