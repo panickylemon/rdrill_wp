@@ -1335,6 +1335,10 @@ img.thumbnail {
     height: 11px;
 }
 
+.review-star-item span{
+    display: none;
+}
+
 .review-rating-half {
     background: url("../image/icons/review-star.png") no-repeat 50% 0;
 }
