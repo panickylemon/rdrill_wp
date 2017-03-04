@@ -2496,11 +2496,7 @@ final class WOOF {
             return $this->render_html(WOOF_PATH . 'views/shortcodes/woof_price_filter_' . $type . '.php', $args);
         }
 
-        //shortcode
-        public function woof_search_options($args = array())
-        {
-            return $this->render_html(WOOF_PATH . 'views/shortcodes/woof_search_options.php', $args);
-        }
+
 
         //shortcode
         public function woof_found_count($args = array())
