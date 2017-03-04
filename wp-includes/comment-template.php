@@ -2245,8 +2245,8 @@ function comment_form( $args = array(), $post_id = null ) {
 		'name_submit'          => 'submit',
 		'title_reply'          => __( 'Leave a Reply' ),
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),
-		'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title">',
-		'title_reply_after'    => '</h3>',
+		'title_reply_before'   => '',
+		'title_reply_after'    => '',
 		'cancel_reply_before'  => ' <small>',
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),
@@ -2302,6 +2302,9 @@ function comment_form( $args = array(), $post_id = null ) {
 			do_action( 'comment_form_must_log_in_after' );
 		else : ?>
 			<form action="<?php echo esc_url( $args['action'] ); ?>" method="post" id="<?php echo esc_attr( $args['id_form'] ); ?>" class="<?php echo esc_attr( $args['class_form'] ); ?>"<?php echo $html5 ? ' novalidate' : ''; ?>>
+				<p class="modal-form__title">
+					Оставить отзыв
+				</p>
 				<?php
 				/**
 				 * Fires at the top of the comment form, inside the form tag.
