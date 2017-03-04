@@ -71,7 +71,7 @@ class WC_Template_Loader {
 
 		} elseif ( is_post_type_archive( 'product' ) || is_page( wc_get_page_id( 'shop' ) ) ) {
 
-			$file 	= 'archive-product.php';
+			$file 	= 'archive-catalog.php';
 			$find[] = $file;
 			$find[] = WC()->template_path() . $file;
 
