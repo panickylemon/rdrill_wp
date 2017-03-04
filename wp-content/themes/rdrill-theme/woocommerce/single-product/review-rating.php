@@ -25,8 +25,9 @@ $rating = intval( get_comment_meta( $comment->comment_ID, 'rating', true ) );
 
 if ( $rating && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) { ?>
 
-	<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" class="star-rating" title="<?php echo sprintf( esc_attr__( 'Rated %d out of 5', 'woocommerce' ), esc_attr( $rating ) ) ?>">
-		<span style="width:<?php echo ( esc_attr( $rating ) / 5 ) * 100; ?>%">
+	<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" class="star-rating wrap-review-rating" title="<?php echo
+	sprintf( esc_attr__( 'Rated %d out of 5', 'woocommerce' ), esc_attr( $rating ) ) ?>">
+		<div class="wrap-review-stars">
 			<?php if ($rating == 1): ?>
 				<span class="review-star-item review-rating-red"></span>
 				<span class="review-star-item review-rating-grey"></span>
@@ -58,8 +59,7 @@ if ( $rating && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) { ?
 				<span class="review-star-item review-rating-red"></span>
 				<span class="review-star-item review-rating-red"></span>
 			<?php endif ?>
-
-		</span>
+		</div>
 	</div>
 
 <?php }
