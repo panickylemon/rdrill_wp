@@ -62,6 +62,7 @@ do_action('woocommerce_before_main_content');
     </div>
 
     <div class="l-container">
+        <div class="button-show-filter"><span>Показать фильтр</span></div>
         <div class="filter-sidebar">
             <div class="filter-catalog" id="filter-form">
                 <?php
@@ -74,6 +75,9 @@ do_action('woocommerce_before_main_content');
                     custom_tpl=themes/rdrill-theme/woocommerce/content-product-drills.php]' );
                 ?>
             </div>
+
+
+            <?php get_sidebar('questions'); ?>
         </div>
 
         <div class="button-show-filter"><span>Показать фильтр</span></div>
