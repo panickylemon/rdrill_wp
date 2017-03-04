@@ -1,7 +1,7 @@
 </div>
 
 <!--—BEGIN MODALS -->
-<div class="l-modal modal fade" id="feeadback-form" tabindex="-1" role="dialog">
+<div class="l-modal modal fade" id="feedback-form" tabindex="-1" role="dialog">
 	<div class="b-modal modal-dialog" role="document">
 		<a href="#" class="modal-close" data-dismiss="modal"></a>
 

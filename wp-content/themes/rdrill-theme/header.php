@@ -61,7 +61,7 @@
 
 				<div class="feedback-search">
 					<div class="header__feedback">
-						<a class="header__feedback-link" href="#feeadback-form" data-toggle="modal">
+						<a class="header__feedback-link" href="#feedback-form" data-toggle="modal">
 							<span class="header__feedback-icon"></span>
 							<span class="header__feedback-text">Напишите нам</span>
 						</a>
