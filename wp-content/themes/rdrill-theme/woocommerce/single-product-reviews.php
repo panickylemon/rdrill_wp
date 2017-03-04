@@ -30,7 +30,7 @@ if ( ! comments_open() ) {
 	<div id="comments">
 		<h2 class="review-title">Отзывы</h2>
 		<?php if ($product->get_review_count()): ?>
-		<p class="review-number"><span><?php $product->get_review_count() ?></span></p>
+		<p class="review-number"><span><?php echo $product->get_review_count() ?></span></p>
 		<?php endif ?>
 
 		<?php if ( have_comments() ) : ?>
