@@ -154,3 +154,7 @@ input, textarea {
 .parsley-errors-list .parsley-required{
 	margin: -22px 0 4px;
 }
+
+.hidden-input{
+	display: none;
+}
