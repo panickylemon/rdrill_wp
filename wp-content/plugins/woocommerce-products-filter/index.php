@@ -1588,14 +1588,6 @@ final class WOOF {
         }
         ?>
 
-
-        <?php
-        if (get_option('woof_hide_red_top_panel', 0) == 0)
-        {
-            echo do_shortcode('[woof_search_options]');
-        }
-        ?>
-
         <?php
         //for ajax output
         if (get_option('woof_try_ajax', 0) AND ! isset($_REQUEST['woof_products_doing']))
@@ -2496,7 +2488,11 @@ final class WOOF {
             return $this->render_html(WOOF_PATH . 'views/shortcodes/woof_price_filter_' . $type . '.php', $args);
         }
 
-
+        //shortcode
+        public function woof_search_options($args = array())
+        {
+            return $this->render_html(WOOF_PATH . 'views/shortcodes/woof_search_options.php', $args);
+        }
 
         //shortcode
         public function woof_found_count($args = array())
