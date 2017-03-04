@@ -69,10 +69,6 @@ do_action('woocommerce_before_main_content');
                 echo do_shortcode( '[woof tax_only="product_cat,pa_glubina-sverl,pa_diametr-sverla" autohide=0 autosubmit=0
                     taxonomies=product_cat:8]' );
                 ?>
-
-                <?php
-                echo do_shortcode( '[woof_products per_page=1 columns=3 is_ajax=1 taxonomies=product_cat:8]' );
-                ?>
             </div>
 
 
@@ -83,10 +79,12 @@ do_action('woocommerce_before_main_content');
 
             <div class="filter-content">
                 <div class="catalog-products-wrap clearfix">
-
+                    <?php
+                    echo do_shortcode( '[woof_products per_page=6 columns=3 is_ajax=1 taxonomies=product_cat:8]' );
+                    ?>
                     <?php while (have_posts()) : the_post(); ?>
 
-                        <?php wc_get_template_part('content', 'product-drills'); ?>
+                        <?php //wc_get_template_part('content', 'product-drills'); ?>
 
                     <?php endwhile; ?>
 
