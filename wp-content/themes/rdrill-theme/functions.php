@@ -312,13 +312,13 @@ function dimox_breadcrumbs() {
                 $cats = get_category_parents($cat, TRUE, $sep);
                 if (!$show_current || get_query_var('cpage')) $cats = preg_replace("#^(.+)$sep$#", "$1", $cats);
                 $cats = preg_replace('#<a([^>]+)>([^<]+)<\/a>#', $link_before . '<a$1' . $link_attr .'>' . $link_in_before . '$2' . $link_in_after .'</a>' . $link_after, $cats);
-                if (in_category('novosti')) {
-                    echo $link_before.'<a href="/about/news/">Новости</a>'.$link_after;
-                } elseif (in_category('bez-rubriki')) {
-                    echo $link_before.'<a href="/about/article/">Статьи</a>'.$link_after;
-                } else {
-                    echo $cats;
-                }
+//                if (in_category('novosti')) {
+//                    echo $link_before.'<a href="/about/news/">Новости</a>'.$link_after;
+//                } elseif (in_category('bez-rubriki')) {
+//                    echo $link_before.'<a href="/about/article/">Статьи</a>'.$link_after;
+//                } else {
+//                    echo $cats;
+//                }
 
                 echo $cats;
                 if ( get_query_var('cpage') ) {
