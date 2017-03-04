@@ -38,12 +38,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="comment-text">
 
 			<?php
-			/**
-			 * The woocommerce_review_before_comment_meta hook.
-			 *
-			 * @hooked woocommerce_review_display_rating - 10
-			 */
-			do_action( 'woocommerce_review_before_comment_meta', $comment );
 
 			/**
 			 * The woocommerce_review_meta hook.
@@ -51,6 +45,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked woocommerce_review_display_meta - 10
 			 */
 			do_action( 'woocommerce_review_meta', $comment );
+
+			/**
+			 * The woocommerce_review_before_comment_meta hook.
+			 *
+			 * @hooked woocommerce_review_display_rating - 10
+			 */
+			do_action( 'woocommerce_review_before_comment_meta', $comment );
+
+
 
 			do_action( 'woocommerce_review_before_comment_text', $comment );
 
