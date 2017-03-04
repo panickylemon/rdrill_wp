@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </div>
                         <div class="wrap-give-feedback">
 
-                            <a class="base-button base-button--grey button-give-feedback" href="#">
+                            <a class="base-button base-button--grey button-give-feedback" href="#review_form_wrapper">
                                 <span class="button-star"></span>
                                 Оставить отзыв
                             </a>
