@@ -224,7 +224,7 @@ $(document).ready(function () {
     });
 
     $('#request-form').on('show.bs.modal', function (e) {
-        $('#product').val(window.location.pathname);
+        $('#product').val(window.location.href);
     })
 });
 
