@@ -28,5 +28,8 @@ if ( ! $post->post_excerpt ) {
 
 ?>
 <div itemprop="description">
-	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
+	<?php $excerpt = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
+	echo substr($excerpt,0, 10);
+	?>
+	<?php //echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
 </div>
