@@ -42,7 +42,7 @@ jQuery( function( $ ) {
 		})
 		// Star ratings for comments
 		.on( 'init', '#rating', function() {
-			$( '#rating' ).hide().before( '<p class="stars"><span><a class="star-1" href="#">1</a><a class="star-2" href="#">2</a><a class="star-3" href="#">3</a><a class="star-4" href="#">4</a><a class="star-5" href="#">5</a></span></p>' );
+			$( '#rating' ).hide().before( '<p class="stars"><span><a class="star-1 star" href="#">1</a><a class="star-2 star" href="#">2</a><a class="star-3 star" href="#">3</a><a class="star-4 star" href="#">4</a><a class="star-5 star" href="#">5</a></span></p>' );
 		})
 		.on( 'click', '#respond p.stars a', function() {
 			var $star   	= $( this ),
@@ -51,8 +51,11 @@ jQuery( function( $ ) {
 
 			$rating.val( $star.text() );
 			$star.siblings( 'a' ).removeClass( 'active' );
+			$star.siblings( 'a' ).removeClass( 'red' );
 			$star.addClass( 'active' );
+			$star.addClass( 'red' );
 			$container.addClass( 'selected' );
+			$star.prevAll('.star').addClass( "red" );
 
 			return false;
 		})
