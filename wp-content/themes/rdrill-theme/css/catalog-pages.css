@@ -1335,16 +1335,16 @@ img.thumbnail {
     height: 11px;
 }
 
-.review-rating-red {
-    background: url("../image/icons/review-star.png") no-repeat;
-}
-
 .review-rating-half {
     background: url("../image/icons/review-star.png") no-repeat 50% 0;
 }
 
 .review-rating-grey {
     background: url("../image/icons/review-star.png") no-repeat 100% 0;
+}
+
+.review-rating-red {
+    background: url("../image/icons/review-star.png") no-repeat !important;
 }
 
 .wrap-review-stars {
