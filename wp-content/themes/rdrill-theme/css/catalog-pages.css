@@ -700,11 +700,11 @@ ul.woof_list {
 
 .search-page .catalog-product:nth-child(2) .catalog-product__content, .search-page .catalog-product:nth-child(2n+5) .catalog-product__content {
     margin: 0 !important;
-    float: none;
 }
 
 .search-page .catalog-product:nth-child(3n) .catalog-product__content{
     margin: auto !important;
+    float: none;
 }
 
 .catalog .pagination-wrap {
