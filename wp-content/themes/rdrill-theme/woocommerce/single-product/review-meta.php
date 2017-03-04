@@ -36,7 +36,7 @@ if ( '0' === $comment->comment_approved ) { ?>
 			echo '<em class="verified">(' . esc_attr__( 'verified owner', 'woocommerce' ) . ')</em> ';
 		}
 
-		?>&ndash; <time itemprop="datePublished" datetime="<?php echo get_comment_date( 'c' ); ?>"><?php echo get_comment_date( wc_date_format() ); ?></time>:
+		?>
 
 
 <?php }
