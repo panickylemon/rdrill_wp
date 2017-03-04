@@ -104,7 +104,7 @@ if (!function_exists('woof_print_tax'))
         //https://wordpress.org/support/topic/adding-classes-woof_container-div
         $primax_class = sanitize_key(WOOF_HELPER::wpml_translate($taxonomies_info[$tax_slug]));
         ?>
-        <div data-css-class="woof_container_<?php echo $tax_slug ?>" class="woof_container woof_container_<?php echo $woof_settings['tax_type'][$tax_slug] ?> woof_container_<?php echo $tax_slug ?> woof_container_<?php echo $counter ?> woof_container_<?php echo $primax_class ?>">
+        <div data-css-class="woof_container_<?php echo $tax_slug ?>" class="woof_container_<?php echo $woof_settings['tax_type'][$tax_slug] ?> woof_container_<?php echo $tax_slug ?> woof_container_<?php echo $counter ?> woof_container_<?php echo $primax_class ?>">
             <div class="woof_container_overlay_item"></div>
             <div class="woof_container_inner woof_container_inner_<?php echo $primax_class ?>">
                 <?php
