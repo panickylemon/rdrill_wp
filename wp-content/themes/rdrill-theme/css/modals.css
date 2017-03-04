@@ -159,6 +159,6 @@ input, textarea {
 	display: none;
 }
 
-.comment-reply-title{
+.comment-reply-title, .comment-notes{
 	display: none;
 }
