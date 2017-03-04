@@ -694,6 +694,14 @@ ul.woof_list {
     float: right;
 }
 
+.search-page .catalog-product:nth-child(2) .catalog-product__content, .catalog-product:nth-child(2n+5) .catalog-product__content {
+    margin: 0 !important;
+}
+
+.search-page .catalog-product:nth-child(3n) .catalog-product__content{
+    margin: auto !important;
+}
+
 .catalog .pagination-wrap {
     margin: 5px 0 0;
 }
