@@ -36,7 +36,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         <p class="catalog-product__title"><span><?php echo get_the_title() ?></span></p>
         <div itemprop="description" class="catalog-product__description">
             <?php $excerpt = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
-                echo mb_substr($excerpt, 0, 10);
+                if ($excerpt > 140) {
+                    echo mb_substr($excerpt, 0, 10).'...';
+                } else {
+                    echo $excerpt;
+                }
             ?>
             <?php //echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
         </div>
