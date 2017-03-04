@@ -420,8 +420,8 @@ if ( function_exists( 'add_image_size' ) ) {
 // Поддрежка виджетов
 if ( function_exists('register_sidebar') ) {
     register_sidebar(array(
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-        'after_widget' => '</li>',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
         'before_title' => '<span class="widgettitle">',
         'after_title' => '</span>',
     ));
