@@ -382,7 +382,7 @@ class WPCF7_ContactForm {
 
 		$atts = wpcf7_format_atts( $atts );
 
-		$html .= sprintf( '<form %s "data-parsley-validate" ="">', $atts ) . "\n";
+		$html .= sprintf( '<form %s data-parsley-validate="">', $atts ) . "\n";
 		$html .= $this->form_hidden_fields();
 		$html .= $this->form_elements();
 
