@@ -3323,7 +3323,8 @@ function paginate_links( $args = '' ) {
 		 *
 		 * @param string $link The paginated link URL.
 		 */
-		$page_links[] = '<li class="pagination-prev lateral-page"><a class="pagination__text" aria-label="Previous" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) .
+		$page_links[] = '<li class="pagination-prev lateral-page"><a class="pagination__text page-numbers" aria-label="Previous"
+href="' . esc_url( apply_filters( 'paginate_links', $link ) ) .
 				'"><span class="button-arrows">«</span> Назад </a></li>';
 	endif;
 	for ( $n = 1; $n <= $total; $n++ ) :
@@ -3355,8 +3356,9 @@ function paginate_links( $args = '' ) {
 		$link .= $args['add_fragment'];
 
 		/** This filter is documented in wp-includes/general-template.php */
-		$page_links[] = '<li class="pagination-next lateral-page"><a class="pagination__text" aria-label="Next" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) .
-				'"> Вперед <span class="button-arrows">»</span></a></li>';
+		$page_links[] = '<li class="pagination-next lateral-page"><a class="pagination__text page-numbers" aria-label="Next" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) .
+				'">
+Вперед <span class="button-arrows">»</span></a></li>';
 	endif;
 	switch ( $args['type'] ) {
 		case 'array' :
