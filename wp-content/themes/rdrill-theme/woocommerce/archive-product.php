@@ -40,21 +40,22 @@ do_action('woocommerce_before_main_content');
 			<?php get_sidebar('questions'); ?>
 		</div>
 
-		<?php if (have_posts()) : ?>
 
-			<div class="filter-content">
-				<div class="catalog-products-wrap clearfix">
+		<div class="filter-content">
+			<div class="catalog-products-wrap clearfix">
+				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 
 						<?php wc_get_template_part('content', 'product-drills'); ?>
 
 					<?php endwhile; ?>
-
-				</div>
+				<?php else: ?>
+					<p>Товаров не найдено!</p>
+				<?php endif; ?>
 			</div>
-		<?php else: ?>
-				<p>Товаров не найдено!</p>
-		<?php endif; ?>
+		</div>
+
+
 
 		<?php
 		/**
