@@ -42,7 +42,7 @@ do_action('woocommerce_before_main_content');
 
 
 		<div class="filter-content">
-			<div class="catalog-products-wrap clearfix">
+			<div class=" clearfix">
 				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
