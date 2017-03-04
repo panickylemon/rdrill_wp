@@ -63,7 +63,7 @@ do_action('woocommerce_before_main_content');
 
     <div class="l-container">
         <?php
-        echo do_shortcode( '[woof sid="auto_shortcode" tax_only="product_cat,pa_ves" autohide=0 autosubmit=0 taxonomies=product_cat:10 ]' );
+        echo do_shortcode( '[woof tax_only="product_cat,pa_ves" autohide=0 autosubmit=0 taxonomies=product_cat:10 ]' );
         ?>
         <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
