@@ -520,18 +520,18 @@ if (!function_exists('woof_print_item_by_key'))
 
 
 
-                        <div class="woof_submit_search_form_container">
+                        <div class="filter-buttons clearfix">
 
                             <?php if (!$autosubmit OR $ajax_redraw): global $woof_link; ?>
                                 <?php
                                 $woof_filter_btn_txt = __('Filter', 'woocommerce-products-filter');
                                 $woof_filter_btn_txt = WOOF_HELPER::wpml_translate(null, $woof_filter_btn_txt);
                                 ?>
-                                <button style="float: left;" class="button woof_submit_search_form">Показать</button>
+                                <button class="base-button base-button--red button-filter woof_submit_search_form">Показать</button>
 
-                        <button style="float: right;" class="button woof_reset_search_form" data-link="<?php echo
-                                    $woof_link ?>">Сбросить</button>
-                            <?php endif; ?>
+		                        <button class="base-button base-button--grey button-filter button-filter-reset" data-link="<?php echo
+		                                    $woof_link ?>">Сбросить</button>
+		                    <?php endif; ?>
                         </div>
 
 
