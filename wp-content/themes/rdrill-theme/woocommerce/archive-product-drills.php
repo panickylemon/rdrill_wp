@@ -85,14 +85,6 @@ do_action('woocommerce_before_main_content');
 
                 </div>
 
-                <?php
-                    /**
-                     * woocommerce_after_shop_loop hook.
-                     *
-                     * @hooked woocommerce_pagination - 10
-                     */
-                do_action('woocommerce_after_shop_loop');
-                ?>
                 <div class="catalog-description">
                     <div><?php echo get_field('description_category', $post_id); ?> </div>
                     <div><?php echo get_field('questions_category', $post_id); ?> </div>
