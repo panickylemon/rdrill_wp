@@ -82,11 +82,6 @@ do_action('woocommerce_before_main_content');
                     <?php
                     echo do_shortcode( '[woof_products per_page=6 columns=3 is_ajax=1 taxonomies=product_cat:8]' );
                     ?>
-                    <?php while (have_posts()) : the_post(); ?>
-
-                        <?php //wc_get_template_part('content', 'product-drills'); ?>
-
-                    <?php endwhile; ?>
 
                 </div>
 
