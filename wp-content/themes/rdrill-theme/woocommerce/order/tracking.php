@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<ol class="commentlist notes">
 		<?php foreach ( $notes as $note ) : ?>
 		<li class="comment note">
-			<div class="comment_container">
+			<div class="comment_container review-item">
 				<div class="comment-text">
 					<p class="meta"><?php echo date_i18n( __( 'l jS \o\f F Y, h:ia', 'woocommerce' ), strtotime( $note->comment_date ) ); ?></p>
 					<div class="description">
