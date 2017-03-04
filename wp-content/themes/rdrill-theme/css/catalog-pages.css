@@ -356,11 +356,11 @@ tr.sorting-model__item {
 
 .checkbox label {
     cursor: default;
-    padding: 0 !important;
+    padding: 0 0 0 9px !important;
 }
 
 ul.woof_list {
-    padding: 0 0 0 9px !important;
+    padding: 0 !important;
 }
 
 .sorting-buttons {
