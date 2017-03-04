@@ -1366,6 +1366,14 @@ img.thumbnail {
     margin: 40px 0 0;
 }
 
+.woocommerce-noreviews{
+    margin: 10px 0 0;
+}
+
+.button-give-feedback-bottom{
+    margin: 35px 0;
+}
+
 .wrap-button-more {
     width: 100%;
     margin: 50px 0 100px;

@@ -119,7 +119,8 @@ placeholder="Email*"  /></p>',
 	<?php endif; ?>
 
 	<div class="clear"></div>
-	<a class="base-button base-button--grey button-give-feedback" href="#">
+	<a class="base-button base-button--grey button-give-feedback button-give-feedback-bottom"
+	   href="#review_form_wrapper" data-toggle="modal">
 		<span class="button-star"></span>
 		Оставить свой отзыв
 	</a>
