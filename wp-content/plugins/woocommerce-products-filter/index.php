@@ -2181,16 +2181,14 @@ final class WOOF {
                         woocommerce_product_loop_end();
                     }
                     ?>
-                    <div class="pagination-wrap-2">
-                    <?php
-                    if ($show_loop_filters)
-                    {
-                        do_action('woocommerce_after_shop_loop');
-                    }
-                    ?>
-                    </div>
-                </div>
 
+                </div>
+        <?php
+        if ($show_loop_filters)
+        {
+            do_action('woocommerce_after_shop_loop');
+        }
+        ?>
 
                 <?php
             else:
