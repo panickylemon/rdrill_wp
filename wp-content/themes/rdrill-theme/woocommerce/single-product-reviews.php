@@ -71,9 +71,12 @@ if ( ! comments_open() ) {
 						'comment_notes_after'  => '',
 						'fields'               => array(
 							'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'woocommerce' ) . ' <span class="required">*</span></label> ' .
-										'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" aria-required="true" required /></p>',
+										'<input
+id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" aria-required="true" required="" placeholder="ФИО*"  /></p>',
 							'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'woocommerce' ) . ' <span class="required">*</span></label> ' .
-										'<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-required="true" required /></p>',
+										'<input
+id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-required="true" required=""
+placeholder="Email*"  /></p>',
 						),
 						'label_submit'  => __( 'Submit', 'woocommerce' ),
 						'logged_in_as'  => '',
@@ -97,7 +100,9 @@ if ( ! comments_open() ) {
 						</select></p>';
 					}
 
-					$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . __( 'Your Review', 'woocommerce' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>';
+					$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . __( 'Your Review', 'woocommerce' ) . '
+ <span class="required">*</span></label><textarea id="comment" name="comment" aria-required="true"
+ placeholder="Ваш отзыв*" required=""></textarea></p>';
 					$comment_form['comment_positive_field'] .= '<p class="comment-form-comment"><label
 					for="comment">' . __( 'Your Review', 'woocommerce' ) . ' <span class="required">*</span></label><textarea
 					id="comment-positive" name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>';
