@@ -320,7 +320,7 @@ function dimox_breadcrumbs() {
                     echo $cats;
                 }
 
-                //echo $cats;
+                echo $cats;
                 if ( get_query_var('cpage') ) {
                     echo $sep . sprintf($link, get_permalink(), get_the_title()) . $sep . $before . sprintf($text['cpage'], get_query_var('cpage')) . $after;
                 } else {
