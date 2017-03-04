@@ -297,7 +297,7 @@ class WPCF7_ContactForm {
 		$name_attr = apply_filters( 'wpcf7_form_name_attr',
 			preg_replace( '/[^A-Za-z0-9:._-]/', '', $args['html_name'] ) );
 
-		$class = 'wpcf7-form';
+		$class = 'wpcf7-form modal-form';
 
 		if ( $this->is_posted() ) {
 			$submission = WPCF7_Submission::get_instance();
