@@ -1218,9 +1218,9 @@ if ( ! function_exists( 'woocommerce_review_display_comment_text' ) ) {
 	 * Display the review content.
 	 */
 	function woocommerce_review_display_comment_text() {
-		echo '<div itemprop="description" class="description">';
+		echo '<p class="review-subtitle">Отзыв:</p><p itemprop="description" class="description">';
 		comment_text();
-		echo '</div>';
+		echo '</p>';
 	}
 }
 
