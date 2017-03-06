@@ -312,8 +312,8 @@
                 <p class="marketing-block__text">У Вас есть вопросы?</p>
 
                 <p class="marketing-block__text">Свяжитесь с нашим менеджером по продажам</p>
-                <a class="base-button base-button--red marketing-block__button" href="#">Получить консультацию
-                    менеджера</a>
+                <a class="base-button base-button--red marketing-block__button" href="#questions-form" data-toggle="modal">
+                    Получить консультацию менеджера</a>
             </div>
         </div>
     </div>
@@ -459,7 +459,7 @@
                 <p class="marketing-block__text">У Вас есть вопросы?</p>
 
                 <p class="marketing-block__text">Свяжитесь с нашим менеджером по продажам</p>
-                <a class="base-button base-button--red marketing-block__button" href="#">
+                <a class="base-button base-button--red marketing-block__button" href="#questions-form" data-toggle="modal">
                     Связаться с менеджером
                 </a>
             </div>
