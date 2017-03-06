@@ -124,7 +124,7 @@ input, textarea {
 	color: #ffffff !important;
 }
 
-.button-submit:hover{
+.submit-button input:hover{
 	background: rgb(199, 28, 0);
 }
 
