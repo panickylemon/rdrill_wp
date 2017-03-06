@@ -92,6 +92,10 @@
         float: right;
     }
 
+    .search-page .catalog-product:nth-child(2n) .catalog-product__content{
+        float: none !important;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
