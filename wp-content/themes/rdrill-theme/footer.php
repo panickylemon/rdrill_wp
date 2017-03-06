@@ -19,7 +19,6 @@
 	<div class="b-modal modal-dialog" role="document">
 		<a href="#" class="modal-close" data-dismiss="modal"></a>
         <?php echo do_shortcode( '[contact-form-7 id="332" html_id="questions" title="Задать вопрос"]' ); ?>
-
 	</div>
 </div>
 <!--—END MODALS -->
