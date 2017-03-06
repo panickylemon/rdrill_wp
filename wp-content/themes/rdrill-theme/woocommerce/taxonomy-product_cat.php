@@ -20,9 +20,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $category = get_queried_object()->term_id;
-$drills = array("8","11","13","14","15","16","17","18","19","20");
+$drills = array("8","13","14","15","16","17","18","19","20");
 $machines = array("9");
 $accessories = array("10","21","22","23","24","25","26","27","28","29");
+$rails = array("11","106","107","108","109","110","111","112","113","114");
 
 if (in_array($category, $drills)) {
     wc_get_template( 'archive-product-drills.php' );
@@ -32,6 +33,9 @@ elseif (in_array($category, $machines)) {
 }
 elseif (in_array($category, $accessories)) {
     wc_get_template( 'archive-product-accessories.php' );
+}
+elseif (in_array($category, $rails)) {
+    wc_get_template( 'archive-product-rails.php' );
 }
 else {
     wc_get_template( 'archive-product.php' );
