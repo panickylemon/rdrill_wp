@@ -121,6 +121,7 @@ input, textarea {
 	font-size: 14px;
 	font-weight: 900;
 	background: #e40017;
+	color: #ffffff;
 }
 
 .button-submit:hover{
