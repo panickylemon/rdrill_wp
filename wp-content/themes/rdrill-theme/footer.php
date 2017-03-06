@@ -18,28 +18,8 @@
 <div class="l-modal modal fade" id="questions-form" tabindex="-1" role="dialog">
 	<div class="b-modal modal-dialog" role="document">
 		<a href="#" class="modal-close" data-dismiss="modal"></a>
+        <?php echo do_shortcode( '[contact-form-7 id="332" html_id="questions" title="Задать вопрос"]' ); ?>
 
-		<form class="modal-form" id="questions" data-parsley-validate="">
-			<p class="modal-form__title">
-				Задать вопрос
-			</p>
-
-			<label for="name">ФИО</label>
-			<input placeholder="ФИО*" type="text" name="name" id="name-questions" required="">
-
-			<label for="phone">Телефон для связи</label>
-			<input placeholder="Телефон для связи*" type="text" name="phone" id="phone-questions" required="">
-
-			<label for="email">Email</label>
-			<input placeholder="Email" type="email" name="email" id="email-questions">
-			<label for="comment">Комментарий</label>
-			<textarea placeholder="Ваш вопрос" name="comment" id="comment-questions"></textarea>
-
-
-			<div class="wrap-button">
-				<button class="base-button base-button--red button-submit">Отправить</button>
-			</div>
-		</form>
 	</div>
 </div>
 <!--—END MODALS -->
