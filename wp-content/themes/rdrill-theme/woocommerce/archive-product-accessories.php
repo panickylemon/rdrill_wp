@@ -65,7 +65,6 @@ do_action('woocommerce_before_main_content');
         <?php
         echo do_shortcode( '[woof tax_only="product_cat,pa_ves" autohide=0 autosubmit=0 taxonomies=product_cat:10 ]' );
         ?>
-        <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
         <?php
 
