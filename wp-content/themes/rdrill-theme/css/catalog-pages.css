@@ -548,6 +548,7 @@ ul.woof_list {
 .filter-item {
     border-right: 1px solid #e9eff1;
     border-left: 1px solid #e9eff1;
+    border-bottom: 1px solid #e9eff1;
 }
 
 .filter-item__title {
@@ -559,6 +560,10 @@ ul.woof_list {
     border-top: 1px solid #e9eff1;
     border-bottom: 1px solid #e9eff1;
     color: #666666;
+}
+
+.filter-item:nth-child(2) .filter-item__title {
+    border-top: 0;
 }
 
 .filter-item__content {
