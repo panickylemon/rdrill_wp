@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span class="delimiter-about delimiter-about-2"></span>
             <span class="delimiter-about delimiter-about-3"></span>
             <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
+            <a class="about-navigation__link" href="/catalog/machine">
                 <div class="about-navigation__image about-navigation__image-brand"></div>
                 <p class="about-navigation__title">
                     Станки
@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span class="delimiter-about delimiter-about-2"></span>
             <span class="delimiter-about delimiter-about-3"></span>
             <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
+            <a class="about-navigation__link" href="/catalog/drills">
                 <div class="about-navigation__image about-navigation__image-quality"></div>
                 <p class="about-navigation__title">
                     Сверла
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span class="delimiter-about delimiter-about-2"></span>
             <span class="delimiter-about delimiter-about-3"></span>
             <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
+            <a class="about-navigation__link" href="/catalog/accessories">
                 <div class="about-navigation__image about-navigation__image-technologies"></div>
                 <p class="about-navigation__title">
                     Аксессуары
@@ -77,7 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span class="delimiter-about delimiter-about-2"></span>
             <span class="delimiter-about delimiter-about-3"></span>
             <span class="delimiter-about delimiter-about-4"></span>
-            <a class="about-navigation__link" href="#">
+            <a class="about-navigation__link" href="/catalog/drilling-rail">
                 <div class="about-navigation__image about-navigation__image-sale"></div>
                 <p class="about-navigation__title">
                     Сверление рельс
