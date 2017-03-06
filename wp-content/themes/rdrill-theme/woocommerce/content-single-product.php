@@ -65,11 +65,11 @@ if ( post_password_required() ) {
                             <div class="product-price">
                                 <p class="product-price__text">Цена с НДС:</p>
                                 <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
-                                <a class="base-button base-button--red button-buy" href="#">Запросить коммерчесткое
+                                <a class="base-button base-button--red button-buy" href="#request-form" data-toggle="modal">Запросить коммерчесткое
                                     предложение</a>
                             </div>
                             <div class="wrap-give-feedback">
-                                <a class="base-button base-button--grey button-give-feedback" href="#">
+                                <a class="base-button base-button--grey button-give-feedback" href="#review_form_wrapper" data-toggle="modal">
                                     <span class="button-star"></span>
                                     Оставить отзыв
                                 </a>
