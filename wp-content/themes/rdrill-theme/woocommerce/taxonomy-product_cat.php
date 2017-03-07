@@ -25,7 +25,7 @@ $machines = array("9");
 $accessories = array("10","21","22","23","24","25","26","27","28","29","106","107","108","112","113","114");
 //$accessories_nofilter = array("21","22","23","24","25","26","27","28","29","106","107","108","112","113","114");
 $rails = array("11");
-$rails_attr = array("109","110","111");
+//$rails_attr = array("109","110","111");
 
 if (in_array($category, $drills)) {
     wc_get_template( 'archive-product-drills.php' );
@@ -39,9 +39,9 @@ elseif (in_array($category, $accessories)) {
 elseif (in_array($category, $rails)) {
     wc_get_template( 'archive-product-rails.php' );
 }
-elseif (in_array($category, $rails_attr)) {
-    wc_get_template( 'archive-product-rails-attr.php' );
-}
+//elseif (in_array($category, $rails_attr)) {
+//    wc_get_template( 'archive-product-rails-attr.php' );
+//}
 else {
     wc_get_template( 'archive-product.php' );
 }
