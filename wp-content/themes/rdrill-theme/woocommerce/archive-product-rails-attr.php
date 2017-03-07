@@ -66,7 +66,7 @@ do_action('woocommerce_before_main_content');
         <div class="filter-sidebar">
             <div class="filter-catalog" id="filter-form">
                 <?php
-                echo do_shortcode( '[woof tax_only="pa_glubina-rails,pa_diametr-sverla" autohide=0 autosubmit=0
+                echo do_shortcode( '[woof tax_only="pa_glubina-rails" autohide=0 autosubmit=0
                     taxonomies=product_cat:11]' );
                 ?>
             </div>
