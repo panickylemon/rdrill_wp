@@ -153,7 +153,8 @@ input, textarea {
 	list-style: none !important;
 }
 
-.parsley-errors-list .parsley-required{
+.parsley-errors-list .parsley-required,
+.parsley-errors-list .parsley-type {
 	margin: -22px 0 4px;
 }
 
