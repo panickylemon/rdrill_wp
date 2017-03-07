@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $category = get_queried_object()->term_id;
 $drills = array("8","13","14","15","16","17","18","19","20");
 $machines = array("9");
-$accessories = array("10","21","22","23","24","25","26","27","28","29","106","107","108","112","113","114");
+$accessories = array("10");
 $accessories_nofilter = array("21","22","23","24","25","26","27","28","29","106","107","108","112","113","114");
 $rails = array("11");
 //$rails_attr = array("109","110","111");
