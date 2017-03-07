@@ -2277,6 +2277,18 @@ function comment_form( $args = array(), $post_id = null ) {
 	 */
 	do_action( 'comment_form_before' );
 	?>
+	<script>
+		$(document).ready(function () {
+		$('#commentform').parsley().on('field:validated', function () {
+		        var ok = $('.parsley-error').length === 0;
+		        $('.bs-callout-info').toggleClass('hidden', !ok);
+		        $('.bs-callout-warning').toggleClass('hidden', ok);
+		    })
+		    .on('form:submit', function () {
+		        window.location.href = "/spasibo/";
+		    });
+		});
+	</script>
 	<div id="respond" class="comment-respond">
 		<a href="#" class="modal-close" data-dismiss="modal"></a>
 		<?php
