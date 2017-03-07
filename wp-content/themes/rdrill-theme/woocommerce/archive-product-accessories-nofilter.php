@@ -62,7 +62,6 @@ do_action('woocommerce_before_main_content');
     </div>
 
     <div class="l-container">
-        <div class="button-show-filter"><span>Показать фильтр</span></div>
         <div class="filter-sidebar">
             <?php get_sidebar('questions'); ?>
         </div>
