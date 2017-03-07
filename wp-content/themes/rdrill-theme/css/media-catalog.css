@@ -198,6 +198,10 @@
         margin-left: 0;
     }
 
+    .filter-catalog {
+        margin: 0;
+    }
+
     .contents-delivery-img {
         width: 100%;
         float: none;
