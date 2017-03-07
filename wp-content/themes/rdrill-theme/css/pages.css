@@ -761,16 +761,20 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	font-weight: 900;
 }
 
+.filter-catalog{
+	margin: 0 0 50px;
+}
+
 .contact-manager {
-	margin: 50px 0;
+	/*margin: 50px 0;*/
 	padding: 30px 0;
 	text-align: center;
 	border: 1px solid #e9eff1;
 }
 
-.contact-manager__only .contact-manager {
-	margin: 0;
-}
+/*.contact-manager__only .contact-manager {*/
+	/*margin: 0;*/
+/*}*/
 
 .contact-manager__image {
 	margin: 20px auto 15px;
