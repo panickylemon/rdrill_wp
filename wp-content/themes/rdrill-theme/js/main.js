@@ -132,7 +132,7 @@ $(document).ready(function () {
             $('.bs-callout-warning').toggleClass('hidden', ok);
         })
         .on('form:submit', function () {
-            window.location.href = "/spasibo/";
+            //window.location.href = "/spasibo/";
         });
 
     //$('#commentform').parsley().on('field:validated', function () {
