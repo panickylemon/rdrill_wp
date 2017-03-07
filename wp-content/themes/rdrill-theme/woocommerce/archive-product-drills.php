@@ -76,13 +76,11 @@ do_action('woocommerce_before_main_content');
         </div>
 
         <?php if (have_posts()) : ?>
-
             <div class="filter-content">
                 <div class="catalog-products-wrap clearfix">
                     <?php
                     echo do_shortcode( '[woof_products per_page=6 columns=3 is_ajax=1 taxonomies=product_cat:8]' );
                     ?>
-
                 </div>
 
                 <div class="catalog-description">
