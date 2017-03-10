@@ -761,6 +761,14 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	font-weight: 900;
 }
 
+.interview-form__submit input{
+	padding: 13px 18px;
+	margin: 25px 0 0 -6px;
+	font-size: 12px;
+	border: none;
+	font-weight: 900;
+}
+
 .filter-catalog{
 	margin: 0 0 50px;
 }
