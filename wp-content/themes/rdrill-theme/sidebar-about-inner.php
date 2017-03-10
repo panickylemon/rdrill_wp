@@ -23,23 +23,24 @@
 
             <p class="question-img">?</p>
 
-            <form class="interview-form clearfix">
-                <div class="interview-form__item">
-                    <label for="hss">HSS</label>
-                    <input type="radio" name="drill" value="hss" id="hss">
-                </div>
-
-                <p class="interview-or">или</p>
-
-                <div class="interview-form__item">
-                    <label for="tct">TST</label>
-                    <input type="radio" name="drill" value="hss" id="tct">
-                </div>
-
-                <button class="base-button base-button--grey interview-form__submit">
-                    Отправить
-                </button>
-            </form>
+<!--            <form class="interview-form clearfix">-->
+<!--                <div class="interview-form__item">-->
+<!--                    <label for="hss">HSS</label>-->
+<!--                    <input type="radio" name="drill" value="hss" id="hss">-->
+<!--                </div>-->
+<!---->
+<!--                <p class="interview-or">или</p>-->
+<!---->
+<!--                <div class="interview-form__item">-->
+<!--                    <label for="tct">TST</label>-->
+<!--                    <input type="radio" name="drill" value="hss" id="tct">-->
+<!--                </div>-->
+<!---->
+<!--                <button class="base-button base-button--grey interview-form__submit">-->
+<!--                    Отправить-->
+<!--                </button>-->
+<!--            </form>-->
+            <?php echo do_shortcode( '[contact-form-7 id="407" title="Опрос"]' ); ?>
         </div>
     </div>
 
