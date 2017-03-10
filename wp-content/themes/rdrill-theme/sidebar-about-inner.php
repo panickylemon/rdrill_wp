@@ -41,8 +41,10 @@
                 </button>
             </form>
 
+<div class="clearfix">
+    <?php echo do_shortcode( '[contact-form-7 id="407" title="Опрос"]' ); ?>
+</div>
 
-            <?php echo do_shortcode( '[contact-form-7 id="407" title="Опрос"]' ); ?>
 
         </div>
     </div>
