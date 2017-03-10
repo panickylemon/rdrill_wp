@@ -100,7 +100,8 @@ function wpcf7_checkbox_form_tag_handler( $tag ) {
 	$hangover = wpcf7_get_hangover( $tag->name, $multiple ? array() : '' );
 
 	foreach ( $values as $key => $value ) {
-		$class = 'wpcf7-list-item';
+		//$class = 'wpcf7-list-item';
+        $class = '';
 
 		$checked = false;
 
