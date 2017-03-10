@@ -96,20 +96,20 @@
 					<div class="footer-item">
 						<ul class="footer-menu-list">
 							<li class="footer-menu-list__item">
-								<a class="footer-menu-link" href="#">Клиенту</a>
+								<a class="footer-menu-link" href="/client">Клиенту</a>
 
 								<ul class="footer-submenu-list">
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Помощь</a>
+										<a class="footer-submenu-link" href="/help">Помощь</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Дилеры</a>
+										<a class="footer-submenu-link" href="/dealers">Дилеры</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Статьи</a>
+										<a class="footer-submenu-link" href="/about/article">Статьи</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Контакты</a>
+										<a class="footer-submenu-link" href="/contacts">Контакты</a>
 									</li>
 								</ul>
 							</li>
