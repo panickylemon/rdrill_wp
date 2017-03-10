@@ -1056,7 +1056,7 @@ function get_header_image_tag( $attr = array() ) {
 			$sizes = ! empty( $attr['sizes'] ) ? $attr['sizes'] : wp_calculate_image_sizes( $size_array, $header->url, $image_meta, $header->attachment_id );
 
 			if ( $srcset && $sizes ) {
-				$attr['srcset'] = $srcset;
+				//$attr['srcset'] = $srcset;
 				$attr['sizes'] = $sizes;
 			}
 		}
