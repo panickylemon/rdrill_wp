@@ -130,9 +130,10 @@ function wpcf7_text_validation_filter( $result, $tag ) {
 	if ( 'email' == $tag->basetype ) {
 		if ( $tag->is_required() && '' == $value ) {
 			$result->invalidate( $tag, wpcf7_get_message( 'invalid_required' ) );
-		} elseif ( '' != $value && ! wpcf7_is_email( $value ) ) {
-			$result->invalidate( $tag, wpcf7_get_message( 'invalid_email' ) );
 		}
+//		elseif ( '' != $value && ! wpcf7_is_email( $value ) ) {
+//			$result->invalidate( $tag, wpcf7_get_message( 'invalid_email' ) );
+//		}
 	}
 
 	if ( 'url' == $tag->basetype ) {
