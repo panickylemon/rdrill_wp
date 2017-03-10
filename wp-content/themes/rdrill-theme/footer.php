@@ -33,32 +33,32 @@
 					<div class="footer-item">
 						<ul class="footer-menu-list">
 							<li class="footer-menu-list__item">
-								<a class="footer-menu-link" href="#">О компании</a>
+								<a class="footer-menu-link" href="/about">О компании</a>
 
 								<ul class="footer-submenu-list">
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">О бренде Rotabroach</a>
+										<a class="footer-submenu-link" href="/about/brand">О бренде Rotabroach</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Качество Rotabroach</a>
+										<a class="footer-submenu-link" href="/about/quality/">Качество Rotabroach</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Технологии Custmart</a>
+										<a class="footer-submenu-link" href="/about/technologies">Технологии Custmart</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Гарантия</a>
+										<a class="footer-submenu-link" href="/about/guarantee">Гарантия</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Новости</a>
+										<a class="footer-submenu-link" href="/about/news">Новости</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Представительство РФ</a>
+										<a class="footer-submenu-link" href="/about/representation">Представительство РФ</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Отзывы клиентов</a>
+										<a class="footer-submenu-link" href="/about/reviews">Отзывы клиентов</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Условия сотрудничества</a>
+										<a class="footer-submenu-link" href="/about/terms-cooperation">Условия сотрудничества</a>
 									</li>
 								</ul>
 							</li>
