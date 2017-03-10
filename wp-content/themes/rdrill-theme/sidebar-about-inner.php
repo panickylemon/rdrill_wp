@@ -44,9 +44,7 @@
         </div>
     </div>
 
-    <div class="clearfix">
-        <?php echo do_shortcode( '[contact-form-7 id="407" title="Опрос"]' ); ?>
-    </div>
+
 
     <div class="contact-manager">
         <p class="sidebar__subtitle">

@@ -748,6 +748,11 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	margin: 10px auto 0;
 }
 
+.interview-block{
+	padding: 0;
+	 background: none;
+}
+
 .interview-form {
 	width: 110px;
 	margin: auto;
