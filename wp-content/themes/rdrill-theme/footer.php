@@ -68,23 +68,23 @@
 					<div class="footer-item">
 						<ul class="footer-menu-list">
 							<li class="footer-menu-list__item">
-								<a class="footer-menu-link" href="#">Продукция и услуги</a>
+								<a class="footer-menu-link" href="/catalog">Продукция и услуги</a>
 
 								<ul class="footer-submenu-list">
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Акции</a>
+										<a class="footer-submenu-link" href="/about/sale">Акции</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Станки</a>
+										<a class="footer-submenu-link" href="/catalog/machine">Станки</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Сверла</a>
+										<a class="footer-submenu-link" href="/catalog/drills">Сверла</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Аксессуары</a>
+										<a class="footer-submenu-link" href="/catalog/accessories">Аксессуары</a>
 									</li>
 									<li class="footer-submenu-list__item">
-										<a class="footer-submenu-link" href="#">Сверление рельс</a>
+										<a class="footer-submenu-link" href="/catalog/drilling-rail">Сверление рельс</a>
 									</li>
 								</ul>
 							</li>
