@@ -714,6 +714,10 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	text-align: center;
 }
 
+.wpcf7-mail-sent-ok{
+	display: none !important;
+}
+
 .sidebar__subtitle strong {
 	font-weight: 900;
 }
