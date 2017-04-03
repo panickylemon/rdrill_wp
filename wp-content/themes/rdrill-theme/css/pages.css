@@ -1778,6 +1778,10 @@ p.brand-content__main-paragraph {
 	width: 100%;
 }
 
+.accordion-wrap ul{
+	padding: 0 0 10px 36px !important;
+}
+
 .accordion-item {
 	margin: 0 0 10px;
 	font-size: 14px;
