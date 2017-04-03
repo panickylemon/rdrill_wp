@@ -5,7 +5,7 @@
         <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
     </div>
 
-    <div class="contacts-wrap">
+    <div class="article">
         <div class="l-container">
 
             <?php $page_title = get_post_meta( $post->ID, 'page_title', true ); ?>
