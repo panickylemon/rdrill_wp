@@ -36,6 +36,10 @@
     background: url("../image/base/slide2.jpg") no-repeat 100% 0;
 }
 
+.catalog-accessories__banner{
+    background: url("../image/base/slide2.jpg") no-repeat 100% 0;
+}
+
 .banner-catalog__title {
     max-width: 470px;
     margin: 0;

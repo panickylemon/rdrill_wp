@@ -34,7 +34,7 @@ do_action('woocommerce_before_main_content');
 
 <div class="catalog catalog-drill">
     <div class="l-container">
-        <div class="banner-catalog catalog-drill__banner">
+        <div class="banner-catalog catalog-accessories__banner">
             <div class="banner-inner">
 
                 <?php
