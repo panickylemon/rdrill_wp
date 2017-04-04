@@ -1425,6 +1425,12 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	margin: 0 0 40px;
 }
 
+.brand-content ul{
+	font-size: 16px;
+	font-weight: 300;
+	color: #666666;
+}
+
 p.brand-content__main-paragraph {
 	display: inline-block;
 	font-size: 20px;
@@ -1767,6 +1773,7 @@ p.brand-content__main-paragraph {
 .article ul, .catalog ul, .about-content ul {
 	padding: 0 0 10px 16px;
 	list-style-image: url("../image/icons/li-point.png");
+	fo
 }
 
 .article ul li, .catalog ul li {
