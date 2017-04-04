@@ -170,6 +170,7 @@
     .catalog-description .catalog-img__left img {
         margin: auto;
         width: 100%;
+        max-width: 400px;
     }
 }
 
