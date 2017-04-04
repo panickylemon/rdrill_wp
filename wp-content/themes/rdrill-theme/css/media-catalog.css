@@ -393,6 +393,7 @@
 @media screen and (max-width: 480px) {
     .catalog-img__left img, .catalog-img__right img {
         width: 100%;
+        max-width: 400px;
     }
 
     .wrap-button-more {
