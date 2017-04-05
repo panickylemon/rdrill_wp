@@ -68,7 +68,7 @@ strong{
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .base-button:hover, .base-button:focus {
