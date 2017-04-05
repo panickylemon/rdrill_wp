@@ -555,6 +555,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 
 .about-menu {
 	border: 1px solid #e9eff1;
+	margin: 0 0 50px;
 }
 
 .about-sidebar__title {
@@ -695,7 +696,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 }
 
 .wrap-interview {
-	margin: 50px 0;
+	margin: 0 0 50px;
 }
 
 .interview-block {
