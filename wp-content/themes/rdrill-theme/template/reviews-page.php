@@ -25,7 +25,6 @@
                             <img src="/wp-content/themes/rdrill-theme/image/reviews/1-otziv-rotabroach.jpg" alt="">
                         </a>
                     </div>
-
                     <div class="news-slider__item">
                         <a href="/wp-content/themes/rdrill-theme/image/reviews/2-otziv-rotabroach.jpg" data-lightbox="images">
                             <img src="/wp-content/themes/rdrill-theme/image/reviews/2-otziv-rotabroach.jpg" alt="">
