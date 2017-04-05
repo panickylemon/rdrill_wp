@@ -1431,6 +1431,10 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	max-width: 100%;
 }
 
+.brand-content a {
+	color: #f84630;
+}
+
 .brand-content .image-left {
 	float: left;
 	margin-right: 50px;
