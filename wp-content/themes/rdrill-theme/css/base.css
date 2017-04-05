@@ -129,3 +129,7 @@ strong{
 	margin-right: 5px;
 	background: url("../image/icons/home-breadcrumb.png") no-repeat;
 }
+
+.lb-data .lb-details{
+	display: none;
+}
