@@ -67,6 +67,27 @@ $(document).ready(function () {
         }
     });
 
+    $('#reviews-slider').owlCarousel({
+        loop: false,
+        nav: true,
+        dots: false,
+        navText: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            481: {
+                items: 2
+            },
+            861: {
+                items: 3
+            },
+            1140: {
+                items: 4
+            }
+        }
+    });
+
     $('#other-product-slider').owlCarousel({
         loop: false,
         nav: true,
