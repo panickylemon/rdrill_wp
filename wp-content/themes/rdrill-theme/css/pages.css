@@ -1143,6 +1143,7 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 }
 
 .instructions-item{
+	margin-bottom: 25px;
 	font-weight: 300;
 	font-size: 16px;
 }
@@ -1151,15 +1152,19 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	color: #fc0013;
 }
 
-.instructions-item img{
+.instructions-item:before{
 	display: inline-block;
-	margin-bottom: 25px;
-	margin-right: 10px;
+	content: "";
+	height: 50px;
+	width: 55px;
+	background: url("../image/base/pdf_icon.png") no-repeat;
 }
 
 .instructions-item div{
 	display: inline-block;
+	margin-left: 10px;
 }
+
 
 .instructions-link{
 	border-bottom: 1px dashed #fc0013;
