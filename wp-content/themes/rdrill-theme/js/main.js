@@ -68,7 +68,7 @@ $(document).ready(function () {
     });
 
     $('#reviews-slider').owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         navText: false,
