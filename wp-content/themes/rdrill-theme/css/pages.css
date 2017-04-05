@@ -1556,7 +1556,7 @@ p.brand-content__main-paragraph {
 /*font-weight: 900;*/
 /*}*/
 
-.partnership-page ol h2 {
+.partnership-page ol h2, .partnership-page ol h3 {
 	font-weight: 900;
 	font-size: 16px;
 }
