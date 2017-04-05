@@ -1532,7 +1532,7 @@ p.brand-content__main-paragraph {
 	margin-bottom: 25px;
 }
 
-.partnership-page ol li:before {
+.partnership-page ol>li:before {
 	content: counter(li);
 	counter-increment: li;
 	position: absolute;
