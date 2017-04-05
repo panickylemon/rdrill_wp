@@ -50,9 +50,9 @@ ob_start();
         <?php endif; ?>
 
         <?php foreach ( $attributes as $attribute ) :
-            if ( empty( $attribute['is_visible'] ) || ( $attribute['is_taxonomy'] && ! taxonomy_exists(
+            if ( empty( $attribute['is_visible'] ) || ( $attribute['is_taxonomy'] && ! taxonomy_exists (
                         //не выводить атрибут "название категории"
-                        $attribute['name'] ) )  || $attribute['name'] == 'pa_name-category') {
+                        $attribute['name'] ) )  || $attribute['name'] == 'pa_name-category' || $attribute['name'] == 'pa_ves'){
                 continue;
             } else {
                 $has_row = true;
