@@ -232,6 +232,15 @@
                                 </p>
                             </div>
                         </a>
+                        <a href="/catalog/accessories/vakuumnaya-podstavka-dlya-stanka/" class="product-tab-item">
+                            <div class="tab-item-content">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-9.png">
+
+                                <p class="product-tab-title">
+                                    <span>Вакуумная подставка для станка</span>
+                                </p>
+                            </div>
+                        </a>
                     </div>
                     <div class="content-tab content-tab3 is-active">
                         <a class="product-tab-item">
