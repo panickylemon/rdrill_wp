@@ -261,18 +261,18 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drilling-rail/rhino-e/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-3.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-3.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Сверла с напаянными пластинами</span>
+                                    <span>Rhino E</span>
                                 </p>
                             </div>
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/ra">
 
                                 <p class="product-tab-title">
                                     <span>Спиральные сверла (Weldon 19.05)</span>
