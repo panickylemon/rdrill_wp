@@ -319,6 +319,7 @@ tr.sorting-model__item {
     font-weight: 900;
     text-transform: uppercase;
     color: #333333;
+    max-width: 140px;
 }
 
 .sorting-model__price-text {
