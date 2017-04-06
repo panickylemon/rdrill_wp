@@ -133,7 +133,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
 
                                 <p class="product-tab-title">
                                     <span>Спиральные сверла (Weldon 19.05)</span>
@@ -142,7 +142,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
 
                                 <p class="product-tab-title">
                                     <span>Твердосплавные коронки</span>
