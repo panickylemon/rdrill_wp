@@ -18,7 +18,7 @@
             <?php if (have_posts()): while (have_posts()): the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; endif; ?>
-            <div class="wrap-slider">
+            <div class="news-slider">
                 <div id="reviews-slider" class="owl-carousel owl-theme">
                     <div class="news-slider__item">
                         <a href="/wp-content/themes/rdrill-theme/image/reviews/1-otziv-rotabroach.jpg" data-lightbox="images">
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <h2>Наши клиенты</h2>
-            <div class="wrap-slider">
+            <div class="news-slider">
                 <div id="clients-slider" class="owl-carousel owl-theme">
                     <div class="news-slider__item">
                         <a href="http://snsz.ru/" target="_blank">
