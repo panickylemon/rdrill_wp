@@ -98,10 +98,13 @@ $(document).ready(function () {
                 items: 1
             },
             481: {
-                items: 2
+                items: 3
             },
-            861: {
+            600: {
                 items: 4
+            },
+            800: {
+                items: 5
             },
             1140: {
                 items: 6
