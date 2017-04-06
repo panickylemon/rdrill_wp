@@ -104,7 +104,7 @@ $(document).ready(function () {
                 items: 4
             },
             1140: {
-                items: 5
+                items: 6
             }
         }
     });

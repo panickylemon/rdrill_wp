@@ -51,32 +51,32 @@
             <div class="wrap-slider">
                 <div id="clients-slider" class="owl-carousel owl-theme">
                     <div class="news-slider__item">
-                        <a href="http://snsz.ru/">
+                        <a href="http://snsz.ru/" target="_blank">
                             <img src="/wp-content/themes/rdrill-theme/image/base/snsz.jpg" alt="Средне-Невский судостроительный завод" title="Средне-Невский судостроительный завод">
                         </a>
                     </div>
                     <div class="news-slider__item">
-                        <a href="http://vszmk.ru/">
+                        <a href="http://vszmk.ru/" target="_blank">
                             <img src="/wp-content/themes/rdrill-theme/image/base/zmk.jpg" alt="Восточно-Сибирский ЗМК" title="Восточно-Сибирский ЗМК">
                         </a>
                     </div>
                     <div class="news-slider__item">
-                        <a href="http://snsz.ru/">
+                        <a href="https://www.sibur.ru/" target="_blank">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/sibur.jpg" alt="Сибур Холдинг" title="Сибур Холдинг">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://mosmetro.ru/" target="_blank">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/mosm.jpg" alt="Московский метрополитен" title="Московский метрополитен">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://snsz.ru/" target="_blank">
                             <img src="/wp-content/themes/rdrill-theme/image/base/snsz.jpg" alt="Средне-Невский судостроительный завод" title="Средне-Невский судостроительный завод">
                         </a>
                     </div>
                     <div class="news-slider__item">
-                        <a href="http://vszmk.ru/">
-                            <img src="/wp-content/themes/rdrill-theme/image/base/zmk.jpg" alt="Восточно-Сибирский ЗМК" title="Восточно-Сибирский ЗМК">
-                        </a>
-                    </div>
-                    <div class="news-slider__item">
-                        <a href="http://snsz.ru/">
-                            <img src="/wp-content/themes/rdrill-theme/image/base/snsz.jpg" alt="Средне-Невский судостроительный завод" title="Средне-Невский судостроительный завод">
-                        </a>
-                    </div>
-                    <div class="news-slider__item">
-                        <a href="http://vszmk.ru/">
+                        <a href="http://vszmk.ru/" target="_blank">
                             <img src="/wp-content/themes/rdrill-theme/image/base/zmk.jpg" alt="Восточно-Сибирский ЗМК" title="Восточно-Сибирский ЗМК">
                         </a>
                     </div>
