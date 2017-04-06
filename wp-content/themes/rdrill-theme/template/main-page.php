@@ -171,7 +171,7 @@
                         </a>
                         <a href="/catalog/accessories/perehodniki-morzeweldon/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-2.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-2.jpg">
 
                                 <p class="product-tab-title">
                                     <span>Переходники Морзе/Weldon</span>
