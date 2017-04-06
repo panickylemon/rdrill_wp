@@ -252,12 +252,12 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drilling-rail/rhino-4/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-2.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-2.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Сверла из быстрорежущей стали</span>
+                                    <span>Rhino 4</span>
                                 </p>
                             </div>
                         </a>
