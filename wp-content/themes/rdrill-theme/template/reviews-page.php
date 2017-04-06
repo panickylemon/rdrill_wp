@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <h2>Наши клиенты</h2>
+            <h2 style="font-weight: 900;">Наши клиенты</h2>
             <div class="news-slider">
                 <div id="clients-slider" class="owl-carousel owl-theme">
                     <div class="news-slider__item">
