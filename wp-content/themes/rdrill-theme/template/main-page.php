@@ -306,7 +306,24 @@
                                 </p>
                             </div>
                         </a>
+                        <a href="/catalog/drilling-rail/shablon-dlya-sverleniya-bez-razmetki/" class="product-tab-item">
+                            <div class="tab-item-content">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-8.jpg">
 
+                                <p class="product-tab-title">
+                                    <span>Шаблон для сверления без разметки</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/catalog/drilling-rail/shablon-dlya-sverleniya-p50-p65/" class="product-tab-item">
+                            <div class="tab-item-content">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-9.jpg">
+
+                                <p class="product-tab-title">
+                                    <span>Шаблон для сверления (P50, P65)</span>
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
