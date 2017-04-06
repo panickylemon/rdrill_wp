@@ -214,6 +214,24 @@
                                 </p>
                             </div>
                         </a>
+                        <a href="/catalog/accessories/adapter-dlya-sverleniya-trub/" class="product-tab-item">
+                            <div class="tab-item-content">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-7.png">
+
+                                <p class="product-tab-title">
+                                    <span>Адаптер для сверления труб</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/catalog/accessories/smazochno-ohlazhdayushhie-materialyi/" class="product-tab-item">
+                            <div class="tab-item-content">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-8.jpg">
+
+                                <p class="product-tab-title">
+                                    <span>Смазочно-охлаждающие материалы</span>
+                                </p>
+                            </div>
+                        </a>
                     </div>
                     <div class="content-tab content-tab3 is-active">
                         <a class="product-tab-item">
