@@ -71,16 +71,25 @@
                         </a>
                     </div>
                     <div class="news-slider__item">
-                        <a href="http://snsz.ru/" target="_blank">
-                            <img src="/wp-content/themes/rdrill-theme/image/base/snsz.jpg" alt="Средне-Невский судостроительный завод" title="Средне-Невский судостроительный завод">
+                        <a href="http://www.metalloinvest.com/business/mining-segment/lgok/" target="_blank">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/mti.jpg" alt="Лебединский ГОК" title="Лебединский ГОК">
                         </a>
                     </div>
                     <div class="news-slider__item">
-                        <a href="http://vszmk.ru/" target="_blank">
-                            <img src="/wp-content/themes/rdrill-theme/image/base/zmk.jpg" alt="Восточно-Сибирский ЗМК" title="Восточно-Сибирский ЗМК">
+                        <a href="http://www.niimostov.ru/" target="_blank">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/niim.jpg" alt="НИИ мостов" title="НИИ мостов">
                         </a>
                     </div>
-
+                    <div class="news-slider__item">
+                        <a href="http://moreship.ru/" target="_blank">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/more.png" alt="Судостроительный завод Море" title="Судостроительный завод Море">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://sibmost.ru/" target="_blank">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/sibm.jpg" alt="Сибмост" title="Сибмост">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
