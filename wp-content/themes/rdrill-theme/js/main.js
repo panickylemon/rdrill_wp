@@ -97,10 +97,13 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            481: {
+            300: {
+                items: 2
+            },
+            550: {
                 items: 3
             },
-            600: {
+            700: {
                 items: 4
             },
             800: {
