@@ -297,6 +297,16 @@
                                 </p>
                             </div>
                         </a>
+                        <a href="/catalog/drilling-rail/zahvat-dlya-tramvaynyih-rels/" class="product-tab-item">
+                            <div class="tab-item-content">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-7.jpg">
+
+                                <p class="product-tab-title">
+                                    <span>Захват для трамвайных рельс</span>
+                                </p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
