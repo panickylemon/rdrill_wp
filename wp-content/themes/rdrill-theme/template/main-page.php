@@ -272,7 +272,7 @@
                         </a>
                         <a class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/ra">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-3.jpg">
 
                                 <p class="product-tab-title">
                                     <span>Спиральные сверла (Weldon 19.05)</span>
