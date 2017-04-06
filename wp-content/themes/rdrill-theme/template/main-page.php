@@ -160,12 +160,12 @@
                         </a>
                     </div>
                     <div class="content-tab content-tab2">
-                        <a class="product-tab-item">
+                        <a href="/catalog/accessories/faskosemniki-zenkovki/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-1.png">
 
                                 <p class="product-tab-title">
-                                    <span>Спиральные сверла (Weldon 19.05)</span>
+                                    <span>Фаскосъемники (зенковки)</span>
                                 </p>
                             </div>
                         </a>
