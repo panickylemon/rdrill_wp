@@ -178,21 +178,21 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/accessories/udlinitelnyie-shpindeli/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-6.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-3.png">
 
                                 <p class="product-tab-title">
-                                    <span>Мини-сверла</span>
+                                    <span>Удлинительные шпиндели</span>
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/accessories/adapteryi-pod-spiralnyie-sverla/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-1.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-4.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Магнитные сверлильные станки</span>
+                                    <span>Адаптеры под спиральные сверла</span>
                                 </p>
                             </div>
                         </a>
