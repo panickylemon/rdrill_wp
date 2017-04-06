@@ -88,6 +88,27 @@ $(document).ready(function () {
         }
     });
 
+    $('#clients-slider').owlCarousel({
+        loop: false,
+        nav: true,
+        dots: false,
+        navText: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            481: {
+                items: 2
+            },
+            861: {
+                items: 4
+            },
+            1140: {
+                items: 5
+            }
+        }
+    });
+
     $('#other-product-slider').owlCarousel({
         loop: false,
         nav: true,

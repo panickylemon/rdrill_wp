@@ -18,7 +18,7 @@
             <?php if (have_posts()): while (have_posts()): the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; endif; ?>
-            <div class="news-slider">
+            <div class="wrap-slider">
                 <div id="reviews-slider" class="owl-carousel owl-theme">
                     <div class="news-slider__item">
                         <a href="/wp-content/themes/rdrill-theme/image/reviews/1-otziv-rotabroach.jpg" data-lightbox="images">
@@ -45,6 +45,42 @@
                             <img src="/wp-content/themes/rdrill-theme/image/reviews/5-otziv-rotabroach.jpg" alt="">
                         </a>
                     </div>
+                </div>
+            </div>
+            <h2>Наши клиенты</h2>
+            <div class="wrap-slider">
+                <div id="clients-slider" class="owl-carousel owl-theme">
+                    <div class="news-slider__item">
+                        <a href="http://snsz.ru/">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/snsz.jpg" alt="Средне-Невский судостроительный завод" title="Средне-Невский судостроительный завод">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://vszmk.ru/">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/zmk.jpg" alt="Восточно-Сибирский ЗМК" title="Восточно-Сибирский ЗМК">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://snsz.ru/">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/snsz.jpg" alt="Средне-Невский судостроительный завод" title="Средне-Невский судостроительный завод">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://vszmk.ru/">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/zmk.jpg" alt="Восточно-Сибирский ЗМК" title="Восточно-Сибирский ЗМК">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://snsz.ru/">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/snsz.jpg" alt="Средне-Невский судостроительный завод" title="Средне-Невский судостроительный завод">
+                        </a>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="http://vszmk.ru/">
+                            <img src="/wp-content/themes/rdrill-theme/image/base/zmk.jpg" alt="Восточно-Сибирский ЗМК" title="Восточно-Сибирский ЗМК">
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
