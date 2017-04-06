@@ -288,12 +288,12 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drilling-rail/zhd-spiralnyie-sverla-drilling-rail/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-6.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-6.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Мини-сверла</span>
+                                    <span>Железнодорожные спиральные сверла</span>
                                 </p>
                             </div>
                         </a>
