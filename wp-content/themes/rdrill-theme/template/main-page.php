@@ -243,12 +243,12 @@
                         </a>
                     </div>
                     <div class="content-tab content-tab3 is-active">
-                        <a class="product-tab-item">
+                        <a href="/catalog/drilling-rail/rhino-2/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-1.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-1.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Магнитные сверлильные станки</span>
+                                    <span>Rhino 2</span>
                                 </p>
                             </div>
                         </a>
