@@ -169,12 +169,12 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/accessories/perehodniki-morzeweldon/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-2.png">
 
                                 <p class="product-tab-title">
-                                    <span>Твердосплавные коронки</span>
+                                    <span>Переходники Морзе/Weldon</span>
                                 </p>
                             </div>
                         </a>
