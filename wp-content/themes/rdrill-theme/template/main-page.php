@@ -196,21 +196,21 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/accessories/sterzhen-dlya-udaleniya-struzhki/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-2.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-5.png">
 
                                 <p class="product-tab-title">
-                                    <span>Сверла из быстрорежущей стали</span>
+                                    <span>Стержень для удаления стружки</span>
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/accessories/perehodnik-weldon-quick/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-3.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-6.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Сверла с напаянными пластинами</span>
+                                    <span>Переходник Weldon / Quick-in / One Touch</span>
                                 </p>
                             </div>
                         </a>
