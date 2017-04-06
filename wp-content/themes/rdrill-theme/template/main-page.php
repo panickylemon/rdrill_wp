@@ -270,21 +270,21 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drilling-rail/zheleznodorozhnyie-sverla-hss/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-3.jpg">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-4.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Спиральные сверла (Weldon 19.05)</span>
+                                    <span>Железнодорожные сверла HSS (SRCV)</span>
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drilling-rail/zheleznodorozhnyie-sverla-tst/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/rail-5.jpg">
 
                                 <p class="product-tab-title">
-                                    <span>Твердосплавные коронки</span>
+                                    <span>Железнодорожные сверла ТСТ (SCRWC)</span>
                                 </p>
                             </div>
                         </a>
