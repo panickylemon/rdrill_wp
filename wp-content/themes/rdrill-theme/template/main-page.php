@@ -162,7 +162,7 @@
                     <div class="content-tab content-tab2">
                         <a href="/catalog/accessories/faskosemniki-zenkovki/" class="product-tab-item">
                             <div class="tab-item-content">
-                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-1.png">
+                                <img src="/wp-content/themes/rdrill-theme/image/products/acs-1.jpg">
 
                                 <p class="product-tab-title">
                                     <span>Фаскосъемники (зенковки)</span>
