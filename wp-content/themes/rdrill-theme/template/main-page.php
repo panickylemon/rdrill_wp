@@ -104,7 +104,7 @@
                 </ul>
                 <div class="resp-tabs-container hor_1">
                     <div class="content-tab content-tab1 ">
-                        <a class="product-tab-item">
+                        <a href="/catalog/machine/" class="product-tab-item">
                             <div class="tab-item-content">
                                 <img src="/wp-content/themes/rdrill-theme/image/products/product-home-1.png">
 
@@ -113,7 +113,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drills/drill-highspeed-steel/" class="product-tab-item">
                             <div class="tab-item-content">
                                 <img src="/wp-content/themes/rdrill-theme/image/products/product-home-2.png">
 
@@ -122,7 +122,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drills/sverla-s-napayannyimi-plastinami/" class="product-tab-item">
                             <div class="tab-item-content">
                                 <img src="/wp-content/themes/rdrill-theme/image/products/product-home-3.png">
 
@@ -131,7 +131,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drills/tverdosplavnyie-koronki/" class="product-tab-item">
                             <div class="tab-item-content">
                                 <img src="/wp-content/themes/rdrill-theme/image/products/product-home-4.png">
 
@@ -140,7 +140,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drills/spiralnyie-sverla-weldon-19-05/" class="product-tab-item">
                             <div class="tab-item-content">
                                 <img src="/wp-content/themes/rdrill-theme/image/products/product-home-5.png">
 
@@ -149,7 +149,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a class="product-tab-item">
+                        <a href="/catalog/drills/mini-drill/" class="product-tab-item">
                             <div class="tab-item-content">
                                 <img src="/wp-content/themes/rdrill-theme/image/products/product-home-6.png">
 
