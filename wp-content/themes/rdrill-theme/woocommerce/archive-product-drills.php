@@ -63,7 +63,7 @@ do_action('woocommerce_before_main_content');
 
     <div class="l-container">
 
-        <div class="button-show-filter"><span>Показать фильтр</span></div>
+        <div class="button-show-filter"><span>Показать фильтр<?php echo $term_id; ?></span></div>
         <div class="filter-sidebar">
             <div class="filter-catalog" id="filter-form">
                 <?php
