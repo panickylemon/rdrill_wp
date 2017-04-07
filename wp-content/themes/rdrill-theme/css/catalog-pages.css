@@ -1025,6 +1025,7 @@ ul.woof_list {
 .characteristics-table {
     display: inline-block;
     padding-right: 60px;
+    vertical-align: top;
 }
 
 .contents-delivery {
