@@ -63,12 +63,12 @@ do_action('woocommerce_before_main_content');
 
     <div class="l-container">
 
-        <div class="button-show-filter"><span>Показать фильтр<?php echo $term_id; ?></span></div>
+        <div class="button-show-filter"><span>Показать фильтр</span></div>
         <div class="filter-sidebar">
             <div class="filter-catalog" id="filter-form">
                 <?php
                 echo do_shortcode( '[woof tax_only="product_cat,pa_glubina-sverl,pa_diametr-sverla" autohide=0 autosubmit=0
-                    taxonomies=product_cat:8]' );
+                    taxonomies=product_cat:'.$term_id.']' );
                 ?>
             </div>
 
@@ -79,7 +79,7 @@ do_action('woocommerce_before_main_content');
             <div class="filter-content">
                 <div class="catalog-products-wrap clearfix">
                     <?php
-                    echo do_shortcode( '[woof_products per_page=12 columns=3 is_ajax=1 taxonomies=product_cat:8]' );
+                    echo do_shortcode( '[woof_products per_page=12 columns=3 is_ajax=1 taxonomies=product_cat:'.$term_id.']' );
                     ?>
                 </div>
 
