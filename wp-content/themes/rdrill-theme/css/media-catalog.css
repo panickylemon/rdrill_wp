@@ -75,9 +75,9 @@
         width: 50%;
     }
 
-    .catalog-product:nth-child(2) .catalog-product__content, .catalog-product:nth-child(2n+5) .catalog-product__content {
-        margin: auto;
-    }
+    /*.catalog-product:nth-child(2) .catalog-product__content, .catalog-product:nth-child(2n+5) .catalog-product__content {*/
+        /*margin: auto;*/
+    /*}*/
 
     .catalog-product:nth-child(3n) .catalog-product__content {
         float: left;
