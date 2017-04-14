@@ -1292,6 +1292,10 @@ h2.resp-accordion:first-child, h2.resp-accordion {
 	background: url("../image/icons/percentage.png") no-repeat;
 }
 
+.list-long-text li{
+	padding-bottom: 10px;
+}
+
 .delimiter-about {
 	position: absolute;
 	z-index: 1;
