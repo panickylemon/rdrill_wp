@@ -208,10 +208,10 @@
                             </a>
                         <?php } else { ?>
                             <a href="<?php the_permalink() ?>">
-                                <img src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
+                                <img src="/wp-content/themes/rdrill-theme/image/base/news-more.jpg" alt="фото">
                             </a>
                         <?php } ?>
-                        <a class="other-news__item-link" onclick="return !window.open(this.href)" href="<?php the_permalink() ?>"
+                        <a class="other-news__item-link" href="<?php the_permalink() ?>"
                             rel="bookmark" title="<?php the_title(); ?>"><span><?php the_title(); ?></span></a>
                     </div>
                     <?php
