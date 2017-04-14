@@ -162,14 +162,14 @@
 <!--                    </div>-->
 
                     <div class="news-item__director">
-                        <img class="news-item__director-img" src="/wp-content/themes/rdrill-theme/image/base/advantages-1.png" alt="фото">
+                        <img class="news-item__director-img" src="/wp-content/themes/rdrill-theme/image/base/olkhovik.png"" alt="фото">
                         <div class="news-item__director-text">
-                            <p class="news-item__director-name">Фамилия Имя Отчество</p>
-                            <p class="news-item__director-position">Директор по маркетингу ОАО «Портал»</p>
+                            <p class="news-item__director-name">Ольховик Никита Игоревич</p>
+                            <p class="news-item__director-position">Руководитель отдела продаж</p>
                             <p>
-                                Андрей работает с крупными клиентами Северо-Запада и досконально знает всю продукцию
+                                Никита работает с крупными клиентами Северо-Запада и досконально знает всю продукцию
                                 Rotabroach. Если у вас есть вопрос по ассортименту или требуется помощь в выборе, то
-                                Андрей всегда поможет.
+                                Никита всегда поможет.
                             </p>
                         </div>
                     </div>
