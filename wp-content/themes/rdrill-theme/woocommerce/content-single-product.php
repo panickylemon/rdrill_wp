@@ -64,7 +64,13 @@ if ( post_password_required() ) {
                         <div class="clearfix card-main-info__bottom">
                             <div class="product-price">
                                 <p class="product-price__text">Цена с НДС:</p>
-                                <p class="product-price__number"><?php echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup></p>
+                                <p class="product-price__number">
+                                <?php if ($product->get_price()==0) {
+                                    echo "По запросу";}
+                                       else {
+                                    echo number_format($product->get_price(), 0, '', ' ') ?> <sup>руб</sup>
+                                <?php }?>
+                                </p>
                                 <a class="base-button base-button--red button-buy" href="#request-form" data-toggle="modal">Запросить коммерчесткое
                                     предложение</a>
                             </div>
