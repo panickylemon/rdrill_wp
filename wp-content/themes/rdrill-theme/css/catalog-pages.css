@@ -694,7 +694,11 @@ ul.woof_list {
     color: #969b9c;
 }
 
-.catalog-product:nth-child(2) .catalog-product__content, .catalog-product:nth-child(2n+5) .catalog-product__content {
+/*.catalog-product:nth-child(2) .catalog-product__content, .catalog-product:nth-child(2n+5) .catalog-product__content {*/
+    /*margin: auto;*/
+/*}*/
+
+.catalog-product:nth-child(3n+2) .catalog-product__content {
     margin: auto;
 }
 
