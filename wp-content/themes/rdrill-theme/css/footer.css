@@ -128,3 +128,7 @@ footer {
 .footer__vk {
 	background: url("../image/icons/social-network-icons.png") no-repeat 100%;
 }
+
+.footer__google-plus{
+	background: url("../image/icons/google-plus.png") no-repeat;
+}

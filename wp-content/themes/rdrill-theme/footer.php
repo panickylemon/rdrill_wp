@@ -154,11 +154,12 @@
 			<div class="l-container">
 				<p class="footer__copyright">© 2016 Реквизиты компании</p>
 
-				<div class="footer__social-network">
-					<a class="social-network__item footer__youtube" href="#"></a>
-					<a class="social-network__item footer__facebook" href="#"></a>
-					<a class="social-network__item footer__vk" href="#"></a>
-				</div>
+                <div class="footer__social-network">
+                    <a class="social-network__item footer__google-plus" href="https://plus.google.com/u/0/+ZaoportalRu" target="_blank"></a>
+                    <a class="social-network__item footer__youtube" href="https://www.youtube.com/user/zaoportaltv" target="_blank"></a>
+                    <a class="social-network__item footer__facebook" href="#" target="_blank"></a>
+                    <a class="social-network__item footer__vk" href="#" target="_blank"></a>
+                </div>
 			</div>
 		</div>
 	</div>
